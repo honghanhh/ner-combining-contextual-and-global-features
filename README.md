@@ -7,11 +7,11 @@ __Superviors__:
 
 __Student__: __TRAN__ Thi Hong Hanh.
 
-### __Week 1 Tasks__:
+### __Task 1__:
 
-- [ ] Implement the code using XLNet for NER training and prediction on the CONLL2003 data.
+- [x] Implement the code using XLNet for NER training and prediction on the CONLL2003 data.
   
-- [ ] Reimplement on multiple datasets of NER including languages of the Embeddia project (Slovenian, Finnish, Estonian, etc.)
+- [x] Reimplement on multiple datasets of NER including languages of the Embeddia project (Slovenian, Finnish, Estonian, etc.)
   - This link https://filesender.renater.fr/?s=download&token=fee352ab-62d6-945d-7a72-88d18c0dfd54 
 
 - [x] Recommended readings:
