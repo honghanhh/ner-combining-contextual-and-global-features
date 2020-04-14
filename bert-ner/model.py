@@ -8,7 +8,7 @@ class Net(nn.Module):
     def __init__(self, top_rnns=False, vocab_size=None, device='cpu', finetuning=False):
         super().__init__()
         #self.bert = BertModel.from_pretrained('bert-base-cased')
-        self.bert = XLNetModel.from_pretrained('xlnet-base-cased')
+        self.xlnet = XLNetModel.from_pretrained('xlnet-base-cased')
         #self.bert = OpenAIGPTModel.from_pretrained('openai-gpt')
 
         self.top_rnns=top_rnns
@@ -31,17 +31,17 @@ class Net(nn.Module):
         y = y.to(self.device)
 
         if self.training and self.finetuning:
-            # print("->bert.train()")
-            self.bert.train()
-            output1 = self.bert(x)
+            # print("->xlnet.train()")
+            self.xlnet.train()
+            output1 = self.xlnet(x)
             print("model",len(output1))
             encoded_layers, _ = output1
             print(encoded_layers.shape,len(_))
             enc = encoded_layers#[-1]
         else:
-            self.bert.eval()
+            self.xlnet.eval()
             with torch.no_grad():
-                encoded_layers, _ = self.bert(x)
+                encoded_layers, _ = self.xlnet(x)
                 enc = encoded_layers#[-1]
 
         if self.top_rnns:
