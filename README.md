@@ -21,12 +21,12 @@ __Student__: __TRAN__ Thi Hong Hanh.
 
 ### __Task 2__:
 - Investigate multilingual word embeddings that can support our interested NER languages:
-  - [x] __Flair__: 
-    - Support 17 languages, including English, Slovanian, and Finish. 
-    - Test word embeddings in [__flair_ner__](https://github.com/honghanhh/multiligualNER/embeddings/flair/).
   - [x] __FastText__: 
-    - Trained on __Common Crawl__ and __Wikipedia__ 
+    - Trained on __Common Crawl__ and __Wikipedia__ with 300 dimension and n_gram of length 5.
     - Support 157 languages, including English, Slovenian, Finnish, Estonian.
-    - Flair supports to use FastText as word embeddings.
-  - [] __BERT__:
-  - [] __Stanza__:
+    - Flair supports to use FastText as word embeddings, also test in [__flair_ner__](https://github.com/honghanhh/multiligualNER/embeddings/flair/).
+  - [x] __Flair__: 
+    - Support 17 languages, including English, Slovanian(419,744,423 tokens), and Finish (427,194,262 tokens).
+    - List of 14 word embeddings that Flair support: [__List__](https://github.com/flairNLP/flair/blob/master/resources/docs/TUTORIAL_4_ELMO_BERT_FLAIR_EMBEDDING.md).
+    - Can stack, mix, match word embeddings (i.e Flair, ELMo, BERT and classical one), test word embeddings in [__flair_ner__](https://github.com/honghanhh/multiligualNER/embeddings/flair/).
+  - [x] __Stanza__:
