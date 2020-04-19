@@ -19,3 +19,14 @@ __Student__: __TRAN__ Thi Hong Hanh.
   - [x] [__BERT__](https://arxiv.org/pdf/1810.04805.pdf): Devlin, J., Chang, M. W., Lee, K., & Toutanova, K. (2018). Bert: Pre-training of deep bidirectional transformers for language understanding. arXiv preprint arXiv:1810.04805.
   - [x] [__BERT+NER__](https://www.aclweb.org/anthology/W19-3712.pdf): Arkhipov, M., Trofimova, M., Kuratov, Y., & Sorokin, A. (2019, August). Tuning multilingual transformers for language-specific named entity recognition. In Proceedings of the 7th Workshop on Balto-Slavic Natural Language Processing (pp. 89-93).
 
+### __Task 2__:
+- Investigate multilingual word embeddings that can support our interested NER languages:
+  - [x] __Flair__: 
+    - Support 17 languages, including English, Slovanian, and Finish. 
+    - Test word embeddings in [__flair_ner__](https://github.com/honghanhh/multiligualNER/embeddings/flair/).
+  - [x] __FastText__: 
+    - Trained on __Common Crawl__ and __Wikipedia__ 
+    - Support 157 languages, including English, Slovenian, Finnish, Estonian.
+    - Flair supports to use FastText as word embeddings.
+  - [] __BERT__:
+  - [] __Stanza__:
