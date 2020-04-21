@@ -1,0 +1,4963 @@
+100% 798011/798011 [00:00<00:00, 2564849.76B/s]
+100% 690/690 [00:00<00:00, 780914.67B/s]
+100% 467042463/467042463 [00:13<00:00, 34977155.89B/s]
+model 2
+torch.Size([32, 45, 768]) 12
+=====sanity check======
+words: <cls> People were waiting for the results to come out before buying . <sep>
+x: [   3 1583   55 2032   28   18  825   22  280   78  134 2759   17    9
+    4]
+is_heads: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1]
+y: [0 1 1 1 1 1 1 1 1 1 1 1 1 0 0]
+tags: <PAD> O O O O O O O O O O O O <PAD>
+seqlen: 15
+=======================
+step: 0, loss: 3.0729610919952393
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 68, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+step: 10, loss: 0.4198075234889984
+model 2
+torch.Size([32, 82, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 73, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+step: 20, loss: 0.248679518699646
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 45, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 78, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+step: 30, loss: 0.18997777998447418
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 44, 768]) 12
+model 2
+torch.Size([32, 77, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+step: 40, loss: 0.14470615983009338
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 72, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+step: 50, loss: 0.14797593653202057
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 43, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 61, 768]) 12
+model 2
+torch.Size([32, 193, 768]) 12
+step: 60, loss: 0.23554039001464844
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 44, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 82, 768]) 12
+model 2
+torch.Size([32, 67, 768]) 12
+model 2
+torch.Size([32, 74, 768]) 12
+model 2
+torch.Size([32, 42, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+step: 70, loss: 0.16264373064041138
+model 2
+torch.Size([32, 96, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 72, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 44, 768]) 12
+model 2
+torch.Size([32, 82, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+step: 80, loss: 0.1218256726861
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 45, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 43, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+step: 90, loss: 0.07528109848499298
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 75, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 76, 768]) 12
+model 2
+torch.Size([32, 86, 768]) 12
+model 2
+torch.Size([32, 71, 768]) 12
+model 2
+torch.Size([32, 72, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+step: 100, loss: 0.08371832966804504
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 68, 768]) 12
+model 2
+torch.Size([32, 74, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 61, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 76, 768]) 12
+step: 110, loss: 0.07804006338119507
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 93, 768]) 12
+model 2
+torch.Size([32, 83, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+step: 120, loss: 0.10012862831354141
+model 2
+torch.Size([32, 90, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 42, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 107, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+step: 130, loss: 0.19693231582641602
+model 2
+torch.Size([32, 44, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 73, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+step: 140, loss: 0.08988650888204575
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 66, 768]) 12
+model 2
+torch.Size([32, 68, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 119, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+step: 150, loss: 0.07134977728128433
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 72, 768]) 12
+model 2
+torch.Size([32, 82, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+step: 160, loss: 0.047378767281770706
+model 2
+torch.Size([32, 44, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 71, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+step: 170, loss: 0.07133062928915024
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 66, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+step: 180, loss: 0.040955737233161926
+model 2
+torch.Size([32, 68, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 104, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 43, 768]) 12
+step: 190, loss: 0.02652623876929283
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 40, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 103, 768]) 12
+step: 200, loss: 0.032164283096790314
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 37, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 66, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+step: 210, loss: 0.01921287178993225
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 171, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+step: 220, loss: 0.029076071456074715
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 39, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 45, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 67, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 44, 768]) 12
+step: 230, loss: 0.1402365267276764
+model 2
+torch.Size([32, 158, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 69, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 93, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 78, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+step: 240, loss: 0.040098972618579865
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 44, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 45, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+step: 250, loss: 0.08909638226032257
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 199, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 77, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 73, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+step: 260, loss: 0.0224841870367527
+model 2
+torch.Size([32, 44, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+step: 270, loss: 0.12454214692115784
+model 2
+torch.Size([32, 74, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 42, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 69, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+step: 280, loss: 0.052715327590703964
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 69, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 43, 768]) 12
+step: 290, loss: 0.1406073421239853
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 72, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 66, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+step: 300, loss: 0.03419438749551773
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 45, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+step: 310, loss: 0.047341056168079376
+model 2
+torch.Size([32, 45, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 44, 768]) 12
+model 2
+torch.Size([32, 66, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 70, 768]) 12
+model 2
+torch.Size([32, 69, 768]) 12
+step: 320, loss: 0.06062762439250946
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 37, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+step: 330, loss: 0.07650139182806015
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 70, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 68, 768]) 12
+model 2
+torch.Size([32, 38, 768]) 12
+model 2
+torch.Size([32, 67, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 70, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+step: 340, loss: 0.015562252141535282
+model 2
+torch.Size([32, 39, 768]) 12
+model 2
+torch.Size([32, 67, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 70, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+step: 350, loss: 0.026283616200089455
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 69, 768]) 12
+model 2
+torch.Size([32, 83, 768]) 12
+model 2
+torch.Size([32, 94, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+step: 360, loss: 0.026070112362504005
+model 2
+torch.Size([32, 66, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 45, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 67, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 90, 768]) 12
+step: 370, loss: 0.0403345450758934
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 61, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 69, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+step: 380, loss: 0.030597997829318047
+model 2
+torch.Size([32, 61, 768]) 12
+model 2
+torch.Size([32, 41, 768]) 12
+model 2
+torch.Size([32, 71, 768]) 12
+model 2
+torch.Size([32, 150, 768]) 12
+model 2
+torch.Size([32, 44, 768]) 12
+model 2
+torch.Size([32, 39, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+step: 390, loss: 0.08976367115974426
+model 2
+torch.Size([32, 78, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 70, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 41, 768]) 12
+model 2
+torch.Size([32, 77, 768]) 12
+model 2
+torch.Size([32, 61, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+step: 400, loss: 0.07148510217666626
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 39, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+step: 410, loss: 0.07068545371294022
+model 2
+torch.Size([32, 81, 768]) 12
+model 2
+torch.Size([32, 87, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 76, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 74, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+step: 420, loss: 0.040898583829402924
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 74, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 40, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 71, 768]) 12
+step: 430, loss: 0.08761478960514069
+model 2
+torch.Size([32, 45, 768]) 12
+model 2
+torch.Size([32, 42, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 69, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+step: 440, loss: 0.037619080394506454
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 39, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 67, 768]) 12
+model 2
+torch.Size([32, 69, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 66, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+step: 450, loss: 0.04614288732409477
+model 2
+torch.Size([32, 67, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 80, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+step: 460, loss: 0.03794030472636223
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 73, 768]) 12
+model 2
+torch.Size([32, 42, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 68, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 144, 768]) 12
+step: 470, loss: 0.038710251450538635
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 84, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 68, 768]) 12
+step: 480, loss: 0.018486367538571358
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 42, 768]) 12
+model 2
+torch.Size([32, 95, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 61, 768]) 12
+step: 490, loss: 0.02248997613787651
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 86, 768]) 12
+model 2
+torch.Size([32, 78, 768]) 12
+model 2
+torch.Size([32, 43, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 76, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+step: 500, loss: 0.04192720353603363
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 43, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 75, 768]) 12
+model 2
+torch.Size([32, 88, 768]) 12
+model 2
+torch.Size([32, 33, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+step: 510, loss: 0.0216352641582489
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 82, 768]) 12
+model 2
+torch.Size([32, 43, 768]) 12
+model 2
+torch.Size([32, 74, 768]) 12
+model 2
+torch.Size([32, 68, 768]) 12
+step: 520, loss: 0.03532620891928673
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 67, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 179, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+step: 530, loss: 0.05753804370760918
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 68, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+step: 540, loss: 0.09497344493865967
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 43, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+step: 550, loss: 0.05869806185364723
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 68, 768]) 12
+model 2
+torch.Size([32, 73, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+step: 560, loss: 0.059455472975969315
+model 2
+torch.Size([32, 119, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 74, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 45, 768]) 12
+model 2
+torch.Size([32, 75, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+step: 570, loss: 0.03122364543378353
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 61, 768]) 12
+model 2
+torch.Size([21, 48, 768]) 12
+=========eval at epoch=1=========
+processed 55044 tokens with 5942 phrases; found: 5971 phrases; correct: 5760.
+accuracy:  97.73%; (non-O)
+accuracy:  99.49%; precision:  96.47%; recall:  96.94%; FB1:  96.70
+              LOC: precision:  97.79%; recall:  98.75%; FB1:  98.27  1855
+             MISC: precision:  89.91%; recall:  93.71%; FB1:  91.77  961
+              ORG: precision:  96.83%; recall:  93.36%; FB1:  95.06  1293
+              PER: precision:  98.28%; recall:  99.35%; FB1:  98.81  1862
+num_proposed:8630
+num_correct:8408
+num_gold:8603
+precision=0.9743
+recall=0.9773
+f1=0.9758
+weights were saved to checkpoints/finetune/1.pt
+model 2
+torch.Size([32, 58, 768]) 12
+=====sanity check======
+words: <cls> More than 10 weapons , including automatic Kalashnikov rifles , were stolen from an arms store in Belgium , police said on Saturday . <sep>
+x: [    3  1154   100   241  1389    17    19   208  6073  2066 10679 26306
+ 14443    17    19    55  7058    40    48  1374  1515    25  5663    17
+    19   365    42    31   582    17     9     4]
+is_heads: [1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1]
+y: [0 1 1 1 1 1 0 1 1 6 0 0 1 1 0 1 1 1 1 1 1 1 2 1 0 1 1 1 1 1 0 0]
+tags: <PAD> O O O O O O O I-MISC O O O O O O O O O I-LOC O O O O O O <PAD>
+seqlen: 32
+=======================
+step: 0, loss: 0.05017348751425743
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 70, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 44, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+step: 10, loss: 0.03239916265010834
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 61, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 39, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 75, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+step: 20, loss: 0.0670749694108963
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 44, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 158, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 45, 768]) 12
+step: 30, loss: 0.0071544041857123375
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 69, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 36, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 41, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 43, 768]) 12
+step: 40, loss: 0.024315068498253822
+model 2
+torch.Size([32, 66, 768]) 12
+model 2
+torch.Size([32, 76, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+step: 50, loss: 0.011402454227209091
+model 2
+torch.Size([32, 41, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 66, 768]) 12
+model 2
+torch.Size([32, 67, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 82, 768]) 12
+model 2
+torch.Size([32, 37, 768]) 12
+step: 60, loss: 0.01954704336822033
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 87, 768]) 12
+model 2
+torch.Size([32, 67, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 70, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+step: 70, loss: 0.07608474045991898
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 75, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 67, 768]) 12
+model 2
+torch.Size([32, 78, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+step: 80, loss: 0.037438590079545975
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 72, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 39, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+step: 90, loss: 0.029714174568653107
+model 2
+torch.Size([32, 77, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 104, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 84, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+step: 100, loss: 0.05638527870178223
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 71, 768]) 12
+model 2
+torch.Size([32, 67, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 73, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+step: 110, loss: 0.04662022367119789
+model 2
+torch.Size([32, 38, 768]) 12
+model 2
+torch.Size([32, 69, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 72, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 77, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+step: 120, loss: 0.013066774234175682
+model 2
+torch.Size([32, 72, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 61, 768]) 12
+model 2
+torch.Size([32, 70, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 61, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 41, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+step: 130, loss: 0.03811522200703621
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 72, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 68, 768]) 12
+step: 140, loss: 0.04647994041442871
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 44, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 42, 768]) 12
+step: 150, loss: 0.021340006962418556
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+step: 160, loss: 0.05759761482477188
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 82, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 68, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+step: 170, loss: 0.037902746349573135
+model 2
+torch.Size([32, 45, 768]) 12
+model 2
+torch.Size([32, 74, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 40, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 76, 768]) 12
+model 2
+torch.Size([32, 75, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+step: 180, loss: 0.047010522335767746
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 68, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 69, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+step: 190, loss: 0.032169897109270096
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 96, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 179, 768]) 12
+model 2
+torch.Size([32, 44, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 66, 768]) 12
+step: 200, loss: 0.04388509318232536
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 61, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 66, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 41, 768]) 12
+step: 210, loss: 0.016819924116134644
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+step: 220, loss: 0.005494858603924513
+model 2
+torch.Size([32, 73, 768]) 12
+model 2
+torch.Size([32, 80, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 74, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+step: 230, loss: 0.02076723985373974
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 67, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 39, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 42, 768]) 12
+model 2
+torch.Size([32, 74, 768]) 12
+step: 240, loss: 0.0530526228249073
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 71, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 68, 768]) 12
+step: 250, loss: 0.029252419248223305
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+step: 260, loss: 0.035449832677841187
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 82, 768]) 12
+model 2
+torch.Size([32, 69, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+step: 270, loss: 0.04674534127116203
+model 2
+torch.Size([32, 69, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 39, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 94, 768]) 12
+step: 280, loss: 0.03745758906006813
+model 2
+torch.Size([32, 81, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 61, 768]) 12
+model 2
+torch.Size([32, 119, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 90, 768]) 12
+step: 290, loss: 0.013573447242379189
+model 2
+torch.Size([32, 73, 768]) 12
+model 2
+torch.Size([32, 41, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 71, 768]) 12
+model 2
+torch.Size([32, 71, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+step: 300, loss: 0.05196225643157959
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 72, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+step: 310, loss: 0.025232365354895592
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 44, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+step: 320, loss: 0.03151310607790947
+model 2
+torch.Size([32, 61, 768]) 12
+model 2
+torch.Size([32, 44, 768]) 12
+model 2
+torch.Size([32, 90, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 68, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+step: 330, loss: 0.03169190511107445
+model 2
+torch.Size([32, 171, 768]) 12
+model 2
+torch.Size([32, 71, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 74, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 74, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 37, 768]) 12
+step: 340, loss: 0.05527261272072792
+model 2
+torch.Size([32, 44, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+step: 350, loss: 0.029228681698441505
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 93, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 61, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+step: 360, loss: 0.010764293372631073
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 74, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 78, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+step: 370, loss: 0.03879803791642189
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 68, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 41, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 88, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+step: 380, loss: 0.012796230614185333
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+step: 390, loss: 0.0355239138007164
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 77, 768]) 12
+model 2
+torch.Size([32, 42, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+step: 400, loss: 0.04677750915288925
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 86, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 72, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 68, 768]) 12
+model 2
+torch.Size([32, 83, 768]) 12
+step: 410, loss: 0.01592976786196232
+model 2
+torch.Size([32, 66, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 68, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+step: 420, loss: 0.033538561314344406
+model 2
+torch.Size([32, 61, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+step: 430, loss: 0.006983977742493153
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 61, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 61, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+step: 440, loss: 0.008433772251009941
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 83, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 82, 768]) 12
+step: 450, loss: 0.04286493733525276
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 69, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 76, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+step: 460, loss: 0.03852711245417595
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 66, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 107, 768]) 12
+model 2
+torch.Size([32, 68, 768]) 12
+step: 470, loss: 0.005568411201238632
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 45, 768]) 12
+model 2
+torch.Size([32, 93, 768]) 12
+model 2
+torch.Size([32, 41, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+step: 480, loss: 0.028664974495768547
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 70, 768]) 12
+model 2
+torch.Size([32, 76, 768]) 12
+step: 490, loss: 0.007745860610157251
+model 2
+torch.Size([32, 42, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 103, 768]) 12
+model 2
+torch.Size([32, 193, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+step: 500, loss: 0.02756831981241703
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 45, 768]) 12
+model 2
+torch.Size([32, 69, 768]) 12
+model 2
+torch.Size([32, 68, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 67, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+step: 510, loss: 0.025301581248641014
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 41, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 68, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+step: 520, loss: 0.00140350591391325
+model 2
+torch.Size([32, 42, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 42, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+step: 530, loss: 0.02225898578763008
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 61, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+step: 540, loss: 0.02418357878923416
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 119, 768]) 12
+model 2
+torch.Size([32, 43, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 42, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 45, 768]) 12
+model 2
+torch.Size([32, 150, 768]) 12
+step: 550, loss: 0.0349796898663044
+model 2
+torch.Size([32, 78, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 70, 768]) 12
+model 2
+torch.Size([32, 199, 768]) 12
+model 2
+torch.Size([32, 42, 768]) 12
+step: 560, loss: 0.018779871985316277
+model 2
+torch.Size([32, 95, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 36, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+step: 570, loss: 0.028754742816090584
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 78, 768]) 12
+model 2
+torch.Size([32, 74, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([21, 46, 768]) 12
+=========eval at epoch=2=========
+processed 55044 tokens with 5942 phrases; found: 5960 phrases; correct: 5825.
+accuracy:  98.92%; (non-O)
+accuracy:  99.72%; precision:  97.73%; recall:  98.03%; FB1:  97.88
+              LOC: precision:  98.65%; recall:  99.13%; FB1:  98.89  1846
+             MISC: precision:  93.59%; recall:  95.01%; FB1:  94.29  936
+              ORG: precision:  97.96%; recall:  96.57%; FB1:  97.26  1322
+              PER: precision:  98.76%; recall:  99.51%; FB1:  99.13  1856
+num_proposed:8638
+num_correct:8510
+num_gold:8603
+precision=0.9852
+recall=0.9892
+f1=0.9872
+weights were saved to checkpoints/finetune/2.pt
+model 2
+torch.Size([32, 57, 768]) 12
+=====sanity check======
+words: <cls> But the radio report did not specify what guarantees , if any , the U.S. envoy had provided . <sep>
+x: [    3   130    18  1242   419   190    50  8650   113 10569    17    19
+   108   124    17    19    18   128     9    83     9  7226    54   915
+    17     9     4]
+is_heads: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1]
+y: [0 1 1 1 1 1 1 1 1 1 1 0 1 1 1 0 1 2 0 0 0 1 1 1 1 0 0]
+tags: <PAD> O O O O O O O O O O O O O O I-LOC O O O O <PAD>
+seqlen: 27
+=======================
+step: 0, loss: 0.034537773579359055
+model 2
+torch.Size([32, 82, 768]) 12
+model 2
+torch.Size([32, 44, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 43, 768]) 12
+model 2
+torch.Size([32, 61, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 61, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+step: 10, loss: 0.011171317659318447
+model 2
+torch.Size([32, 61, 768]) 12
+model 2
+torch.Size([32, 93, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 44, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 68, 768]) 12
+step: 20, loss: 0.02394603006541729
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+step: 30, loss: 0.012478628195822239
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 83, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 74, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+step: 40, loss: 0.0188542902469635
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 42, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 45, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 179, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+step: 50, loss: 0.013003462925553322
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 74, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+step: 60, loss: 0.011585668660700321
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 70, 768]) 12
+model 2
+torch.Size([32, 75, 768]) 12
+model 2
+torch.Size([32, 76, 768]) 12
+model 2
+torch.Size([32, 69, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+step: 70, loss: 0.02832469344139099
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 42, 768]) 12
+model 2
+torch.Size([32, 74, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 39, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+step: 80, loss: 0.0024742840323597193
+model 2
+torch.Size([32, 44, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 150, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 44, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+step: 90, loss: 0.037969090044498444
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 82, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 40, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+step: 100, loss: 0.011998992413282394
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 75, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+step: 110, loss: 0.0033017373643815517
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 74, 768]) 12
+model 2
+torch.Size([32, 70, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+step: 120, loss: 0.02243727818131447
+model 2
+torch.Size([32, 41, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 76, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 72, 768]) 12
+step: 130, loss: 0.014861802570521832
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 44, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 67, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+step: 140, loss: 0.011686388403177261
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 43, 768]) 12
+model 2
+torch.Size([32, 74, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 67, 768]) 12
+model 2
+torch.Size([32, 107, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+step: 150, loss: 0.02363387681543827
+model 2
+torch.Size([32, 69, 768]) 12
+model 2
+torch.Size([32, 69, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 70, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 74, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 70, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 78, 768]) 12
+step: 160, loss: 0.021427195519208908
+model 2
+torch.Size([32, 78, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 67, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 96, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 77, 768]) 12
+model 2
+torch.Size([32, 44, 768]) 12
+step: 170, loss: 0.012476085685193539
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 95, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+step: 180, loss: 0.020232707262039185
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 171, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+step: 190, loss: 0.014992388896644115
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 94, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 39, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+step: 200, loss: 0.042383793741464615
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 44, 768]) 12
+model 2
+torch.Size([32, 73, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 72, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+step: 210, loss: 0.017524125054478645
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 61, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 45, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 45, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+step: 220, loss: 0.0116388825699687
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 119, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+step: 230, loss: 0.06968669593334198
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 69, 768]) 12
+model 2
+torch.Size([32, 61, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 45, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 73, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 199, 768]) 12
+step: 240, loss: 0.021710718050599098
+model 2
+torch.Size([32, 41, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+step: 250, loss: 0.03359951451420784
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 66, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 67, 768]) 12
+model 2
+torch.Size([32, 71, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+step: 260, loss: 0.029043840244412422
+model 2
+torch.Size([32, 71, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 193, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+step: 270, loss: 0.029971903190016747
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+step: 280, loss: 0.010207613930106163
+model 2
+torch.Size([32, 67, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 44, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 68, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+step: 290, loss: 0.0037244646809995174
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+step: 300, loss: 0.001962678274139762
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 61, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+step: 310, loss: 0.0017889483133330941
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 70, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 45, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+step: 320, loss: 0.013093050569295883
+model 2
+torch.Size([32, 68, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 38, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+step: 330, loss: 0.023598363623023033
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+step: 340, loss: 0.007403380237519741
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 68, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 45, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+step: 350, loss: 0.05067567527294159
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 82, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 72, 768]) 12
+model 2
+torch.Size([32, 37, 768]) 12
+step: 360, loss: 0.004115469753742218
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 69, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 90, 768]) 12
+model 2
+torch.Size([32, 61, 768]) 12
+step: 370, loss: 0.0014560756972059608
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 144, 768]) 12
+model 2
+torch.Size([32, 67, 768]) 12
+model 2
+torch.Size([32, 44, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 86, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 42, 768]) 12
+step: 380, loss: 0.020974712446331978
+model 2
+torch.Size([32, 74, 768]) 12
+model 2
+torch.Size([32, 42, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 70, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+step: 390, loss: 0.027440335601568222
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 86, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 68, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+step: 400, loss: 0.028415603563189507
+model 2
+torch.Size([32, 103, 768]) 12
+model 2
+torch.Size([32, 71, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 61, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+step: 410, loss: 0.012901091016829014
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 72, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 71, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+step: 420, loss: 0.03857620805501938
+model 2
+torch.Size([32, 78, 768]) 12
+model 2
+torch.Size([32, 82, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 68, 768]) 12
+model 2
+torch.Size([32, 68, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+step: 430, loss: 0.0017898671794682741
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 77, 768]) 12
+model 2
+torch.Size([32, 43, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+step: 440, loss: 0.0030081705190241337
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 83, 768]) 12
+model 2
+torch.Size([32, 45, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 61, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+step: 450, loss: 0.0018284181132912636
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 69, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 71, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 61, 768]) 12
+step: 460, loss: 0.016742853447794914
+model 2
+torch.Size([32, 61, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 69, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 81, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 44, 768]) 12
+model 2
+torch.Size([32, 39, 768]) 12
+step: 470, loss: 0.053872134536504745
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 43, 768]) 12
+model 2
+torch.Size([32, 76, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 45, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 45, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 45, 768]) 12
+step: 480, loss: 0.024848634377121925
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 45, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 80, 768]) 12
+model 2
+torch.Size([32, 43, 768]) 12
+model 2
+torch.Size([32, 45, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+step: 490, loss: 0.045689940452575684
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 158, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 61, 768]) 12
+model 2
+torch.Size([32, 88, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+step: 500, loss: 0.01793965883553028
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 104, 768]) 12
+step: 510, loss: 0.014304333366453648
+model 2
+torch.Size([32, 87, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 61, 768]) 12
+model 2
+torch.Size([32, 73, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 44, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+step: 520, loss: 0.020496847108006477
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 82, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+step: 530, loss: 0.04589732736349106
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 84, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 66, 768]) 12
+step: 540, loss: 0.037597935646772385
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 68, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 43, 768]) 12
+model 2
+torch.Size([32, 68, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 45, 768]) 12
+step: 550, loss: 0.034199561923742294
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 66, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 93, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+step: 560, loss: 0.045869387686252594
+model 2
+torch.Size([32, 119, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 41, 768]) 12
+model 2
+torch.Size([32, 68, 768]) 12
+model 2
+torch.Size([32, 75, 768]) 12
+model 2
+torch.Size([32, 66, 768]) 12
+model 2
+torch.Size([32, 67, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 67, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+step: 570, loss: 0.01771913841366768
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 78, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 37, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([21, 58, 768]) 12
+=========eval at epoch=3=========
+processed 55044 tokens with 5942 phrases; found: 5956 phrases; correct: 5853.
+accuracy:  99.37%; (non-O)
+accuracy:  99.80%; precision:  98.27%; recall:  98.50%; FB1:  98.39
+              LOC: precision:  98.43%; recall:  99.13%; FB1:  98.78  1850
+             MISC: precision:  96.95%; recall:  96.53%; FB1:  96.74  918
+              ORG: precision:  97.77%; recall:  97.91%; FB1:  97.84  1343
+              PER: precision:  99.13%; recall:  99.29%; FB1:  99.21  1845
+num_proposed:8653
+num_correct:8549
+num_gold:8603
+precision=0.9880
+recall=0.9937
+f1=0.9908
+weights were saved to checkpoints/finetune/3.pt
+model 2
+torch.Size([32, 55, 768]) 12
+=====sanity check======
+words: <cls> The deal is expected to close by the first quarter of 1997 , subject to regulatory approval . <sep>
+x: [   3   32  629   27  558   22  474   37   18   89 1201   20 2226   17
+   19 1333   22 7582 2679   17    9    4]
+is_heads: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1]
+y: [0 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 0 0]
+tags: <PAD> O O O O O O O O O O O O O O O O O O <PAD>
+seqlen: 22
+=======================
+step: 0, loss: 0.02181563712656498
+model 2
+torch.Size([32, 66, 768]) 12
+model 2
+torch.Size([32, 94, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 44, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 74, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+step: 10, loss: 0.002832785015925765
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 68, 768]) 12
+model 2
+torch.Size([32, 86, 768]) 12
+step: 20, loss: 0.025024790316820145
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 68, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 45, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+step: 30, loss: 0.023991640657186508
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 43, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+step: 40, loss: 0.02957427315413952
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 67, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 66, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 74, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+step: 50, loss: 0.0025100118946284056
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 70, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 61, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+step: 60, loss: 0.028928929939866066
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 67, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+step: 70, loss: 0.002701282501220703
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 41, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 39, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+step: 80, loss: 0.02281069941818714
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 68, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 78, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+step: 90, loss: 0.008297150023281574
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 71, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 74, 768]) 12
+model 2
+torch.Size([32, 75, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+step: 100, loss: 0.007848026230931282
+model 2
+torch.Size([32, 76, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 72, 768]) 12
+model 2
+torch.Size([32, 66, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+step: 110, loss: 0.0010936538456007838
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 69, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 68, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 45, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 42, 768]) 12
+step: 120, loss: 0.0032070400193333626
+model 2
+torch.Size([32, 75, 768]) 12
+model 2
+torch.Size([32, 69, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 67, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 61, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+step: 130, loss: 0.0072720968164503574
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 69, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+step: 140, loss: 0.004366223234683275
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 67, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 61, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 42, 768]) 12
+model 2
+torch.Size([32, 68, 768]) 12
+step: 150, loss: 0.008640513755381107
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 42, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 33, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+step: 160, loss: 0.0007716752588748932
+model 2
+torch.Size([32, 78, 768]) 12
+model 2
+torch.Size([32, 76, 768]) 12
+model 2
+torch.Size([32, 158, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 66, 768]) 12
+step: 170, loss: 0.01919778436422348
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 70, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 70, 768]) 12
+step: 180, loss: 0.004220800474286079
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 44, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 74, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+step: 190, loss: 0.008218353614211082
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+step: 200, loss: 0.023818910121917725
+model 2
+torch.Size([32, 82, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 84, 768]) 12
+model 2
+torch.Size([32, 37, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+step: 210, loss: 0.006204735487699509
+model 2
+torch.Size([32, 73, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 119, 768]) 12
+model 2
+torch.Size([32, 61, 768]) 12
+model 2
+torch.Size([32, 193, 768]) 12
+model 2
+torch.Size([32, 83, 768]) 12
+step: 220, loss: 0.002775233006104827
+model 2
+torch.Size([32, 77, 768]) 12
+model 2
+torch.Size([32, 70, 768]) 12
+model 2
+torch.Size([32, 43, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+step: 230, loss: 0.010089587420225143
+model 2
+torch.Size([32, 39, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+step: 240, loss: 0.0010296921245753765
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 82, 768]) 12
+model 2
+torch.Size([32, 171, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+step: 250, loss: 0.0043688612058758736
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 72, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 71, 768]) 12
+model 2
+torch.Size([32, 43, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 90, 768]) 12
+step: 260, loss: 0.015441599301993847
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 67, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 74, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 61, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+step: 270, loss: 0.020307118073105812
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 45, 768]) 12
+model 2
+torch.Size([32, 41, 768]) 12
+step: 280, loss: 0.021947860717773438
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 88, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 45, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 95, 768]) 12
+model 2
+torch.Size([32, 68, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+step: 290, loss: 0.0013256623642519116
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 45, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 82, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+step: 300, loss: 0.003821708494797349
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+step: 310, loss: 0.03664233908057213
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 71, 768]) 12
+model 2
+torch.Size([32, 38, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 77, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+step: 320, loss: 0.05876302719116211
+model 2
+torch.Size([32, 68, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 45, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+step: 330, loss: 0.017504550516605377
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 44, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 73, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+step: 340, loss: 0.005149592645466328
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 72, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 72, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+step: 350, loss: 0.0014229583321139216
+model 2
+torch.Size([32, 119, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 76, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+step: 360, loss: 0.013164710253477097
+model 2
+torch.Size([32, 179, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 42, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 77, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+step: 370, loss: 0.0031750770285725594
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 69, 768]) 12
+model 2
+torch.Size([32, 103, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+step: 380, loss: 0.004367545712739229
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 107, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+step: 390, loss: 0.008770505897700787
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 73, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+step: 400, loss: 0.012423469685018063
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 45, 768]) 12
+model 2
+torch.Size([32, 67, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 87, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 45, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+step: 410, loss: 0.02276609092950821
+model 2
+torch.Size([32, 69, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 72, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+step: 420, loss: 0.008269881829619408
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 82, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 68, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+step: 430, loss: 0.018964866176247597
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 199, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 61, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+step: 440, loss: 0.039109304547309875
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 68, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 43, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 66, 768]) 12
+model 2
+torch.Size([32, 76, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 71, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+step: 450, loss: 0.005122235510498285
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 45, 768]) 12
+model 2
+torch.Size([32, 83, 768]) 12
+model 2
+torch.Size([32, 150, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+step: 460, loss: 0.002438124269247055
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 61, 768]) 12
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 61, 768]) 12
+model 2
+torch.Size([32, 71, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+step: 470, loss: 0.003727853763848543
+model 2
+torch.Size([32, 50, 768]) 12
+model 2
+torch.Size([32, 61, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 64, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+step: 480, loss: 0.01833183504641056
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 74, 768]) 12
+model 2
+torch.Size([32, 86, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 37, 768]) 12
+model 2
+torch.Size([32, 40, 768]) 12
+model 2
+torch.Size([32, 67, 768]) 12
+model 2
+torch.Size([32, 45, 768]) 12
+step: 490, loss: 0.0879850685596466
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 67, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 74, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 70, 768]) 12
+step: 500, loss: 0.004479981958866119
+model 2
+torch.Size([32, 81, 768]) 12
+model 2
+torch.Size([32, 52, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 73, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 144, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 68, 768]) 12
+step: 510, loss: 0.0030385807622224092
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 93, 768]) 12
+model 2
+torch.Size([32, 39, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+model 2
+torch.Size([32, 78, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+step: 520, loss: 0.007750570308417082
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 70, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 45, 768]) 12
+step: 530, loss: 0.0023622452281415462
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 63, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 59, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 104, 768]) 12
+model 2
+torch.Size([32, 78, 768]) 12
+model 2
+torch.Size([32, 72, 768]) 12
+step: 540, loss: 0.001984806265681982
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 93, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 42, 768]) 12
+model 2
+torch.Size([32, 82, 768]) 12
+model 2
+torch.Size([32, 57, 768]) 12
+model 2
+torch.Size([32, 46, 768]) 12
+step: 550, loss: 0.01619470678269863
+model 2
+torch.Size([32, 55, 768]) 12
+model 2
+torch.Size([32, 62, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+model 2
+torch.Size([32, 96, 768]) 12
+model 2
+torch.Size([32, 54, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 90, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 48, 768]) 12
+step: 560, loss: 0.013266673311591148
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 47, 768]) 12
+model 2
+torch.Size([32, 43, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+model 2
+torch.Size([32, 65, 768]) 12
+model 2
+torch.Size([32, 53, 768]) 12
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 58, 768]) 12
+model 2
+torch.Size([32, 60, 768]) 12
+model 2
+torch.Size([32, 49, 768]) 12
+step: 570, loss: 0.005288240499794483
+model 2
+torch.Size([32, 56, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 66, 768]) 12
+model 2
+torch.Size([32, 51, 768]) 12
+model 2
+torch.Size([32, 68, 768]) 12
+model 2
+torch.Size([21, 54, 768]) 12
+=========eval at epoch=4=========
+processed 55044 tokens with 5942 phrases; found: 5950 phrases; correct: 5878.
+accuracy:  99.27%; (non-O)
+accuracy:  99.85%; precision:  98.79%; recall:  98.92%; FB1:  98.86
+              LOC: precision:  98.55%; recall:  99.73%; FB1:  99.13  1859
+             MISC: precision:  97.62%; recall:  97.72%; FB1:  97.67  923
+              ORG: precision:  99.17%; recall:  97.69%; FB1:  98.42  1321
+              PER: precision:  99.35%; recall:  99.62%; FB1:  99.48  1847
+num_proposed:8611
+num_correct:8540
+num_gold:8603
+precision=0.9918
+recall=0.9927
+f1=0.9922
+weights were saved to checkpoints/finetune/4.pt
+=========eval at epoch=4=========
+processed 50350 tokens with 5648 phrases; found: 5757 phrases; correct: 5204.
+accuracy:  93.80%; (non-O)
+accuracy:  98.38%; precision:  90.39%; recall:  92.14%; FB1:  91.26
+              LOC: precision:  91.34%; recall:  94.84%; FB1:  93.06  1732
+             MISC: precision:  81.04%; recall:  79.77%; FB1:  80.40  691
+              ORG: precision:  87.67%; recall:  90.79%; FB1:  89.20  1720
+              PER: precision:  96.28%; recall:  96.10%; FB1:  96.19  1614
+num_proposed:8324
+num_correct:7609
+num_gold:8112
+precision=0.9141
+recall=0.9380
+f1=0.9259

@@ -34,8 +34,46 @@ __Student__: __TRAN__ Thi Hong Hanh.
 
   
 ### __Task 3__ (20/04/2020 - 26/04/2020):
-- [] Implement XLNet to reach SOTA benchmark (at least 91% F1-score).
-- [] Upgrade memory in Colab, test in this [link](https://towardsdatascience.com/upgrade-your-memory-on-google-colab-for-free-1b8b18e8791d).
+- [x] Implement XLNet to reach SOTA benchmark (at least 91% F1-score).
+  - Log file in this [link](https://github.com/honghanhh/multiligualNER/bert-ner/logs/XLNet_20-02-20.out).
+  
+  ```
+  =========eval at epoch=4=========
+  processed 55044 tokens with 5942 phrases; found: 5950 phrases; correct: 5878.
+  accuracy:  99.27%; (non-O)
+  accuracy:  99.85%; precision:  98.79%; recall:  98.92%; FB1:  98.86
+                LOC: precision:  98.55%; recall:  99.73%; FB1:  99.13  1859
+              MISC: precision:  97.62%; recall:  97.72%; FB1:  97.67  923
+                ORG: precision:  99.17%; recall:  97.69%; FB1:  98.42  1321
+                PER: precision:  99.35%; recall:  99.62%; FB1:  99.48  1847
+  num_proposed:8611
+  num_correct:8540
+  num_gold:8603
+  precision=0.9918
+  recall=0.9927
+  f1=0.9922
+  weights were saved to checkpoints/finetune/4.pt
+  =========eval at epoch=4=========
+  processed 50350 tokens with 5648 phrases; found: 5757 phrases; correct: 5204.
+  accuracy:  93.80%; (non-O)
+  accuracy:  98.38%; precision:  90.39%; recall:  92.14%; FB1:  91.26
+                LOC: precision:  91.34%; recall:  94.84%; FB1:  93.06  1732
+              MISC: precision:  81.04%; recall:  79.77%; FB1:  80.40  691
+                ORG: precision:  87.67%; recall:  90.79%; FB1:  89.20  1720
+                PER: precision:  96.28%; recall:  96.10%; FB1:  96.19  1614
+  num_proposed:8324
+  num_correct:7609
+  num_gold:8112
+  precision=0.9141
+  recall=0.9380
+  f1=0.9259
+  ```
+- [x] Upgrade memory in Colab, test in this [link](https://towardsdatascience.com/upgrade-your-memory-on-google-colab-for-free-1b8b18e8791d).
+  ```
+  a = []
+  while(1):
+    a.append(‘1’)
+  ```
 - [] Calculate predictions using [__Flair__](https://github.com/flairNLP/flair) and [__Stanza__](https://github.com/stanfordnlp/stanza).
 - [] Evaluate the performance using __get_score.py__ in this [github](https://github.com/Adaxry/GCDT/tree/master/data/conll03).
 - [] Learn about graph embeddings:
