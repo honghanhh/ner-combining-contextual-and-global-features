@@ -68,6 +68,7 @@ __Student__: __TRAN__ Thi Hong Hanh.
   recall=0.9380
   f1=0.9259
   ```
+  - Saved checkpoints in this [link](https://github.com/honghanhh/multiligualNER/bert-ner/finetune/)
 - [x] Upgrade memory in Colab, test in this [link](https://towardsdatascience.com/upgrade-your-memory-on-google-colab-for-free-1b8b18e8791d).
   ```
   a = []
