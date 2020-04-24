@@ -47,7 +47,7 @@ with open(dataset, "rt") as f_p:
 #            print(textdoc,y_pred,"".join(textdoc))
               for i,(l,y) in enumerate(zip(lines,y_pred)):
                  newlines.append([l[0],markedtypes[y]])
-            with open(dataset+".new", "a+") as f_o:
+            with open(dataset+"flair.new", "a+") as f_o:
                 f_o.write("\n".join([" ".join(x) for x in newlines]))
                 f_o.write("\n\n" if len(lines)>0 else "\n")
             newlines = []

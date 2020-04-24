@@ -68,7 +68,8 @@ __Student__: __TRAN__ Thi Hong Hanh.
   recall=0.9380
   f1=0.9259
   ```
-  - Saved checkpoints in this [link](https://github.com/honghanhh/multiligualNER/bert-ner/finetune/)
+  - Saved logs in this [link](https://github.com/honghanhh/multiligualNER/bert-ner/finetune/)
+  - Saved checkpoints in this [link](https://github.com/honghanhh/multiligualNER/bert-ner/checkpoints/)
 - [x] Upgrade memory in Colab, test in this [link](https://towardsdatascience.com/upgrade-your-memory-on-google-colab-for-free-1b8b18e8791d).
   ```
   a = []
@@ -78,7 +79,7 @@ __Student__: __TRAN__ Thi Hong Hanh.
   - It works !!!!
 - [] Calculate predictions using [__Flair__](https://github.com/flairNLP/flair) and [__Stanza__](https://github.com/stanfordnlp/stanza).
 - [] Evaluate the performance using __get_score.py__ in this [github](https://github.com/Adaxry/GCDT/tree/master/data/conll03).
-- [] Recommend papers about graph embeddings:
+- Recommend papers about graph embeddings:
   - [x] Graph Convolutional Networks for Named Entity Recognition - 2017.
     - Paper link: [GCN](https://www.aclweb.org/anthology/W17-7607.pdf).
     - Source code: [gcn_ner](https://github.com/contextscout/gcn_ner).
@@ -101,18 +102,17 @@ __Student__: __TRAN__ Thi Hong Hanh.
           - The neural network needs considerable amount of labeled data for validation and model selection.
       - Solutions: __co-training__ vs __self-training__ GCN (spatial vs spectral).
       - Graph convolution of the GCN model is actually a special form of Laplacian smoothing (mix the features of a vertex and its nearby neighbors).
-  - [x] Semi-supervised classification with graph convolutional networks - 2017.
+  - Semi-supervised classification with graph convolutional networks - 2017.
     - Paper link: [GCN](https://arxiv.org/pdf/1609.02907.pdf).
+    - Source code:
+    - Keynotes:
+      - Updating
+  - [x] Graph convolution over pruned dependency trees improves relation extraction. 
+    - Paper link: [GCN](https://www.aclweb.org/anthology/D18-1244.pdf).
     - Source code:
     - Keynotes:
       - Extract relation using GCN to efficiently pool information over arbitrary dependency structures.
       - Use new pathcentric pruning technique to help dependency-based models maximally remove irrelevant information without damaging crucial content to improve their robustness.
       - The architecture:
           ![Relation extraction with a graph convolutional network.](images/architecture_GCN.png)
-
-  - [] Graph convolution over pruned dependency trees improves relation extraction. 
-    - Paper link: [GCN](https://www.aclweb.org/anthology/D18-1244.pdf).
-    - Source code:
-    - Keynotes:
-      - Updating
 
