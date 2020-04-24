@@ -77,7 +77,8 @@ __Student__: __TRAN__ Thi Hong Hanh.
     a.append(‘1’)
   ```
   - It works !!!!
-- [] Calculate predictions using [__Flair__](https://github.com/flairNLP/flair) and [__Stanza__](https://github.com/stanfordnlp/stanza).
+- [x] Calculate predictions using [__Flair__](https://github.com/flairNLP/flair) and [__Stanza__](https://github.com/stanfordnlp/stanza).
+  - Prediction result files of each approach are in [eng.testb.2.examples.txt.flair.new](https://github.com/honghanhh/multiligualNER/enconll03_baselines/eng.testb.2.examples.txt.flair.new) and [eng.testb.2.examples.txt.stanza.new](https://github.com/honghanhh/multiligualNER/enconll03_baselines/eng.testb.2.examples.txt.stanza.new), respectively.
 - [] Evaluate the performance using __get_score.py__ in this [github](https://github.com/Adaxry/GCDT/tree/master/data/conll03).
 - Recommend papers about graph embeddings:
   - [x] Graph Convolutional Networks for Named Entity Recognition - 2017.

@@ -30,8 +30,7 @@ def getStanzaLabels(doc,ents):
 
 dataset = sys.argv[1]
 
-nlp = stanza.Pipeline(lang='en', processors={'tokenize':'ewt','ner':'ontonotes'}, tokenize_pretokenized=True)
-# nlp = stanza.Pipeline(lang='en', processors='tokenize,ner', tokenize_pretokenized=True) conll03
+nlp = stanza.Pipeline(lang='en', processors={'tokenize':'ewt','ner':'conll03'}, tokenize_pretokenized=True)
 with open(dataset, "rt") as f_p:
     lines = []
     markedtypes = {'ORG':'I-ORG','PER':'I-PER','LOC':'I-LOC','MISC':'I-MISC','O':'O'}
