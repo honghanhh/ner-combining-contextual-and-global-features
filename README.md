@@ -75,11 +75,44 @@ __Student__: __TRAN__ Thi Hong Hanh.
   while(1):
     a.append(‘1’)
   ```
+  - It works !!!!
 - [] Calculate predictions using [__Flair__](https://github.com/flairNLP/flair) and [__Stanza__](https://github.com/stanfordnlp/stanza).
 - [] Evaluate the performance using __get_score.py__ in this [github](https://github.com/Adaxry/GCDT/tree/master/data/conll03).
-- [] Learn about graph embeddings:
-  - [] [Topological Feature Extractors for Named Entity Recognition using graph convolutional networks](https://www.aclweb.org/anthology/W17-7607.pdf).
-  - [] [Semi-supervised classification with graph convolutional networks](https://arxiv.org/pdf/1609.02907.pdf).
-  - [] [Deeper insights into graph convolutional networks for semi-supervised learning](https://arxiv.org/pdf/1801.07606.pdf). 
-  - [] [Graph convolution over pruned dependency trees improves relation extraction](https://www.aclweb.org/anthology/D18-1244.pdf). 
+- [] Recommend papers about graph embeddings:
+  - [x] Graph Convolutional Networks for Named Entity Recognition - 2017.
+    - Paper link: [GCN](https://www.aclweb.org/anthology/W17-7607.pdf).
+    - Source code: [gcn_ner](https://github.com/contextscout/gcn_ner).
+    - Keynotes:
+      - Input vectors = Morphological embeddings + POS embeddings + word embeddings.
+      - The bi-directional architectures: (a) LSTM and (b) GCN:
+          ![Bi-directional architectures: (a) LSTM; and (b) GCN](images/bi_LSTM-bi_GCN.png)
+      - Dependency trees play a positive role for entity recognition by using a GCN to boost the
+  results of a bidirectional LSTM.
+  - [x] Deeper insights into graph convolutional networks for semi-supervised learning - 2018. 
+    - Paper link: [GCN](https://arxiv.org/pdf/1801.07606.pdf).
+    - Source code:
+    - Keynotes:
+      - Use GCN for __semi-supervised learning__.
+      - Pros:
+        - The graph convolution – Laplacian smoothing helps making the classification problem much easier
+        - The multi-layer neural network is a powerful feature extractor. 
+        - Cons:
+          - The graph convolution is a localized filter, which performs unsatisfactorily with few labeled data.
+          - The neural network needs considerable amount of labeled data for validation and model selection.
+      - Solutions: __co-training__ vs __self-training__ GCN (spatial vs spectral).
+      - Graph convolution of the GCN model is actually a special form of Laplacian smoothing (mix the features of a vertex and its nearby neighbors).
+  - [x] Semi-supervised classification with graph convolutional networks - 2017.
+    - Paper link: [GCN](https://arxiv.org/pdf/1609.02907.pdf).
+    - Source code:
+    - Keynotes:
+      - Extract relation using GCN to efficiently pool information over arbitrary dependency structures.
+      - Use new pathcentric pruning technique to help dependency-based models maximally remove irrelevant information without damaging crucial content to improve their robustness.
+      - The architecture:
+          ![Relation extraction with a graph convolutional network.](images/architecture_GCN.png)
+
+  - [] Graph convolution over pruned dependency trees improves relation extraction. 
+    - Paper link: [GCN](https://www.aclweb.org/anthology/D18-1244.pdf).
+    - Source code:
+    - Keynotes:
+      - Updating
 
