@@ -79,7 +79,20 @@ __Student__: __TRAN__ Thi Hong Hanh.
   - It works !!!!
 - [x] Calculate predictions using [__Flair__](https://github.com/flairNLP/flair) and [__Stanza__](https://github.com/stanfordnlp/stanza).
   - Prediction result files of each approach are in [eng.testb.2.examples.txt.flair.new](https://github.com/honghanhh/multiligualNER/enconll03_baselines/eng.testb.2.examples.txt.flair.new) and [eng.testb.2.examples.txt.stanza.new](https://github.com/honghanhh/multiligualNER/enconll03_baselines/eng.testb.2.examples.txt.stanza.new), respectively.
-- [] Evaluate the performance using __get_score.py__ in this [github](https://github.com/Adaxry/GCDT/tree/master/data/conll03).
+  - Note of stanza model:
+  ```
+  stanza.download('en', processors={'tokenize': 'ewt', 'ner': 'conll03'})
+  ```
+- [x] Evaluate the performance using __get_score.py__ in this [github](https://github.com/Adaxry/GCDT/tree/master/data/conll03).
+    - Evaluating data: [eng.testb.2.examples.txt](https://github.com/honghanhh/multiligualNER/enconll03_baselines/eng.testb.2.examples.txt)
+    - __Stanza__: 
+      - Generate __510/50120__ bad datas.
+      - Predicting result is saved in [eng.testb.2.examples.txt.stanza.new](https://github.com/honghanhh/multiligualNER/enconll03_baselines/eng.testb.2.examples.txt.stanza.new).
+      - Wrong predictions are collected in [eng.res.stanza.txt](https://github.com/honghanhh/multiligualNER/enconll03_baselines/eng.res.stanza.txt).
+    - __Flair__: 
+      - Generate __20151/50120__ bad datas. 
+      - Predicting result is saved in [eng.testb.2.examples.txt.flair.new](https://github.com/honghanhh/multiligualNER/enconll03_baselines/eng.testb.2.examples.txt.flair.new).
+      - Wrong predictions are collected in [eng.res.flair.txt](https://github.com/honghanhh/multiligualNER/enconll03_baselines/eng.res.flair.txt).
 - Recommend papers about graph embeddings:
   - [x] Graph Convolutional Networks for Named Entity Recognition - 2017.
     - Paper link: [GCN](https://www.aclweb.org/anthology/W17-7607.pdf).

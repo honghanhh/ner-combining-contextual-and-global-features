@@ -1,6 +1,6 @@
 import stanza
 import sys
-stanza.download('en', processors={'tokenize': 'ewt', 'ner': 'conll03'}, package=None)
+stanza.download('en', processors={'tokenize': 'ewt', 'ner': 'conll03'})
 
 def getStanzaLabels(doc,ents):
     print("#",end='')
