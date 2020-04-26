@@ -70,6 +70,7 @@ __Student__: __TRAN__ Thi Hong Hanh.
   ```
   - Saved logs in this [link](https://github.com/honghanhh/multiligualNER/bert-ner/finetune/)
   - Saved checkpoints in this [link](https://github.com/honghanhh/multiligualNER/bert-ner/checkpoints/)
+    - Bugs!
 - [x] Upgrade memory in Colab, test in this [link](https://towardsdatascience.com/upgrade-your-memory-on-google-colab-for-free-1b8b18e8791d).
   ```
   a = []
@@ -130,3 +131,15 @@ __Student__: __TRAN__ Thi Hong Hanh.
       - The architecture:
           ![Relation extraction with a graph convolutional network.](images/architecture_GCN.png)
 
+### __Task 4__ (27/04/2020 - 29/04/2020):
+- Issue from previous tasks:
+  - Error in saving model checkpoints from XLNet model.
+
+- [] Fix issues from previous task.
+- [] Test XLNet model with baseline data ([eng.testb.2.examples.txt](https://github.com/honghanhh/multiligualNER/enconll03_baselines/eng.testb.2.examples.txt)).
+- [] Compare, visualize, and analyze the performance of 3 models.
+- [] Understand the concept of Graph Convolution Network (GCN) and test the usage.
+  - [] Semi-supervised classification with graph convolutional networks - 2017.
+    - Paper link: [GCN](https://arxiv.org/pdf/1609.02907.pdf).
+    - Keynotes:
+  - [] Test the usage of GCN with NER taggings.
