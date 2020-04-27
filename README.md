@@ -133,7 +133,21 @@ __Student__: __TRAN__ Thi Hong Hanh.
 
 ### __Task 4__ (27/04/2020 - 29/04/2020):
 - Issue from previous tasks:
-  - Error in saving model checkpoints from XLNet model.
+  - Error.
+  ```
+  Traceback (most recent call last):
+  File "train.py", line 136, in <module>
+    model = Net(hp.top_rnns, len(VOCAB), device, hp.finetuning).cuda()
+  File "/drive/My Drive/Internship2020/NER/bert-ner/model.py", line 11, in __init__
+    self.xlnet_ = XLNetModel.from_pretrained('xlnet-base-cased')
+  File "/usr/local/lib/python3.6/dist-packages/pytorch_transformers/modeling_utils.py", line 536, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/pytorch_transformers/modeling_xlnet.py", line 731, in __init__
+    self.word_embedding = nn.Embedding(config.n_token, config.d_model)
+  File "/usr/local/lib/python3.6/dist-packages/torch/nn/modules/sparse.py", line 97, in __init__
+    self.weight = Parameter(torch.Tensor(num_embeddings, embedding_dim))
+  RuntimeError: Trying to create tensor with negative dimension -1: [-1, 768]
+  ```
 
 - [] Fix issues from previous task.
 - [] Test XLNet model with baseline data ([eng.testb.2.examples.txt](https://github.com/honghanhh/multiligualNER/enconll03_baselines/eng.testb.2.examples.txt)).
