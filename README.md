@@ -130,3 +130,21 @@ __Student__: __TRAN__ Thi Hong Hanh.
       - The architecture:
           ![Relation extraction with a graph convolutional network.](images/architecture_GCN.png)
 
+### __Task 4__:
+  - [] Evaluate XLNetNER using new get_score.py
+    - Due to CUDA memory error, I have not saved the checkpoint with tunned parameters yet.
+    ```
+    Traceback (most recent call last):
+    File "train.py", line 164, in <module>
+    train(model, train_iter, optimizer, criterion)
+      ...
+    File "/usr/local/lib/python3.6/dist-packages/torch/nn/functional.py", line 936, in dropout
+    else _VF.dropout(input, p, training))
+    RuntimeError: CUDA out of memory. Tried to allocate 68.00 MiB (GPU 0; 11.17 GiB total capacity; 10.01 GiB already allocated; 58.81 MiB free; 10.74 GiB reserved in total by PyTorch)
+    ```
+    - Current XLNetNER:
+      - Command:
+      ```
+      python3.6 train.py --logdir $SLURM_JOB_ID/finetuning --finetuning --batch_size 8 --lr 5e-5 --n_epochs 4 
+      ```
+      - Result logs and checkpoints are saved in [Google Drive](https://drive.google.com/drive/folders/1yWKrjyTj_5ETjG-ppF2Xr43hVhYz0_kk?usp=sharing).

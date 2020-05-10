@@ -1,8 +1,9 @@
 import torch
 import torch.nn as nn
 #from pytorch_transformers import BertModel
-from pytorch_transformers import XLNetModel
+# from pytorch_transformers import XLNetModel
 #from pytorch_pretrained_bert import OpenAIGPTModel
+from transformers import XLNetModel
 
 class Net(nn.Module):
     def __init__(self, top_rnns=False, vocab_size=None, device='cpu', finetuning=False):
@@ -19,6 +20,7 @@ class Net(nn.Module):
         self.device = device
         self.finetuning = finetuning
 
+    
     def forward(self, x, y, ):
         '''
         x: (N, T). int64
@@ -33,20 +35,20 @@ class Net(nn.Module):
         if self.training and self.finetuning:
             # print("->xlnet.train()")
             self.xlnet.train()
-            output1 = self.xlnet(x)
-            print("model",len(output1))
-            encoded_layers, _ = output1
-            print(encoded_layers.shape,len(_))
-            enc = encoded_layers#[-1]
+            # output1 = self.xlnet(x)
+            # print("model",len(output1), output1)
+            # encoded_layers = output1
+            encoded_layers = self.xlnet(x)
+            # print(encoded_layers.shape,len(_))
+            enc = encoded_layers[0]#[-1]
         else:
             self.xlnet.eval()
             with torch.no_grad():
                 encoded_layers, _ = self.xlnet(x)
-                enc = encoded_layers#[-1]
+                enc = encoded_layers[0]#[-1]
 
         if self.top_rnns:
             enc, _ = self.rnn(enc)
         logits = self.fc(enc)
         y_hat = logits.argmax(-1)
         return logits, y, y_hat
-
