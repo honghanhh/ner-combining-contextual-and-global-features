@@ -26,12 +26,9 @@ import numpy as np
 import torch
 from torch.utils import data
 
-# from pytorch_transformers import XLNetTokenizer
-#from pytorch_pretrained_bert import OpenAIGPTTokenizer
 from transformers import XLNetTokenizer
 
 tokenizer = XLNetTokenizer.from_pretrained('xlnet-base-cased', do_lower_case=False)
-#tokenizer = OpenAIGPTTokenizer.from_pretrained('openai-gpt')
 VOCAB = ('<PAD>', 'O', 'I-LOC', 'B-PER', 'I-PER', 'I-ORG', 'I-MISC', 'B-MISC', 'B-LOC', 'B-ORG')
 tag2idx = {tag: idx for idx, tag in enumerate(VOCAB)}
 idx2tag = {idx: tag for idx, tag in enumerate(VOCAB)}
