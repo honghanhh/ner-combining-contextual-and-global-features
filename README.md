@@ -84,15 +84,15 @@ __Student__: __TRAN__ Thi Hong Hanh.
   stanza.download('en', processors={'tokenize': 'ewt', 'ner': 'conll03'})
   ```
 - [x] Evaluate the performance using __get_score.py__ in this [github](https://github.com/Adaxry/GCDT/tree/master/data/conll03).
-    - Evaluating data: [eng.testb.2.examples.txt](https://github.com/honghanhh/multiligualNER/enconll03_baselines/eng.testb.2.examples.txt)
+    - Evaluating data: [eng.testb.2.examples.txt](https://github.com/honghanhh/multiligualNER/enconll03_baselines/result/eng.testb.2.examples.txt).
     - __Stanza__: 
       - Generate __510/50120__ bad datas.
-      - Predicting result is saved in [eng.testb.2.examples.txt.stanza.new](https://github.com/honghanhh/multiligualNER/enconll03_baselines/eng.testb.2.examples.txt.stanza.new).
-      - Wrong predictions are collected in [eng.res.stanza.txt](https://github.com/honghanhh/multiligualNER/enconll03_baselines/eng.res.stanza.txt).
+      - Predicting result is saved in [eng.testb.2.examples.txt.stanza.new](https://github.com/honghanhh/multiligualNER/enconll03_baselines/result/eng.testb.2.examples.txt.stanza.new).
+      - Wrong predictions are collected in [eng.res.stanza.txt](https://github.com/honghanhh/multiligualNER/enconll03_baselines/result/eng.res.stanza.txt).
     - __Flair__: 
       - Generate __20151/50120__ bad datas. 
-      - Predicting result is saved in [eng.testb.2.examples.txt.flair.new](https://github.com/honghanhh/multiligualNER/enconll03_baselines/eng.testb.2.examples.txt.flair.new).
-      - Wrong predictions are collected in [eng.res.flair.txt](https://github.com/honghanhh/multiligualNER/enconll03_baselines/eng.res.flair.txt).
+      - Predicting result is saved in [eng.testb.2.examples.txt.flair.new](https://github.com/honghanhh/multiligualNER/enconll03_baselines/result/eng.testb.2.examples.txt.flair.new).
+      - Wrong predictions are collected in [eng.res.flair.txt](https://github.com/honghanhh/multiligualNER/enconll03_baselines/result/eng.res.flair.txt).
 - Recommend papers about graph embeddings:
   - [x] Graph Convolutional Networks for Named Entity Recognition - 2017.
     - Paper link: [GCN](https://www.aclweb.org/anthology/W17-7607.pdf).
@@ -130,3 +130,35 @@ __Student__: __TRAN__ Thi Hong Hanh.
       - The architecture:
           ![Relation extraction with a graph convolutional network.](images/architecture_GCN.png)
 
+### __Task 4__:
+- [x] Double check stanza and flair baselines.
+  - Data: [eng.testb.2.examples.txt](https://github.com/honghanhh/multiligualNER/enconll03_baselines/result/eng.testb.2.examples.txt).
+  - [x] Flair:
+    - Syntax:
+    ```
+    python get_score.py -predict_file ./result_baselines/eng.testb.2.examples.txt.flair.new -golden_file eng.testb.2.examples.txt -result_file ./result_baselines/flair.txt
+    ```
+    - Result:
+    ```
+    Generate 510/50120 bad datas when evaluating ./result_baselines/eng.testb.2.examples.txt.flair.new processed 45925 tokens with 5446 phrases; found: 5428 phrases; correct: 5275.
+    accuracy:  99.56%; precision:  97.18%; recall:  96.86%; FB1:  97.02
+                LOC: precision:  96.49%; recall:  96.14%; FB1:  96.32  1626
+              MISC: precision:  98.67%; recall:  97.37%; FB1:  98.01  600
+                ORG: precision:  95.78%; recall:  95.60%; FB1:  95.69  1612
+                PER: precision:  98.74%; recall:  98.68%; FB1:  98.71  1590
+    ```
+  - [x] Stanza:
+      - Syntax:
+      ```
+      python get_score.py -predict_file ./result_baselines/eng.testb.2.examples.txt.stanza.new -golden_file eng.testb.2.examples.txt -result_file ./result_baselines/stanza.txt
+      ```
+      - Result:
+      ```
+      Generate 577/50120 bad datas when evaluating ./result_baselines/eng.testb.2.examples.txt.stanza.new
+      processed 45858 tokens with 5420 phrases; found: 5397 phrases; correct: 5230.
+      accuracy:  99.50%; precision:  96.91%; recall:  96.49%; FB1:  96.70
+                    LOC: precision:  96.02%; recall:  95.90%; FB1:  95.96  1632
+                  MISC: precision:  98.67%; recall:  97.37%; FB1:  98.01  600
+                    ORG: precision:  95.33%; recall:  95.03%; FB1:  95.18  1584
+                    PER: precision:  98.73%; recall:  98.24%; FB1:  98.49  1581
+      ```
