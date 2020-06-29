@@ -3,7 +3,7 @@
 __Superviors__: 
 - Prof. Nicolas __SIDERE__
 - Prof. Antoine __DOUCET__
-- Prof. Jose __MONERO__. 
+- Prof. Jose __MORENO__. 
 
 __Student__: __TRAN__ Thi Hong Hanh.
 
