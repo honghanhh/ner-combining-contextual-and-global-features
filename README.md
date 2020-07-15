@@ -131,6 +131,54 @@ __Student__: __TRAN__ Thi Hong Hanh.
           ![Relation extraction with a graph convolutional network.](images/architecture_GCN.png)
 
 ### __Task 4__:
+  - [x] Evaluate XLNetNER using new get_score.py
+    - Due to CUDA memory error, I have not saved the checkpoint with tunned parameters yet.
+    ```
+    Traceback (most recent call last):
+    File "train.py", line 164, in <module>
+    train(model, train_iter, optimizer, criterion)
+      ...
+    File "/usr/local/lib/python3.6/dist-packages/torch/nn/functional.py", line 936, in dropout
+    else _VF.dropout(input, p, training))
+    RuntimeError: CUDA out of memory. Tried to allocate 68.00 MiB (GPU 0; 11.17 GiB total capacity; 10.01 GiB already allocated; 58.81 MiB free; 10.74 GiB reserved in total by PyTorch)
+    ```
+    - Current XLNetNER:
+      - Command:
+      ```
+      python3.6 train.py --logdir $SLURM_JOB_ID/finetuning --finetuning --batch_size 16 --lr 5e-5 --n_epochs 4 
+      ```
+      - Result logs and checkpoints are saved in [Google Drive](https://drive.google.com/drive/folders/1yWKrjyTj_5ETjG-ppF2Xr43hVhYz0_kk?usp=sharing).
+      ```
+      =========eval at epoch=4=========
+      processed 55044 tokens with 5942 phrases; found: 5944 phrases; correct: 5823.
+      accuracy:  98.80%; (non-O)
+      accuracy:  99.75%; precision:  97.96%; recall:  98.00%; FB1:  97.98
+                    LOC: precision:  98.85%; recall:  98.26%; FB1:  98.55  1826
+                  MISC: precision:  95.06%; recall:  96.10%; FB1:  95.58  932
+                    ORG: precision:  97.02%; recall:  97.17%; FB1:  97.09  1343
+                    PER: precision:  99.24%; recall:  99.29%; FB1:  99.27  1843
+      num_proposed:8596
+      num_correct:8500
+      num_gold:8603
+      precision=0.9888
+      recall=0.9880
+      f1=0.9884
+      weights were saved to checkpoints/finetuning/4.pt
+      =========eval at epoch=4=========
+      processed 50350 tokens with 5648 phrases; found: 5696 phrases; correct: 5111.
+      accuracy:  92.14%; (non-O)
+      accuracy:  98.21%; precision:  89.73%; recall:  90.49%; FB1:  90.11
+                    LOC: precision:  94.67%; recall:  91.55%; FB1:  93.08  1613
+                  MISC: precision:  76.70%; recall:  83.48%; FB1:  79.95  764
+                    ORG: precision:  85.59%; recall:  87.24%; FB1:  86.40  1693
+                    PER: precision:  95.26%; recall:  95.79%; FB1:  95.53  1626
+      num_proposed:8199
+      num_correct:7474
+      num_gold:8112
+      precision=0.9116
+      recall=0.9214
+      f1=0.9164
+
 - [x] Double check stanza and flair baselines.
   - Data: [eng.testb.2.examples.txt](https://github.com/honghanhh/multiligualNER/enconll03_baselines/result/eng.testb.2.examples.txt).
   - [x] Flair:
@@ -161,4 +209,6 @@ __Student__: __TRAN__ Thi Hong Hanh.
                   MISC: precision:  98.67%; recall:  97.37%; FB1:  98.01  600
                     ORG: precision:  95.33%; recall:  95.03%; FB1:  95.18  1584
                     PER: precision:  98.73%; recall:  98.24%; FB1:  98.49  1581
+
       ```
+    
