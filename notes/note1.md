@@ -17,5 +17,5 @@ Context can strongly represented by contextual embeddings. However, global relat
 2. NER using only token-based embeddings classification based on [TextGCN](https://github.com/yao8839836/text_gcn).
 3. Combining contextual embeddings and TextGCN token classification.
 
-![Architecture](images/XLNetTextGCN.png)
+![Architecture](../images/XLNetTextGCN.png)
 
