@@ -13,8 +13,8 @@ class SpectralGraphConvolution(Layer):
     def __init__(self, output_dim,
                  init='glorot_uniform', activation='linear',
                  weights=None, W_regularizer=None,
-                 b_regularizer=None, bias=True, 
-                 self_links=True, consecutive_links=True, 
+                 b_regularizer=None, bias=True,
+                 self_links=True, consecutive_links=True,
                  backward_links=True, edge_weighting=False, **kwargs):
         self.init = initializers.get(init)
         self.activation = activations.get(activation)
@@ -68,32 +68,35 @@ class SpectralGraphConvolution(Layer):
         self.W = []
         self.W_edges = []
         for i in range(self.num_adjacency_matrices):
-            self.W.append(self.add_weight((self.num_features, self.output_dim), # shape: (num_features, output_dim)
-                                                    initializer=self.init,
-                                                    name='{}_W_rel_{}'.format(self.name, i),
-                                                    regularizer=self.W_regularizer))
+            self.W.append(self.add_weight((self.num_features, self.output_dim),  # shape: (num_features, output_dim)
+                                          initializer=self.init,
+                                          name='{}_W_rel_{}'.format(
+                                              self.name, i),
+                                          regularizer=self.W_regularizer))
 
             if self.edge_weighting:
-                self.W_edges.append(self.add_weight((self.input_dim, self.num_features), # shape: (num_features, output_dim)
-                                                        initializer='ones',
-                                                        name='{}_W_edge_{}'.format(self.name, i),
-                                                        regularizer=self.W_regularizer))
+                self.W_edges.append(self.add_weight((self.input_dim, self.num_features),  # shape: (num_features, output_dim)
+                                                    initializer='ones',
+                                                    name='{}_W_edge_{}'.format(
+                                                        self.name, i),
+                                                    regularizer=self.W_regularizer))
 
         self.b = self.add_weight((self.input_dim, self.output_dim),
-                                        initializer='random_uniform',
-                                        name='{}_b'.format(self.name),
-                                        regularizer=self.b_regularizer)
+                                 initializer='random_uniform',
+                                 name='{}_b'.format(self.name),
+                                 regularizer=self.b_regularizer)
 
         if self.initial_weights is not None:
             self.set_weights(self.initial_weights)
             del self.initial_weights
         super(SpectralGraphConvolution, self).build(input_shapes)
 
-    def call (self, inputs, mask=None):
-        features = inputs[0] # Shape: (None, num_nodes, num_features)
+    def call(self, inputs, mask=None):
+        features = inputs[0]  # Shape: (None, num_nodes, num_features)
         A = inputs[1:]  # Shapes: (None, num_nodes, num_nodes)
-
-        eye = A[0] * K.zeros(self.num_nodes, dtype='float32') + K.eye(self.num_nodes, dtype='float32')
+        # print("A: ", A.shape)
+        eye = A[0] * K.zeros(self.num_nodes, dtype='float32') + \
+            K.eye(self.num_nodes, dtype='float32')
 
         # eye = K.eye(self.num_nodes, dtype='float32')
 
@@ -112,11 +115,15 @@ class SpectralGraphConvolution(Layer):
         for i in range(self.num_adjacency_matrices):
             if self.edge_weighting:
                 features *= self.W_edges[i]
-            HW = K.dot(features, self.W[i]) # Shape: (None, num_nodes, output_dim)
-            AHW = K.batch_dot(A[i], HW) # Shape: (None, num_nodes, num_features)
+            # Shape: (None, num_nodes, output_dim)
+            HW = K.dot(features, self.W[i])
+            # Shape: (None, num_nodes, num_features)
+            AHW = K.batch_dot(A[i], HW)
             AHWs.append(AHW)
-        AHWs_stacked = K.stack(AHWs, axis=1) # Shape: (None, num_supports, num_nodes, num_features)
-        output = K.max(AHWs_stacked, axis=1) # Shape: (None, num_nodes, output_dim)
+        # Shape: (None, num_supports, num_nodes, num_features)
+        AHWs_stacked = K.stack(AHWs, axis=1)
+        # Shape: (None, num_nodes, output_dim)
+        output = K.max(AHWs_stacked, axis=1)
 
         if self.bias:
             output += self.b

@@ -9,7 +9,7 @@ import scipy.sparse as sp
 ap = argparse.ArgumentParser()
 ap.add_argument("-d", "--dataset", type=str, default="conll2003",
                 help="Dataset string ('conll2003')")
-ap.add_argument("-e", "--embeddings", type=str, default="wiki_extvec",  # default="komninos_english_embeddings"
+ap.add_argument("-e", "--embeddings", type=str, default="wiki_extvec",
                 help="Name of embeddings file in embeddings/, without .gz extension.")
 ap.add_argument("-w", "--words", type=int, default=-1,
                 help="Maximum number of words in the embeddings.")

@@ -119,7 +119,6 @@ class GraphPreprocessor():
         return tokens
 
     def _lookup_sentence_labels(self, sentence_labels):
-        print(self.label2idx)
         label_idx = [self.label2idx['O'] for x in range(self.max_num_nodes)]
         for i, label in enumerate(sentence_labels):
             label_idx[i] = self.label2idx[label]
@@ -185,7 +184,7 @@ def read_conll(filepath):
                 sentence_labels = []
             else:
                 sentence.append(line_split[0])
-                sentence_labels.append(line_split[1])
+                sentence_labels.append(line_split[3])
     if len(sentence) > 0:
         sentences.append(sentence)
         sentences_labels.append(sentence_labels)
@@ -235,14 +234,14 @@ def load_data(A, X, Y, split_name):
         for j in range(len(A[split_name])):
             split_x[i + 1].append(A[split_name][j][i].toarray())
 
-    split_y = [to_categorical(y.toarray()[0], num_classes=9)
+    split_y = [to_categorical(y.toarray()[0], num_classes=8)
                for y in Y[split_name]]
 
     return split_x, split_y
 
 
 def load_output(A, X, Y, split_name):
-    split_y = [to_categorical(y.toarray()[0], num_classes=9)
+    split_y = [to_categorical(y.toarray()[0], num_classes=8)
                for y in Y[split_name]]
 
     return split_y
@@ -265,7 +264,7 @@ def batch_generator(A, X, Y, split_name, batch_size=16):
                 split_x[i + 1].append(A[split_name]
                                       [batch_start:batch_end][j][i].toarray())
             split_x[i + 1] = np.array(split_x[i + 1])
-        split_y = np.array([to_categorical(y.toarray()[0], num_classes=9)
+        split_y = np.array([to_categorical(y.toarray()[0], num_classes=8)
                             for y in Y[split_name][batch_start:batch_end]])
         batch_counter = (batch_counter + 1) % (num_sentences // batch_size)
         yield split_x, split_y
