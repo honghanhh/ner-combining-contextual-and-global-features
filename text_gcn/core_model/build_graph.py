@@ -1,18 +1,21 @@
-import os
-import random
-import numpy as np
-import pickle as pkl
-import networkx as nx
-import scipy.sparse as sp
-from utils import loadWord2Vec, clean_str
-from math import log
-from sklearn import svm
-from nltk.corpus import wordnet as wn
-from sklearn.feature_extraction.text import TfidfVectorizer
-import sys
-from scipy.spatial.distance import cosine
-from collections import defaultdict
 import pandas as pd
+from collections import defaultdict
+from scipy.spatial.distance import cosine
+import sys
+from sklearn.feature_extraction.text import TfidfVectorizer
+from nltk.corpus import wordnet as wn
+from sklearn import svm
+from math import log
+from utils import loadWord2Vec, clean_str
+import scipy.sparse as sp
+import networkx as nx
+import pickle as pkl
+import numpy as np
+import random
+import os
+import nltk
+nltk.download('wordnet')
+
 """
 :return:
 ind.dataset_str.x => the feature vectors of the training docs as scipy.sparse.csr.csr_matrix object;
@@ -25,15 +28,15 @@ All objects above must be saved using python pickle module.
 
 
 """
-
-path = '/home/hanh/Videos/multiligualNER/text_gcn/'
-dataset = ['conll2003/train.txt','conll2003/valid.txt','conll2003/test.txt']
+path = '../'
+dataset = ['conll2003/train.txt', 'conll2003/valid.txt', 'conll2003/test.txt']
 
 word_embeddings_dim = 300
 word_vector_map = {}
 
 # label list
-label_list = ['<PAD>', 'O', 'I-LOC', 'B-PER', 'I-PER', 'I-ORG', 'I-MISC', 'B-MISC', 'B-LOC', 'B-ORG']
+label_list = ['<PAD>', 'O', 'I-LOC', 'B-PER', 'I-PER',
+              'I-ORG', 'I-MISC', 'B-MISC', 'B-LOC', 'B-ORG']
 
 label_list_str = '\n'.join(label_list)
 f = open(path + 'conll2003_wv/conll_labels.txt', 'w')
@@ -53,7 +56,7 @@ for word in words[0].split():
         word_freq[word] = 1
 
 vocab = list(word_set)
-vocab_size = len(vocab) #9489
+vocab_size = len(vocab)  # 9489
 
 vocab_str = '\n'.join(vocab)
 f = open(path + 'conll2003_wv/conll_vocab.txt', 'w')
@@ -64,11 +67,11 @@ word_id_map = {}
 for i in range(vocab_size):
     word_id_map[vocab[i]] = i
 
-f = open(path + 'conll2003_wv/word_id_map.txt','w')
+f = open(path + 'conll2003_wv/word_id_map.txt', 'w')
 f.write(str(word_id_map))
 f.close()
 
-#train
+# train
 f = open(path + dataset[0], 'r')
 lines = f.readlines()
 train = []
@@ -77,12 +80,13 @@ for line in lines:
     train_data = line.split(" ")[0].replace('\n', ' ')
     train.append(train_data)
 
-print("Train length: ",len(train))  #274599
+print("Train length: ", len(train))  # 274599
 
 train_sentence = ' '.join(str(word) for word in train)
-train_sentence_dict = [x + ' .' for x in train_sentence.split(".")] #[22348 rows x 22348 columns]
+# [22348 rows x 22348 columns]
+train_sentence_dict = [x + ' .' for x in train_sentence.split(".")]
 
-#valid
+# valid
 f = open(path + dataset[1], 'r')
 lines = f.readlines()
 valid = []
@@ -91,12 +95,13 @@ for line in lines:
     valid_data = line.split(" ")[0].replace('\n', ' ')
     valid.append(valid_data)
 
-print("Valid length: ",len(valid))  #55045
+print("Valid length: ", len(valid))  # 55045
 
 valid_sentence = ' '.join(str(word) for word in valid)
-valid_sentence_dict = [x + ' .' for x in valid_sentence.split(".")] #[8692 rows x 8692 columns] 
+# [8692 rows x 8692 columns]
+valid_sentence_dict = [x + ' .' for x in valid_sentence.split(".")]
 
-#test
+# test
 f = open(path + dataset[2], 'r')
 lines = f.readlines()
 test = []
@@ -105,10 +110,11 @@ for line in lines:
     test_data = line.split(" ")[0].replace('\n', ' ')
     test.append(test_data)
 
-print("Test length: ",len(test))  #50351
+print("Test length: ", len(test))  # 50351
 
 test_sentence = ' '.join(str(word) for word in test)
-test_sentence_dict = [x + ' .' for x in test_sentence.split(".")] #[8112 rows x 8112 columns]
+# [8112 rows x 8112 columns]
+test_sentence_dict = [x + ' .' for x in test_sentence.split(".")]
 
 
 # Word definitions begin
@@ -181,11 +187,10 @@ for i in range(len(train)):
 
 x = sp.csr_matrix((row_x, col_x), shape=(len(train), word_embeddings_dim))
 print(x)
-
-# valid 
+# valid
 row_vx = []
 col_vx = []
-for i in range(len(valid))):
+for i in range(len(valid)):
     for word in words:
         if word in word_vector_map:
             word_vector = word_vector_map[word]
@@ -195,10 +200,10 @@ for i in range(len(valid))):
 vx = sp.csr_matrix(((row_vx, col_vx)),
                    shape=(len(valid), word_embeddings_dim))
 
-# test 
+# test
 row_tx = []
 col_tx = []
-for i in range(len(test))):
+for i in range(len(test)):
     for word in words:
         if word in word_vector_map:
             word_vector = word_vector_map[word]
@@ -243,9 +248,9 @@ print(x_v)
 x_te = co_occurrence(test_sentence_dict, 20)
 print(x_te)
 
-#Label
+# Label
 
-#train
+# train
 f = open(path + dataset[0], 'r')
 lines = f.readlines()
 label_train = []
