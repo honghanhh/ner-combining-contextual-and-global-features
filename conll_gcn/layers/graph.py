@@ -131,12 +131,12 @@ class SpectralGraphConvolution(Layer):
 
     def get_config(self):
         config = {'output_dim': self.output_dim,
-                  'init': self.init.__name__,
-                  'activation': self.activation.__name__,
+                  'init': "glorot_uniform",
+                  'activation': "linear",
                   'W_regularizer': self.W_regularizer.get_config() if self.W_regularizer else None,
                   'b_regularizer': self.b_regularizer.get_config() if self.b_regularizer else None,
                   'num_bases': self.num_bases,
                   'bias': self.bias,
                   'input_dim': self.input_dim}
-        base_config = super(GraphConvolution, self).get_config()
+        base_config = super(SpectralGraphConvolution, self).get_config()
         return dict(list(base_config.items()) + list(config.items()))
