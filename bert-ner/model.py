@@ -18,6 +18,8 @@ class Net(nn.Module):
         if top_rnns:
             self.rnn = nn.LSTM(bidirectional=True, num_layers=2,
                                input_size=768, hidden_size=768//2, batch_first=True)
+
+        self.dropout = nn.Dropout(p=0.5)
         self.fc = nn.Linear(768, vocab_size)
 
         self.device = device
@@ -46,6 +48,7 @@ class Net(nn.Module):
 
         if self.top_rnns:
             enc, _ = self.rnn(enc)
+        enc = self.dropout(enc)
         logits = self.fc(enc)
         y_hat = logits.argmax(-1)
         return logits, y, y_hat

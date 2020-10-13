@@ -17,3 +17,8 @@ text_gcn/conll2003_wv/conll_ind.x
 text_gcn/core_model/.ipynb_checkpoints/
 text_gcn/core_model/buil_graph_gcn.ipynb
 text_gcn/core_model/train.py
+bert-ner/finetuning1/
+# bert-ner/result-logs/10ep-combined-logs.txt
+# bert-ner/result-logs/xlnet-92.33.txt
+conll_gcn/.ipynb_checkpoints/
+conll_gcn/logs/

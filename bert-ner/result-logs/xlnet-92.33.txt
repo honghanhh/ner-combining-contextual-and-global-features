@@ -1,0 +1,149 @@
+
+=========eval at epoch=1=========
+processed 55044 tokens with 5942 phrases; found: 5967 phrases; correct: 5629.
+accuracy:  95.65%; (non-O)
+accuracy:  99.19%; precision:  94.34%; recall:  94.73%; FB1:  94.53
+              LOC: precision:  95.80%; recall:  98.04%; FB1:  96.91  1880
+             MISC: precision:  86.67%; recall:  85.36%; FB1:  86.01  908
+              ORG: precision:  92.09%; recall:  91.20%; FB1:  91.64  1328
+              PER: precision:  98.22%; recall:  98.70%; FB1:  98.46  1851
+num_proposed:8521
+num_correct:8229
+num_gold:8603
+precision=0.9657
+recall=0.9565
+f1=0.9611
+=========test at epoch=1=========
+processed 50350 tokens with 5648 phrases; found: 5692 phrases; correct: 5103.
+accuracy:  92.04%; (non-O)
+accuracy:  98.28%; precision:  89.65%; recall:  90.35%; FB1:  90.00
+              LOC: precision:  91.04%; recall:  93.17%; FB1:  92.09  1707
+             MISC: precision:  75.48%; recall:  78.49%; FB1:  76.96  730
+              ORG: precision:  88.26%; recall:  86.45%; FB1:  87.35  1627
+              PER: precision:  95.95%; recall:  96.60%; FB1:  96.27  1628
+num_proposed:8139
+num_correct:7466
+num_gold:8112
+precision=0.9173
+recall=0.9204
+f1=0.9188
+=====sanity check======
+words: <cls> California played without interim manager John McNamara , who was admitted to a New York hospital with a blood clot in his right calf . <sep>
+x: [    3   848   507   286  7164  1416   408 31256    17    19    61    30
+  3111    22    24   158   313  1460    33    24  1032 22680    25    45
+   203 22551    17     9     4]
+is_heads: [1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1]
+y: [0 2 1 1 1 1 4 4 1 0 1 1 1 1 1 2 2 1 1 1 1 1 1 1 1 1 1 0 0]
+tags: <PAD> I-LOC O O O O I-PER I-PER O O O O O O I-LOC I-LOC O O O O O O O O O O <PAD>
+seqlen: 29
+=======================
+
+=========eval at epoch=2=========
+processed 55044 tokens with 5942 phrases; found: 5991 phrases; correct: 5791.
+accuracy:  98.35%; (non-O)
+accuracy:  99.60%; precision:  96.66%; recall:  97.46%; FB1:  97.06
+              LOC: precision:  97.74%; recall:  99.02%; FB1:  98.38  1861
+             MISC: precision:  92.00%; recall:  92.30%; FB1:  92.15  925
+              ORG: precision:  94.81%; recall:  96.72%; FB1:  95.75  1368
+              PER: precision:  99.29%; recall:  99.02%; FB1:  99.16  1837
+num_proposed:8648
+num_correct:8461
+num_gold:8603
+precision=0.9784
+recall=0.9835
+f1=0.9809
+=========test at epoch=2=========
+processed 50350 tokens with 5648 phrases; found: 5721 phrases; correct: 5195.
+accuracy:  93.80%; (non-O)
+accuracy:  98.44%; precision:  90.81%; recall:  91.98%; FB1:  91.39
+              LOC: precision:  93.25%; recall:  93.53%; FB1:  93.39  1673
+             MISC: precision:  78.33%; recall:  81.34%; FB1:  79.80  729
+              ORG: precision:  87.28%; recall:  91.27%; FB1:  89.23  1737
+              PER: precision:  97.85%; recall:  95.73%; FB1:  96.78  1582
+num_proposed:8284
+num_correct:7609
+num_gold:8112
+precision=0.9185
+recall=0.9380
+f1=0.9282
+=====sanity check======
+words: <cls> CALCUTTA 1996-08-22 <sep>
+x: [    3  7046 10000 10969  4768  2025    13  3383    13  2896     4]
+is_heads: [1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1]
+y: [0 2 0 0 0 1 0 0 0 0 0]
+tags: <PAD> I-LOC O <PAD>
+seqlen: 11
+=======================
+
+=========eval at epoch=3=========
+processed 55044 tokens with 5942 phrases; found: 5961 phrases; correct: 5822.
+accuracy:  98.77%; (non-O)
+accuracy:  99.71%; precision:  97.67%; recall:  97.98%; FB1:  97.82
+              LOC: precision:  98.96%; recall:  98.58%; FB1:  98.77  1830
+             MISC: precision:  94.28%; recall:  94.79%; FB1:  94.54  927
+              ORG: precision:  96.74%; recall:  97.46%; FB1:  97.10  1351
+              PER: precision:  98.76%; recall:  99.35%; FB1:  99.05  1853
+num_proposed:8633
+num_correct:8497
+num_gold:8603
+precision=0.9842
+recall=0.9877
+f1=0.9860
+=========test at epoch=3=========
+processed 50350 tokens with 5648 phrases; found: 5764 phrases; correct: 5205.
+accuracy:  93.84%; (non-O)
+accuracy:  98.40%; precision:  90.30%; recall:  92.16%; FB1:  91.22
+              LOC: precision:  93.84%; recall:  93.17%; FB1:  93.50  1656
+             MISC: precision:  76.68%; recall:  79.63%; FB1:  78.13  729
+              ORG: precision:  87.71%; recall:  91.51%; FB1:  89.57  1733
+              PER: precision:  95.50%; recall:  97.22%; FB1:  96.35  1646
+num_proposed:8309
+num_correct:7612
+num_gold:8112
+precision=0.9161
+recall=0.9384
+f1=0.9271
+=====sanity check======
+words: <cls> LONDON 1996-08-22 <sep>
+x: [    3 29397  2025    13  3383    13  2896     4]
+is_heads: [1, 1, 1, 0, 0, 0, 0, 1]
+y: [0 2 1 0 0 0 0 0]
+tags: <PAD> I-LOC O <PAD>
+seqlen: 8
+=======================
+
+=========eval at epoch=4=========
+processed 55044 tokens with 5942 phrases; found: 5946 phrases; correct: 5869.
+accuracy:  99.30%; (non-O)
+accuracy:  99.82%; precision:  98.71%; recall:  98.77%; FB1:  98.74
+              LOC: precision:  99.56%; recall:  99.24%; FB1:  99.40  1831
+             MISC: precision:  97.05%; recall:  96.31%; FB1:  96.68  915
+              ORG: precision:  97.21%; recall:  98.66%; FB1:  97.93  1361
+              PER: precision:  99.78%; recall:  99.62%; FB1:  99.70  1839
+num_proposed:8620
+num_correct:8543
+num_gold:8603
+precision=0.9911
+recall=0.9930
+f1=0.9920
+=========test at epoch=4=========
+processed 50350 tokens with 5648 phrases; found: 5748 phrases; correct: 5176.
+accuracy:  93.77%; (non-O)
+accuracy:  98.31%; precision:  90.05%; recall:  91.64%; FB1:  90.84
+              LOC: precision:  96.03%; recall:  91.31%; FB1:  93.61  1586
+             MISC: precision:  77.99%; recall:  81.77%; FB1:  79.83  736
+              ORG: precision:  83.13%; recall:  92.23%; FB1:  87.44  1843
+              PER: precision:  97.73%; recall:  95.67%; FB1:  96.69  1583
+num_proposed:8366
+num_correct:7607
+num_gold:8112
+precision=0.9093
+recall=0.9377
+f1=0.9233
+(ai) ➜  bert-ner git:(master) ✗
+
+
+batch_size 8
+lr 1e-5
+n_epochs 4
+drop_out 0.5

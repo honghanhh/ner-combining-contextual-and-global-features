@@ -7,15 +7,15 @@ from data_load import NerDataset, pad, VOCAB, tag2idx, idx2tag
 import os
 import numpy as np
 import argparse
-from conlleval import evaluate_conll_files
+from conlleval import evaluate_conll_file
 
 
 def train(model, iterator, optimizer, criterion):
     model.train()
     for i, batch in enumerate(iterator):
         words, x, is_heads, tags, y, seqlens = batch
-        print("x: ", x.shape)
-        print("y: ", y.shape)
+        # print("x: ", x.shape)
+        # print("y: ", y.shape)
         _y = y  # for monitoring
         optimizer.zero_grad()
         output1 = model(x, y)  # logits: (N, T, VOCAB), y: (N, T)
@@ -42,8 +42,8 @@ def train(model, iterator, optimizer, criterion):
             print("seqlen:", seqlens[0])
             print("=======================")
 
-        if i % 10 == 0:  # monitoring
-            print(f"step: {i}, loss: {loss.item()}")
+        # if i % 10 == 0:  # monitoring
+        #     print(f"step: {i}, loss: {loss.item()}")
 
 
 def eval(model, iterator, f):
@@ -131,7 +131,7 @@ if __name__ == "__main__":
     parser.add_argument("--n_epochs", type=int, default=30)
     parser.add_argument("--finetuning", dest="finetuning", action="store_true")
     parser.add_argument("--top_rnns", dest="top_rnns", action="store_true")
-    parser.add_argument("--logdir", type=str, default="\")
+    parser.add_argument("--logdir", type=str, default="/")
     parser.add_argument("--trainset", type=str, default="conll2003/train.txt")
     parser.add_argument("--validset", type=str, default="conll2003/valid.txt")
     parser.add_argument("--testset", type=str, default="conll2003/test.txt")
@@ -177,8 +177,9 @@ if __name__ == "__main__":
 
         torch.save(model, f"{fname}.pt")
         print(f"weights were saved to {fname}.pt")
-    print(f"=========eval at epoch={epoch}=========")
-    if not os.path.exists(hp.logdir):
-        os.makedirs(hp.logdir)
-    fname = os.path.join(hp.logdir, str(epoch)+'_test_')
-    precision, recall, f1 = eval(model, test_iter, fname)
+
+        print(f"=========test at epoch={epoch}=========")
+        if not os.path.exists(hp.logdir):
+            os.makedirs(hp.logdir)
+        fname = os.path.join(hp.logdir, str(epoch)+'_test_')
+        precision, recall, f1 = eval(model, test_iter, fname)
