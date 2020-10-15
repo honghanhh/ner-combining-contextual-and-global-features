@@ -1,0 +1,2358 @@
+earning rate:  3e-05
+/home/t/anaconda3/envs/ai/lib/python3.8/site-packages/transformers/configuration_xlnet.py:204: FutureWarning: This config doesn't use attention memories, a core feature of XLNet. Consider setting `men_len` to a non-zero value, for example `xlnet = XLNetLMHeadModel.from_pretrained('xlnet-base-cased'', mem_len=1024)`, for accurate training performance as well as an order of magnitude faster inference. Starting from version 3.5.0, the default parameter will be 1024, following the implementation in https://arxiv.org/abs/1906.08237
+  warnings.warn(
+=========eval at epoch=1=========
+processed 55044 tokens with 5942 phrases; found: 6046 phrases; correct: 5730.
+accuracy:  97.59%; (non-O)
+accuracy:  99.38%; precision:  94.77%; recall:  96.43%; FB1:  95.60
+              LOC: precision:  97.61%; recall:  97.71%; FB1:  97.66  1839
+             MISC: precision:  89.02%; recall:  90.56%; FB1:  89.78  938
+              ORG: precision:  91.14%; recall:  95.08%; FB1:  93.07  1399
+              PER: precision:  97.59%; recall:  99.08%; FB1:  98.33  1870
+num_proposed:8698
+num_correct:8396
+num_gold:8603
+precision=0.9653
+recall=0.9759
+f1=0.9706
+weights were saved to finetuning1/1.pt
+=========test at epoch=1=========
+processed 50350 tokens with 5648 phrases; found: 5861 phrases; correct: 5153.
+accuracy:  93.44%; (non-O)
+accuracy:  98.09%; precision:  87.92%; recall:  91.24%; FB1:  89.55
+              LOC: precision:  93.10%; recall:  92.21%; FB1:  92.65  1652
+             MISC: precision:  72.12%; recall:  78.49%; FB1:  75.17  764
+              ORG: precision:  84.38%; recall:  90.43%; FB1:  87.30  1780
+              PER: precision:  93.81%; recall:  96.60%; FB1:  95.19  1665
+num_proposed:8472
+num_correct:7580
+num_gold:8112
+precision=0.8947
+recall=0.9344
+f1=0.9141
+=========eval at epoch=2=========
+processed 55044 tokens with 5942 phrases; found: 5983 phrases; correct: 5808.
+accuracy:  98.48%; (non-O)
+accuracy:  99.63%; precision:  97.08%; recall:  97.74%; FB1:  97.41
+              LOC: precision:  98.43%; recall:  98.91%; FB1:  98.67  1846
+             MISC: precision:  93.64%; recall:  94.25%; FB1:  93.95  928
+              ORG: precision:  96.87%; recall:  96.79%; FB1:  96.83  1340
+              PER: precision:  97.59%; recall:  99.02%; FB1:  98.30  1869
+num_proposed:8643
+num_correct:8472
+num_gold:8603
+precision=0.9802
+recall=0.9848
+f1=0.9825
+weights were saved to finetuning1/2.pt
+=========test at epoch=2=========
+processed 50350 tokens with 5648 phrases; found: 5801 phrases; correct: 5163.
+accuracy:  93.32%; (non-O)
+accuracy:  98.23%; precision:  89.00%; recall:  91.41%; FB1:  90.19
+              LOC: precision:  93.70%; recall:  91.91%; FB1:  92.80  1636
+             MISC: precision:  78.90%; recall:  79.34%; FB1:  79.12  706
+              ORG: precision:  87.60%; recall:  90.19%; FB1:  88.88  1710
+              PER: precision:  90.05%; recall:  97.40%; FB1:  93.58  1749
+num_proposed:8361
+num_correct:7570
+num_gold:8112
+precision=0.9054
+recall=0.9332
+f1=0.9191
+=========eval at epoch=3=========
+processed 55044 tokens with 5942 phrases; found: 5990 phrases; correct: 5838.
+accuracy:  98.94%; (non-O)
+accuracy:  99.71%; precision:  97.46%; recall:  98.25%; FB1:  97.85
+              LOC: precision:  99.29%; recall:  98.69%; FB1:  98.99  1826
+             MISC: precision:  91.74%; recall:  96.31%; FB1:  93.97  968
+              ORG: precision:  96.74%; recall:  97.46%; FB1:  97.10  1351
+              PER: precision:  99.19%; recall:  99.35%; FB1:  99.27  1845
+num_proposed:8659
+num_correct:8512
+num_gold:8603
+precision=0.9830
+recall=0.9894
+f1=0.9862
+weights were saved to finetuning1/3.pt
+=========test at epoch=3=========
+processed 50350 tokens with 5648 phrases; found: 5814 phrases; correct: 5160.
+accuracy:  93.29%; (non-O)
+accuracy:  98.10%; precision:  88.75%; recall:  91.36%; FB1:  90.04
+              LOC: precision:  94.54%; recall:  91.43%; FB1:  92.96  1613
+             MISC: precision:  71.45%; recall:  83.76%; FB1:  77.11  823
+              ORG: precision:  84.62%; recall:  90.73%; FB1:  87.57  1781
+              PER: precision:  96.43%; recall:  95.24%; FB1:  95.83  1597
+num_proposed:8433
+num_correct:7568
+num_gold:8112
+precision=0.8974
+recall=0.9329
+f1=0.9148
+=========eval at epoch=4=========
+processed 55044 tokens with 5942 phrases; found: 5963 phrases; correct: 5843.
+accuracy:  99.30%; (non-O)
+accuracy:  99.76%; precision:  97.99%; recall:  98.33%; FB1:  98.16
+              LOC: precision:  98.38%; recall:  99.07%; FB1:  98.73  1850
+             MISC: precision:  96.18%; recall:  95.66%; FB1:  95.92  917
+              ORG: precision:  96.87%; recall:  97.02%; FB1:  96.94  1343
+              PER: precision:  99.30%; recall:  99.89%; FB1:  99.59  1853
+num_proposed:8668
+num_correct:8543
+num_gold:8603
+precision=0.9856
+recall=0.9930
+f1=0.9893
+weights were saved to finetuning1/4.pt
+=========test at epoch=4=========
+processed 50350 tokens with 5648 phrases; found: 5787 phrases; correct: 5162.
+accuracy:  93.38%; (non-O)
+accuracy:  98.20%; precision:  89.20%; recall:  91.40%; FB1:  90.28
+              LOC: precision:  88.86%; recall:  93.23%; FB1:  90.99  1750
+             MISC: precision:  81.58%; recall:  80.77%; FB1:  81.17  695
+              ORG: precision:  86.37%; recall:  88.92%; FB1:  87.63  1710
+              PER: precision:  95.77%; recall:  96.66%; FB1:  96.21  1632
+num_proposed:8391
+num_correct:7575
+num_gold:8112
+precision=0.9028
+recall=0.9338
+f1=0.9180
+=========eval at epoch=5=========
+processed 55044 tokens with 5942 phrases; found: 5980 phrases; correct: 5839.
+accuracy:  98.92%; (non-O)
+accuracy:  99.71%; precision:  97.64%; recall:  98.27%; FB1:  97.95
+              LOC: precision:  94.52%; recall:  99.46%; FB1:  96.92  1933
+             MISC: precision:  97.92%; recall:  96.96%; FB1:  97.44  913
+              ORG: precision:  99.23%; recall:  96.12%; FB1:  97.65  1299
+              PER: precision:  99.67%; recall:  99.29%; FB1:  99.48  1835
+num_proposed:8666
+num_correct:8510
+num_gold:8603
+precision=0.9820
+recall=0.9892
+f1=0.9856
+weights were saved to finetuning1/5.pt
+=========test at epoch=5=========
+processed 50350 tokens with 5648 phrases; found: 5824 phrases; correct: 5094.
+accuracy:  92.41%; (non-O)
+accuracy:  97.90%; precision:  87.47%; recall:  90.19%; FB1:  88.81
+              LOC: precision:  80.29%; recall:  94.00%; FB1:  86.61  1953
+             MISC: precision:  78.57%; recall:  79.91%; FB1:  79.24  714
+              ORG: precision:  91.65%; recall:  85.85%; FB1:  88.65  1556
+              PER: precision:  96.13%; recall:  95.18%; FB1:  95.65  1601
+num_proposed:8457
+num_correct:7496
+num_gold:8112
+precision=0.8864
+recall=0.9241
+f1=0.9048
+=========eval at epoch=6=========
+processed 55044 tokens with 5942 phrases; found: 5956 phrases; correct: 5872.
+accuracy:  99.41%; (non-O)
+accuracy:  99.83%; precision:  98.59%; recall:  98.82%; FB1:  98.71
+              LOC: precision:  98.81%; recall:  99.18%; FB1:  98.99  1844
+             MISC: precision:  96.16%; recall:  97.72%; FB1:  96.93  937
+              ORG: precision:  98.42%; recall:  97.69%; FB1:  98.05  1331
+              PER: precision:  99.73%; recall:  99.84%; FB1:  99.78  1844
+num_proposed:8636
+num_correct:8552
+num_gold:8603
+precision=0.9903
+recall=0.9941
+f1=0.9922
+weights were saved to finetuning1/6.pt
+=========test at epoch=6=========
+processed 50350 tokens with 5648 phrases; found: 5732 phrases; correct: 5177.
+accuracy:  93.71%; (non-O)
+accuracy:  98.37%; precision:  90.32%; recall:  91.66%; FB1:  90.98
+              LOC: precision:  91.83%; recall:  93.05%; FB1:  92.44  1690
+             MISC: precision:  75.84%; recall:  83.19%; FB1:  79.35  770
+              ORG: precision:  90.38%; recall:  89.40%; FB1:  89.89  1643
+              PER: precision:  95.52%; recall:  96.23%; FB1:  95.87  1629
+num_proposed:8313
+num_correct:7602
+num_gold:8112
+precision=0.9145
+recall=0.9371
+f1=0.9257
+=========eval at epoch=7=========
+processed 55044 tokens with 5942 phrases; found: 5950 phrases; correct: 5906.
+accuracy:  99.64%; (non-O)
+accuracy:  99.92%; precision:  99.26%; recall:  99.39%; FB1:  99.33
+              LOC: precision:  99.46%; recall:  99.95%; FB1:  99.70  1846
+             MISC: precision:  97.51%; recall:  97.61%; FB1:  97.56  923
+              ORG: precision:  99.25%; recall:  99.33%; FB1:  99.29  1342
+              PER: precision:  99.95%; recall:  99.78%; FB1:  99.86  1839
+num_proposed:8603
+num_correct:8572
+num_gold:8603
+precision=0.9964
+recall=0.9964
+f1=0.9964
+weights were saved to finetuning1/7.pt
+=========test at epoch=7=========
+processed 50350 tokens with 5648 phrases; found: 5793 phrases; correct: 5177.
+accuracy:  93.26%; (non-O)
+accuracy:  98.27%; precision:  89.37%; recall:  91.66%; FB1:  90.50
+              LOC: precision:  91.79%; recall:  93.88%; FB1:  92.83  1706
+             MISC: precision:  79.42%; recall:  81.34%; FB1:  80.37  719
+              ORG: precision:  85.46%; recall:  89.89%; FB1:  87.62  1747
+              PER: precision:  95.43%; recall:  95.67%; FB1:  95.55  1621
+num_proposed:8323
+num_correct:7565
+num_gold:8112
+precision=0.9089
+recall=0.9326
+f1=0.9206
+=========eval at epoch=8=========
+processed 55044 tokens with 5942 phrases; found: 5919 phrases; correct: 5839.
+accuracy:  98.99%; (non-O)
+accuracy:  99.76%; precision:  98.65%; recall:  98.27%; FB1:  98.46
+              LOC: precision:  97.57%; recall:  98.42%; FB1:  97.99  1853
+             MISC: precision:  98.55%; recall:  95.55%; FB1:  97.03  894
+              ORG: precision:  98.65%; recall:  98.28%; FB1:  98.47  1336
+              PER: precision:  99.78%; recall:  99.46%; FB1:  99.62  1836
+num_proposed:8644
+num_correct:8516
+num_gold:8603
+precision=0.9852
+recall=0.9899
+f1=0.9875
+weights were saved to finetuning1/8.pt
+=========test at epoch=8=========
+processed 50350 tokens with 5648 phrases; found: 5744 phrases; correct: 5084.
+accuracy:  92.65%; (non-O)
+accuracy:  98.08%; precision:  88.51%; recall:  90.01%; FB1:  89.26
+              LOC: precision:  88.95%; recall:  91.73%; FB1:  90.32  1720
+             MISC: precision:  79.34%; recall:  79.34%; FB1:  79.34  702
+              ORG: precision:  84.67%; recall:  89.46%; FB1:  87.00  1755
+              PER: precision:  96.43%; recall:  93.44%; FB1:  94.91  1567
+num_proposed:8375
+num_correct:7516
+num_gold:8112
+precision=0.8974
+recall=0.9265
+f1=0.9117
+=========eval at epoch=9=========
+processed 55044 tokens with 5942 phrases; found: 5946 phrases; correct: 5903.
+accuracy:  99.70%; (non-O)
+accuracy:  99.93%; precision:  99.28%; recall:  99.34%; FB1:  99.31
+              LOC: precision:  99.51%; recall:  99.67%; FB1:  99.59  1840
+             MISC: precision:  97.62%; recall:  97.83%; FB1:  97.72  924
+              ORG: precision:  99.40%; recall:  99.25%; FB1:  99.33  1339
+              PER: precision:  99.78%; recall:  99.84%; FB1:  99.81  1843
+num_proposed:8603
+num_correct:8577
+num_gold:8603
+precision=0.9970
+recall=0.9970
+f1=0.9970
+weights were saved to finetuning1/9.pt
+=========test at epoch=9=========
+processed 50350 tokens with 5648 phrases; found: 5735 phrases; correct: 5141.
+accuracy:  92.97%; (non-O)
+accuracy:  98.27%; precision:  89.64%; recall:  91.02%; FB1:  90.33
+              LOC: precision:  91.79%; recall:  93.23%; FB1:  92.50  1694
+             MISC: precision:  78.88%; recall:  81.91%; FB1:  80.36  729
+              ORG: precision:  86.44%; recall:  89.83%; FB1:  88.10  1726
+              PER: precision:  95.78%; recall:  93.94%; FB1:  94.85  1586
+num_proposed:8290
+num_correct:7542
+num_gold:8112
+precision=0.9098
+recall=0.9297
+f1=0.9196
+=========eval at epoch=10=========
+processed 55044 tokens with 5942 phrases; found: 5938 phrases; correct: 5908.
+accuracy:  99.66%; (non-O)
+accuracy:  99.93%; precision:  99.49%; recall:  99.43%; FB1:  99.46
+              LOC: precision:  99.40%; recall:  99.89%; FB1:  99.65  1846
+             MISC: precision:  99.45%; recall:  98.81%; FB1:  99.13  916
+              ORG: precision:  98.96%; recall:  99.25%; FB1:  99.11  1345
+              PER: precision: 100.00%; recall:  99.40%; FB1:  99.70  1831
+num_proposed:8609
+num_correct:8574
+num_gold:8603
+precision=0.9959
+recall=0.9966
+f1=0.9963
+weights were saved to finetuning1/10.pt
+=========test at epoch=10=========
+processed 50350 tokens with 5648 phrases; found: 5718 phrases; correct: 5087.
+accuracy:  92.20%; (non-O)
+accuracy:  98.18%; precision:  88.96%; recall:  90.07%; FB1:  89.51
+              LOC: precision:  91.26%; recall:  93.23%; FB1:  92.23  1704
+             MISC: precision:  79.72%; recall:  81.20%; FB1:  80.45  715
+              ORG: precision:  83.96%; recall:  90.13%; FB1:  86.93  1783
+              PER: precision:  96.64%; recall:  90.60%; FB1:  93.52  1516
+num_proposed:8273
+num_correct:7479
+num_gold:8112
+precision=0.9040
+recall=0.9220
+f1=0.9129
+2020-10-15 00:20:43.499885: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.2/lib64:
+2020-10-15 00:20:43.499906: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+Learning rate:  2e-05
+/home/t/anaconda3/envs/ai/lib/python3.8/site-packages/transformers/configuration_xlnet.py:204: FutureWarning: This config doesn't use attention memories, a core feature of XLNet. Consider setting `men_len` to a non-zero value, for example `xlnet = XLNetLMHeadModel.from_pretrained('xlnet-base-cased'', mem_len=1024)`, for accurate training performance as well as an order of magnitude faster inference. Starting from version 3.5.0, the default parameter will be 1024, following the implementation in https://arxiv.org/abs/1906.08237
+  warnings.warn(
+=========eval at epoch=1=========
+processed 55044 tokens with 5942 phrases; found: 5982 phrases; correct: 5645.
+accuracy:  96.51%; (non-O)
+accuracy:  99.27%; precision:  94.37%; recall:  95.00%; FB1:  94.68
+              LOC: precision:  98.28%; recall:  93.47%; FB1:  95.81  1747
+             MISC: precision:  90.67%; recall:  90.67%; FB1:  90.67  922
+              ORG: precision:  86.46%; recall:  95.75%; FB1:  90.87  1485
+              PER: precision:  98.91%; recall:  98.15%; FB1:  98.53  1828
+num_proposed:8660
+num_correct:8303
+num_gold:8603
+precision=0.9588
+recall=0.9651
+f1=0.9619
+weights were saved to finetuning1/1.pt
+=========test at epoch=1=========
+processed 50350 tokens with 5648 phrases; found: 5802 phrases; correct: 5070.
+accuracy:  91.61%; (non-O)
+accuracy:  97.82%; precision:  87.38%; recall:  89.77%; FB1:  88.56
+              LOC: precision:  94.68%; recall:  87.53%; FB1:  90.97  1542
+             MISC: precision:  73.44%; recall:  77.21%; FB1:  75.28  738
+              ORG: precision:  78.92%; recall:  92.66%; FB1:  85.24  1950
+              PER: precision:  97.26%; recall:  94.56%; FB1:  95.89  1572
+num_proposed:8430
+num_correct:7431
+num_gold:8112
+precision=0.8815
+recall=0.9161
+f1=0.8984
+=========eval at epoch=2=========
+processed 55044 tokens with 5942 phrases; found: 5974 phrases; correct: 5782.
+accuracy:  98.47%; (non-O)
+accuracy:  99.57%; precision:  96.79%; recall:  97.31%; FB1:  97.05
+              LOC: precision:  98.80%; recall:  98.48%; FB1:  98.64  1831
+             MISC: precision:  89.04%; recall:  92.52%; FB1:  90.74  958
+              ORG: precision:  96.78%; recall:  96.35%; FB1:  96.56  1335
+              PER: precision:  98.81%; recall:  99.24%; FB1:  99.02  1850
+num_proposed:8672
+num_correct:8471
+num_gold:8603
+precision=0.9768
+recall=0.9847
+f1=0.9807
+weights were saved to finetuning1/2.pt
+=========test at epoch=2=========
+processed 50350 tokens with 5648 phrases; found: 5845 phrases; correct: 5150.
+accuracy:  93.36%; (non-O)
+accuracy:  98.07%; precision:  88.11%; recall:  91.18%; FB1:  89.62
+              LOC: precision:  93.78%; recall:  91.25%; FB1:  92.49  1623
+             MISC: precision:  66.74%; recall:  81.20%; FB1:  73.26  854
+              ORG: precision:  87.20%; recall:  89.83%; FB1:  88.49  1711
+              PER: precision:  94.51%; recall:  96.85%; FB1:  95.66  1657
+num_proposed:8470
+num_correct:7573
+num_gold:8112
+precision=0.8941
+recall=0.9336
+f1=0.9134
+=========eval at epoch=3=========
+processed 55044 tokens with 5942 phrases; found: 5945 phrases; correct: 5844.
+accuracy:  98.93%; (non-O)
+accuracy:  99.77%; precision:  98.30%; recall:  98.35%; FB1:  98.33
+              LOC: precision:  98.97%; recall:  99.78%; FB1:  99.38  1852
+             MISC: precision:  95.45%; recall:  95.66%; FB1:  95.56  924
+              ORG: precision:  98.26%; recall:  96.87%; FB1:  97.56  1322
+              PER: precision:  99.08%; recall:  99.35%; FB1:  99.21  1847
+num_proposed:8594
+num_correct:8511
+num_gold:8603
+precision=0.9903
+recall=0.9893
+f1=0.9898
+weights were saved to finetuning1/3.pt
+=========test at epoch=3=========
+processed 50350 tokens with 5648 phrases; found: 5775 phrases; correct: 5159.
+accuracy:  92.89%; (non-O)
+accuracy:  98.17%; precision:  89.33%; recall:  91.34%; FB1:  90.33
+              LOC: precision:  91.00%; recall:  94.00%; FB1:  92.48  1723
+             MISC: precision:  77.61%; recall:  80.48%; FB1:  79.02  728
+              ORG: precision:  87.79%; recall:  87.84%; FB1:  87.81  1662
+              PER: precision:  94.28%; recall:  96.91%; FB1:  95.58  1662
+num_proposed:8303
+num_correct:7535
+num_gold:8112
+precision=0.9075
+recall=0.9289
+f1=0.9181
+=========eval at epoch=4=========
+processed 55044 tokens with 5942 phrases; found: 5943 phrases; correct: 5874.
+accuracy:  99.34%; (non-O)
+accuracy:  99.85%; precision:  98.84%; recall:  98.86%; FB1:  98.85
+              LOC: precision:  98.81%; recall:  99.73%; FB1:  99.27  1854
+             MISC: precision:  96.96%; recall:  96.96%; FB1:  96.96  922
+              ORG: precision:  99.47%; recall:  97.61%; FB1:  98.53  1316
+              PER: precision:  99.35%; recall:  99.84%; FB1:  99.59  1851
+num_proposed:8609
+num_correct:8546
+num_gold:8603
+precision=0.9927
+recall=0.9934
+f1=0.9930
+weights were saved to finetuning1/4.pt
+=========test at epoch=4=========
+processed 50350 tokens with 5648 phrases; found: 5679 phrases; correct: 5207.
+accuracy:  93.81%; (non-O)
+accuracy:  98.51%; precision:  91.69%; recall:  92.19%; FB1:  91.94
+              LOC: precision:  91.85%; recall:  93.94%; FB1:  92.89  1706
+             MISC: precision:  81.64%; recall:  82.34%; FB1:  81.99  708
+              ORG: precision:  91.73%; recall:  90.19%; FB1:  90.95  1633
+              PER: precision:  95.83%; recall:  96.72%; FB1:  96.28  1632
+num_proposed:8228
+num_correct:7610
+num_gold:8112
+precision=0.9249
+recall=0.9381
+f1=0.9315
+=========eval at epoch=5=========
+processed 55044 tokens with 5942 phrases; found: 5951 phrases; correct: 5891.
+accuracy:  99.57%; (non-O)
+accuracy:  99.88%; precision:  98.99%; recall:  99.14%; FB1:  99.07
+              LOC: precision:  99.51%; recall:  99.62%; FB1:  99.56  1839
+             MISC: precision:  96.77%; recall:  97.51%; FB1:  97.14  929
+              ORG: precision:  99.10%; recall:  98.66%; FB1:  98.88  1335
+              PER: precision:  99.51%; recall:  99.84%; FB1:  99.67  1848
+num_proposed:8622
+num_correct:8566
+num_gold:8603
+precision=0.9935
+recall=0.9957
+f1=0.9946
+weights were saved to finetuning1/5.pt
+=========test at epoch=5=========
+processed 50350 tokens with 5648 phrases; found: 5781 phrases; correct: 5220.
+accuracy:  94.01%; (non-O)
+accuracy:  98.41%; precision:  90.30%; recall:  92.42%; FB1:  91.35
+              LOC: precision:  92.37%; recall:  94.30%; FB1:  93.33  1703
+             MISC: precision:  78.64%; recall:  80.77%; FB1:  79.69  721
+              ORG: precision:  89.32%; recall:  90.61%; FB1:  89.96  1685
+              PER: precision:  94.20%; recall:  97.40%; FB1:  95.77  1672
+num_proposed:8337
+num_correct:7626
+num_gold:8112
+precision=0.9147
+recall=0.9401
+f1=0.9272
+=========eval at epoch=6=========
+processed 55044 tokens with 5942 phrases; found: 5939 phrases; correct: 5913.
+accuracy:  99.74%; (non-O)
+accuracy:  99.94%; precision:  99.56%; recall:  99.51%; FB1:  99.54
+              LOC: precision:  99.62%; recall:  99.67%; FB1:  99.65  1838
+             MISC: precision:  99.24%; recall:  98.70%; FB1:  98.97  917
+              ORG: precision:  99.26%; recall:  99.40%; FB1:  99.33  1343
+              PER: precision:  99.89%; recall:  99.84%; FB1:  99.86  1841
+num_proposed:8605
+num_correct:8581
+num_gold:8603
+precision=0.9972
+recall=0.9974
+f1=0.9973
+weights were saved to finetuning1/6.pt
+=========test at epoch=6=========
+processed 50350 tokens with 5648 phrases; found: 5684 phrases; correct: 5207.
+accuracy:  93.82%; (non-O)
+accuracy:  98.55%; precision:  91.61%; recall:  92.19%; FB1:  91.90
+              LOC: precision:  93.56%; recall:  93.17%; FB1:  93.36  1661
+             MISC: precision:  83.41%; recall:  79.49%; FB1:  81.40  669
+              ORG: precision:  87.59%; recall:  92.66%; FB1:  90.05  1757
+              PER: precision:  97.43%; recall:  96.23%; FB1:  96.83  1597
+num_proposed:8214
+num_correct:7611
+num_gold:8112
+precision=0.9266
+recall=0.9382
+f1=0.9324
+=========eval at epoch=7=========
+processed 55044 tokens with 5942 phrases; found: 5940 phrases; correct: 5897.
+accuracy:  99.62%; (non-O)
+accuracy:  99.90%; precision:  99.28%; recall:  99.24%; FB1:  99.26
+              LOC: precision:  99.19%; recall: 100.00%; FB1:  99.59  1852
+             MISC: precision:  98.16%; recall:  98.16%; FB1:  98.16  922
+              ORG: precision:  99.32%; recall:  98.28%; FB1:  98.80  1327
+              PER: precision:  99.89%; recall:  99.73%; FB1:  99.81  1839
+num_proposed:8616
+num_correct:8570
+num_gold:8603
+precision=0.9947
+recall=0.9962
+f1=0.9954
+weights were saved to finetuning1/7.pt
+=========test at epoch=7=========
+processed 50350 tokens with 5648 phrases; found: 5709 phrases; correct: 5169.
+accuracy:  93.26%; (non-O)
+accuracy:  98.35%; precision:  90.54%; recall:  91.52%; FB1:  91.03
+              LOC: precision:  90.50%; recall:  94.84%; FB1:  92.62  1748
+             MISC: precision:  78.12%; recall:  82.91%; FB1:  80.44  745
+              ORG: precision:  90.12%; recall:  87.30%; FB1:  88.69  1609
+              PER: precision:  96.76%; recall:  96.17%; FB1:  96.46  1607
+num_proposed:8258
+num_correct:7565
+num_gold:8112
+precision=0.9161
+recall=0.9326
+f1=0.9243
+=========eval at epoch=8=========
+processed 55044 tokens with 5942 phrases; found: 5951 phrases; correct: 5916.
+accuracy:  99.57%; (non-O)
+accuracy:  99.91%; precision:  99.41%; recall:  99.56%; FB1:  99.49
+              LOC: precision:  99.51%; recall:  99.89%; FB1:  99.70  1844
+             MISC: precision:  99.23%; recall:  98.37%; FB1:  98.80  914
+              ORG: precision:  98.74%; recall:  99.63%; FB1:  99.18  1353
+              PER: precision:  99.89%; recall:  99.78%; FB1:  99.84  1840
+num_proposed:8610
+num_correct:8566
+num_gold:8603
+precision=0.9949
+recall=0.9957
+f1=0.9953
+weights were saved to finetuning1/8.pt
+=========test at epoch=8=========
+processed 50350 tokens with 5648 phrases; found: 5738 phrases; correct: 5162.
+accuracy:  93.49%; (non-O)
+accuracy:  98.30%; precision:  89.96%; recall:  91.40%; FB1:  90.67
+              LOC: precision:  93.31%; recall:  92.75%; FB1:  93.02  1658
+             MISC: precision:  82.73%; recall:  77.78%; FB1:  80.18  660
+              ORG: precision:  83.13%; recall:  91.99%; FB1:  87.34  1838
+              PER: precision:  97.41%; recall:  95.30%; FB1:  96.34  1582
+num_proposed:8326
+num_correct:7584
+num_gold:8112
+precision=0.9109
+recall=0.9349
+f1=0.9227
+=========eval at epoch=9=========
+processed 55044 tokens with 5942 phrases; found: 5941 phrases; correct: 5917.
+accuracy:  99.74%; (non-O)
+accuracy:  99.93%; precision:  99.60%; recall:  99.58%; FB1:  99.59
+              LOC: precision:  99.78%; recall:  99.95%; FB1:  99.86  1840
+             MISC: precision:  98.92%; recall:  99.24%; FB1:  99.08  925
+              ORG: precision:  99.78%; recall:  99.33%; FB1:  99.55  1335
+              PER: precision:  99.62%; recall:  99.57%; FB1:  99.59  1841
+num_proposed:8616
+num_correct:8581
+num_gold:8603
+precision=0.9959
+recall=0.9974
+f1=0.9967
+weights were saved to finetuning1/9.pt
+=========test at epoch=9=========
+processed 50350 tokens with 5648 phrases; found: 5777 phrases; correct: 5213.
+accuracy:  94.01%; (non-O)
+accuracy:  98.34%; precision:  90.24%; recall:  92.30%; FB1:  91.26
+              LOC: precision:  93.38%; recall:  93.88%; FB1:  93.63  1677
+             MISC: precision:  75.97%; recall:  83.33%; FB1:  79.48  770
+              ORG: precision:  89.40%; recall:  90.37%; FB1:  89.88  1679
+              PER: precision:  94.55%; recall:  96.54%; FB1:  95.53  1651
+num_proposed:8372
+num_correct:7626
+num_gold:8112
+precision=0.9109
+recall=0.9401
+f1=0.9253
+=========eval at epoch=10=========
+processed 55044 tokens with 5942 phrases; found: 5948 phrases; correct: 5927.
+accuracy:  99.87%; (non-O)
+accuracy:  99.95%; precision:  99.65%; recall:  99.75%; FB1:  99.70
+              LOC: precision:  99.84%; recall:  99.95%; FB1:  99.89  1839
+             MISC: precision:  99.24%; recall:  99.46%; FB1:  99.35  924
+              ORG: precision:  99.40%; recall:  99.48%; FB1:  99.44  1342
+              PER: precision:  99.84%; recall:  99.89%; FB1:  99.86  1843
+num_proposed:8614
+num_correct:8592
+num_gold:8603
+precision=0.9974
+recall=0.9987
+f1=0.9981
+weights were saved to finetuning1/10.pt
+=========test at epoch=10=========
+processed 50350 tokens with 5648 phrases; found: 5765 phrases; correct: 5233.
+accuracy:  94.28%; (non-O)
+accuracy:  98.39%; precision:  90.77%; recall:  92.65%; FB1:  91.70
+              LOC: precision:  93.37%; recall:  93.76%; FB1:  93.57  1675
+             MISC: precision:  80.39%; recall:  82.34%; FB1:  81.35  719
+              ORG: precision:  87.44%; recall:  91.81%; FB1:  89.57  1744
+              PER: precision:  96.25%; recall:  96.85%; FB1:  96.55  1627
+num_proposed:8356
+num_correct:7648
+num_gold:8112
+precision=0.9153
+recall=0.9428
+f1=0.9288
+2020-10-15 00:53:50.655904: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.2/lib64:
+2020-10-15 00:53:50.655925: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+Learning rate:  1e-05
+/home/t/anaconda3/envs/ai/lib/python3.8/site-packages/transformers/configuration_xlnet.py:204: FutureWarning: This config doesn't use attention memories, a core feature of XLNet. Consider setting `men_len` to a non-zero value, for example `xlnet = XLNetLMHeadModel.from_pretrained('xlnet-base-cased'', mem_len=1024)`, for accurate training performance as well as an order of magnitude faster inference. Starting from version 3.5.0, the default parameter will be 1024, following the implementation in https://arxiv.org/abs/1906.08237
+  warnings.warn(
+=========eval at epoch=1=========
+processed 55044 tokens with 5942 phrases; found: 6004 phrases; correct: 5613.
+accuracy:  95.78%; (non-O)
+accuracy:  99.14%; precision:  93.49%; recall:  94.46%; FB1:  93.97
+              LOC: precision:  96.04%; recall:  96.30%; FB1:  96.17  1842
+             MISC: precision:  82.15%; recall:  87.85%; FB1:  84.91  986
+              ORG: precision:  92.55%; recall:  91.65%; FB1:  92.09  1328
+              PER: precision:  97.67%; recall:  97.99%; FB1:  97.83  1848
+num_proposed:8608
+num_correct:8240
+num_gold:8603
+precision=0.9572
+recall=0.9578
+f1=0.9575
+weights were saved to finetuning1/1.pt
+=========test at epoch=1=========
+processed 50350 tokens with 5648 phrases; found: 5753 phrases; correct: 5098.
+accuracy:  92.37%; (non-O)
+accuracy:  98.14%; precision:  88.61%; recall:  90.26%; FB1:  89.43
+              LOC: precision:  92.53%; recall:  91.37%; FB1:  91.95  1647
+             MISC: precision:  66.31%; recall:  78.77%; FB1:  72.01  834
+              ORG: precision:  87.73%; recall:  88.26%; FB1:  88.00  1671
+              PER: precision:  97.13%; recall:  96.17%; FB1:  96.64  1601
+num_proposed:8278
+num_correct:7493
+num_gold:8112
+precision=0.9052
+recall=0.9237
+f1=0.9143
+=========eval at epoch=2=========
+processed 55044 tokens with 5942 phrases; found: 5975 phrases; correct: 5765.
+accuracy:  98.09%; (non-O)
+accuracy:  99.57%; precision:  96.49%; recall:  97.02%; FB1:  96.75
+              LOC: precision:  98.15%; recall:  98.20%; FB1:  98.18  1838
+             MISC: precision:  90.72%; recall:  92.30%; FB1:  91.51  938
+              ORG: precision:  94.84%; recall:  95.90%; FB1:  95.37  1356
+              PER: precision:  98.97%; recall:  99.02%; FB1:  99.00  1843
+num_proposed:8630
+num_correct:8439
+num_gold:8603
+precision=0.9779
+recall=0.9809
+f1=0.9794
+weights were saved to finetuning1/2.pt
+=========test at epoch=2=========
+processed 50350 tokens with 5648 phrases; found: 5755 phrases; correct: 5191.
+accuracy:  93.64%; (non-O)
+accuracy:  98.42%; precision:  90.20%; recall:  91.91%; FB1:  91.05
+              LOC: precision:  93.56%; recall:  92.27%; FB1:  92.91  1645
+             MISC: precision:  75.23%; recall:  81.34%; FB1:  78.17  759
+              ORG: precision:  86.99%; recall:  91.39%; FB1:  89.14  1745
+              PER: precision:  97.32%; recall:  96.66%; FB1:  96.99  1606
+num_proposed:8269
+num_correct:7596
+num_gold:8112
+precision=0.9186
+recall=0.9364
+f1=0.9274
+=========eval at epoch=3=========
+processed 55044 tokens with 5942 phrases; found: 5977 phrases; correct: 5835.
+accuracy:  98.98%; (non-O)
+accuracy:  99.72%; precision:  97.62%; recall:  98.20%; FB1:  97.91
+              LOC: precision:  98.59%; recall:  99.18%; FB1:  98.89  1848
+             MISC: precision:  92.07%; recall:  95.66%; FB1:  93.83  958
+              ORG: precision:  97.82%; recall:  97.02%; FB1:  97.42  1330
+              PER: precision:  99.40%; recall:  99.35%; FB1:  99.38  1841
+num_proposed:8651
+num_correct:8515
+num_gold:8603
+precision=0.9843
+recall=0.9898
+f1=0.9870
+weights were saved to finetuning1/3.pt
+=========test at epoch=3=========
+processed 50350 tokens with 5648 phrases; found: 5771 phrases; correct: 5190.
+accuracy:  93.64%; (non-O)
+accuracy:  98.35%; precision:  89.93%; recall:  91.89%; FB1:  90.90
+              LOC: precision:  93.29%; recall:  93.29%; FB1:  93.29  1668
+             MISC: precision:  69.69%; recall:  83.19%; FB1:  75.84  838
+              ORG: precision:  89.42%; recall:  89.52%; FB1:  89.47  1663
+              PER: precision:  97.57%; recall:  96.66%; FB1:  97.11  1602
+num_proposed:8338
+num_correct:7596
+num_gold:8112
+precision=0.9110
+recall=0.9364
+f1=0.9235
+=========eval at epoch=4=========
+processed 55044 tokens with 5942 phrases; found: 5962 phrases; correct: 5849.
+accuracy:  99.05%; (non-O)
+accuracy:  99.77%; precision:  98.10%; recall:  98.43%; FB1:  98.27
+              LOC: precision:  99.02%; recall:  99.51%; FB1:  99.27  1846
+             MISC: precision:  94.73%; recall:  95.55%; FB1:  95.14  930
+              ORG: precision:  97.54%; recall:  97.54%; FB1:  97.54  1341
+              PER: precision:  99.30%; recall:  99.46%; FB1:  99.38  1845
+num_proposed:8619
+num_correct:8521
+num_gold:8603
+precision=0.9886
+recall=0.9905
+f1=0.9895
+weights were saved to finetuning1/4.pt
+=========test at epoch=4=========
+processed 50350 tokens with 5648 phrases; found: 5741 phrases; correct: 5204.
+accuracy:  93.89%; (non-O)
+accuracy:  98.43%; precision:  90.65%; recall:  92.14%; FB1:  91.39
+              LOC: precision:  92.73%; recall:  94.12%; FB1:  93.42  1693
+             MISC: precision:  72.91%; recall:  82.05%; FB1:  77.21  790
+              ORG: precision:  91.17%; recall:  90.13%; FB1:  90.64  1642
+              PER: precision:  96.60%; recall:  96.54%; FB1:  96.57  1616
+num_proposed:8275
+num_correct:7616
+num_gold:8112
+precision=0.9204
+recall=0.9389
+f1=0.9295
+=========eval at epoch=5=========
+processed 55044 tokens with 5942 phrases; found: 5942 phrases; correct: 5888.
+accuracy:  99.43%; (non-O)
+accuracy:  99.87%; precision:  99.09%; recall:  99.09%; FB1:  99.09
+              LOC: precision:  99.62%; recall:  99.62%; FB1:  99.62  1837
+             MISC: precision:  97.60%; recall:  97.18%; FB1:  97.39  918
+              ORG: precision:  98.59%; recall:  98.81%; FB1:  98.70  1344
+              PER: precision:  99.67%; recall:  99.73%; FB1:  99.70  1843
+num_proposed:8599
+num_correct:8554
+num_gold:8603
+precision=0.9948
+recall=0.9943
+f1=0.9945
+weights were saved to finetuning1/5.pt
+=========test at epoch=5=========
+processed 50350 tokens with 5648 phrases; found: 5745 phrases; correct: 5200.
+accuracy:  93.89%; (non-O)
+accuracy:  98.46%; precision:  90.51%; recall:  92.07%; FB1:  91.28
+              LOC: precision:  93.79%; recall:  93.29%; FB1:  93.54  1659
+             MISC: precision:  75.80%; recall:  81.20%; FB1:  78.40  752
+              ORG: precision:  88.13%; recall:  91.21%; FB1:  89.64  1719
+              PER: precision:  96.53%; recall:  96.41%; FB1:  96.47  1615
+num_proposed:8266
+num_correct:7616
+num_gold:8112
+precision=0.9214
+recall=0.9389
+f1=0.9300
+=========eval at epoch=6=========
+processed 55044 tokens with 5942 phrases; found: 5963 phrases; correct: 5891.
+accuracy:  99.57%; (non-O)
+accuracy:  99.86%; precision:  98.79%; recall:  99.14%; FB1:  98.97
+              LOC: precision:  99.46%; recall:  99.78%; FB1:  99.62  1843
+             MISC: precision:  97.50%; recall:  97.40%; FB1:  97.45  921
+              ORG: precision:  97.43%; recall:  99.03%; FB1:  98.22  1363
+              PER: precision:  99.78%; recall:  99.46%; FB1:  99.62  1836
+num_proposed:8634
+num_correct:8566
+num_gold:8603
+precision=0.9921
+recall=0.9957
+f1=0.9939
+weights were saved to finetuning1/6.pt
+=========test at epoch=6=========
+processed 50350 tokens with 5648 phrases; found: 5801 phrases; correct: 5204.
+accuracy:  94.05%; (non-O)
+accuracy:  98.33%; precision:  89.71%; recall:  92.14%; FB1:  90.91
+              LOC: precision:  92.70%; recall:  93.59%; FB1:  93.14  1684
+             MISC: precision:  79.47%; recall:  80.48%; FB1:  79.97  711
+              ORG: precision:  83.76%; recall:  92.84%; FB1:  88.06  1841
+              PER: precision:  98.15%; recall:  94.99%; FB1:  96.54  1565
+num_proposed:8378
+num_correct:7629
+num_gold:8112
+precision=0.9106
+recall=0.9405
+f1=0.9253
+=========eval at epoch=7=========
+processed 55044 tokens with 5942 phrases; found: 5945 phrases; correct: 5907.
+accuracy:  99.65%; (non-O)
+accuracy:  99.92%; precision:  99.36%; recall:  99.41%; FB1:  99.39
+              LOC: precision:  99.73%; recall:  99.73%; FB1:  99.73  1837
+             MISC: precision:  98.05%; recall:  98.16%; FB1:  98.10  923
+              ORG: precision:  98.96%; recall:  99.18%; FB1:  99.07  1344
+              PER: precision:  99.95%; recall:  99.89%; FB1:  99.92  1841
+num_proposed:8604
+num_correct:8573
+num_gold:8603
+precision=0.9964
+recall=0.9965
+f1=0.9965
+weights were saved to finetuning1/7.pt
+=========test at epoch=7=========
+processed 50350 tokens with 5648 phrases; found: 5754 phrases; correct: 5240.
+accuracy:  94.40%; (non-O)
+accuracy:  98.48%; precision:  91.07%; recall:  92.78%; FB1:  91.91
+              LOC: precision:  94.30%; recall:  93.23%; FB1:  93.76  1649
+             MISC: precision:  77.70%; recall:  82.91%; FB1:  80.22  749
+              ORG: precision:  89.06%; recall:  92.66%; FB1:  90.82  1728
+              PER: precision:  96.07%; recall:  96.72%; FB1:  96.39  1628
+num_proposed:8327
+num_correct:7658
+num_gold:8112
+precision=0.9197
+recall=0.9440
+f1=0.9317
+=========eval at epoch=8=========
+processed 55044 tokens with 5942 phrases; found: 5939 phrases; correct: 5911.
+accuracy:  99.69%; (non-O)
+accuracy:  99.94%; precision:  99.53%; recall:  99.48%; FB1:  99.50
+              LOC: precision:  99.51%; recall:  99.84%; FB1:  99.67  1843
+             MISC: precision:  98.91%; recall:  98.48%; FB1:  98.70  918
+              ORG: precision:  99.48%; recall:  99.11%; FB1:  99.29  1336
+              PER: precision:  99.89%; recall:  99.89%; FB1:  99.89  1842
+num_proposed:8603
+num_correct:8576
+num_gold:8603
+precision=0.9969
+recall=0.9969
+f1=0.9969
+weights were saved to finetuning1/8.pt
+=========test at epoch=8=========
+processed 50350 tokens with 5648 phrases; found: 5754 phrases; correct: 5216.
+accuracy:  94.01%; (non-O)
+accuracy:  98.47%; precision:  90.65%; recall:  92.35%; FB1:  91.49
+              LOC: precision:  92.79%; recall:  94.12%; FB1:  93.45  1692
+             MISC: precision:  75.42%; recall:  83.05%; FB1:  79.05  773
+              ORG: precision:  91.56%; recall:  90.19%; FB1:  90.87  1636
+              PER: precision:  94.68%; recall:  96.78%; FB1:  95.72  1653
+num_proposed:8283
+num_correct:7626
+num_gold:8112
+precision=0.9207
+recall=0.9401
+f1=0.9303
+=========eval at epoch=9=========
+processed 55044 tokens with 5942 phrases; found: 5940 phrases; correct: 5926.
+accuracy:  99.87%; (non-O)
+accuracy:  99.97%; precision:  99.76%; recall:  99.73%; FB1:  99.75
+              LOC: precision:  99.89%; recall:  99.89%; FB1:  99.89  1837
+             MISC: precision:  99.35%; recall:  99.02%; FB1:  99.19  919
+              ORG: precision:  99.63%; recall:  99.70%; FB1:  99.66  1342
+              PER: precision:  99.95%; recall:  99.95%; FB1:  99.95  1842
+num_proposed:8606
+num_correct:8592
+num_gold:8603
+precision=0.9984
+recall=0.9987
+f1=0.9985
+weights were saved to finetuning1/9.pt
+=========test at epoch=9=========
+processed 50350 tokens with 5648 phrases; found: 5712 phrases; correct: 5225.
+accuracy:  94.26%; (non-O)
+accuracy:  98.54%; precision:  91.47%; recall:  92.51%; FB1:  91.99
+              LOC: precision:  94.08%; recall:  93.35%; FB1:  93.71  1655
+             MISC: precision:  80.03%; recall:  82.19%; FB1:  81.10  721
+              ORG: precision:  88.54%; recall:  92.53%; FB1:  90.49  1736
+              PER: precision:  97.12%; recall:  96.10%; FB1:  96.61  1600
+num_proposed:8268
+num_correct:7646
+num_gold:8112
+precision=0.9248
+recall=0.9426
+f1=0.9336
+=========eval at epoch=10=========
+processed 55044 tokens with 5942 phrases; found: 5943 phrases; correct: 5927.
+accuracy:  99.88%; (non-O)
+accuracy:  99.97%; precision:  99.73%; recall:  99.75%; FB1:  99.74
+              LOC: precision:  99.73%; recall: 100.00%; FB1:  99.86  1842
+             MISC: precision:  99.46%; recall:  99.13%; FB1:  99.29  919
+              ORG: precision:  99.63%; recall:  99.55%; FB1:  99.59  1340
+              PER: precision:  99.95%; recall:  99.95%; FB1:  99.95  1842
+num_proposed:8608
+num_correct:8593
+num_gold:8603
+precision=0.9983
+recall=0.9988
+f1=0.9985
+weights were saved to finetuning1/10.pt
+=========test at epoch=10=========
+processed 50350 tokens with 5648 phrases; found: 5752 phrases; correct: 5243.
+accuracy:  94.33%; (non-O)
+accuracy:  98.47%; precision:  91.15%; recall:  92.83%; FB1:  91.98
+              LOC: precision:  93.99%; recall:  93.76%; FB1:  93.88  1664
+             MISC: precision:  80.62%; recall:  81.20%; FB1:  80.91  707
+              ORG: precision:  89.03%; recall:  92.35%; FB1:  90.66  1723
+              PER: precision:  94.99%; recall:  97.40%; FB1:  96.18  1658
+num_proposed:8325
+num_correct:7652
+num_gold:8112
+precision=0.9192
+recall=0.9433
+f1=0.9311
+2020-10-15 01:27:02.420128: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.2/lib64:
+2020-10-15 01:27:02.420149: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+Learning rate:  5e-06
+/home/t/anaconda3/envs/ai/lib/python3.8/site-packages/transformers/configuration_xlnet.py:204: FutureWarning: This config doesn't use attention memories, a core feature of XLNet. Consider setting `men_len` to a non-zero value, for example `xlnet = XLNetLMHeadModel.from_pretrained('xlnet-base-cased'', mem_len=1024)`, for accurate training performance as well as an order of magnitude faster inference. Starting from version 3.5.0, the default parameter will be 1024, following the implementation in https://arxiv.org/abs/1906.08237
+  warnings.warn(
+=========eval at epoch=1=========
+processed 55044 tokens with 5942 phrases; found: 5990 phrases; correct: 5456.
+accuracy:  93.30%; (non-O)
+accuracy:  98.71%; precision:  91.09%; recall:  91.82%; FB1:  91.45
+              LOC: precision:  93.19%; recall:  95.32%; FB1:  94.24  1879
+             MISC: precision:  80.19%; recall:  75.05%; FB1:  77.54  863
+              ORG: precision:  86.10%; recall:  91.42%; FB1:  88.68  1424
+              PER: precision:  97.97%; recall:  97.01%; FB1:  97.49  1824
+num_proposed:8518
+num_correct:8027
+num_gold:8603
+precision=0.9424
+recall=0.9330
+f1=0.9377
+weights were saved to finetuning1/1.pt
+=========test at epoch=1=========
+processed 50350 tokens with 5648 phrases; found: 5743 phrases; correct: 5025.
+accuracy:  91.36%; (non-O)
+accuracy:  97.92%; precision:  87.50%; recall:  88.97%; FB1:  88.23
+              LOC: precision:  89.88%; recall:  91.01%; FB1:  90.44  1689
+             MISC: precision:  72.78%; recall:  68.95%; FB1:  70.81  665
+              ORG: precision:  82.51%; recall:  88.62%; FB1:  85.46  1784
+              PER: precision:  96.64%; recall:  95.92%; FB1:  96.28  1605
+num_proposed:8279
+num_correct:7411
+num_gold:8112
+precision=0.8952
+recall=0.9136
+f1=0.9043
+=========eval at epoch=2=========
+processed 55044 tokens with 5942 phrases; found: 5986 phrases; correct: 5705.
+accuracy:  96.95%; (non-O)
+accuracy:  99.37%; precision:  95.31%; recall:  96.01%; FB1:  95.66
+              LOC: precision:  97.14%; recall:  97.88%; FB1:  97.51  1851
+             MISC: precision:  85.96%; recall:  90.35%; FB1:  88.10  969
+              ORG: precision:  95.05%; recall:  93.14%; FB1:  94.09  1314
+              PER: precision:  98.54%; recall:  99.08%; FB1:  98.81  1852
+num_proposed:8619
+num_correct:8341
+num_gold:8603
+precision=0.9677
+recall=0.9695
+f1=0.9686
+weights were saved to finetuning1/2.pt
+=========test at epoch=2=========
+processed 50350 tokens with 5648 phrases; found: 5735 phrases; correct: 5133.
+accuracy:  92.81%; (non-O)
+accuracy:  98.23%; precision:  89.50%; recall:  90.88%; FB1:  90.19
+              LOC: precision:  92.30%; recall:  92.69%; FB1:  92.49  1675
+             MISC: precision:  72.08%; recall:  78.35%; FB1:  75.09  763
+              ORG: precision:  87.92%; recall:  88.92%; FB1:  88.42  1680
+              PER: precision:  96.47%; recall:  96.47%; FB1:  96.47  1617
+num_proposed:8277
+num_correct:7529
+num_gold:8112
+precision=0.9096
+recall=0.9281
+f1=0.9188
+=========eval at epoch=3=========
+processed 55044 tokens with 5942 phrases; found: 5995 phrases; correct: 5770.
+accuracy:  98.06%; (non-O)
+accuracy:  99.56%; precision:  96.25%; recall:  97.11%; FB1:  96.67
+              LOC: precision:  97.73%; recall:  98.58%; FB1:  98.16  1853
+             MISC: precision:  89.49%; recall:  93.28%; FB1:  91.34  961
+              ORG: precision:  95.63%; recall:  94.63%; FB1:  95.13  1327
+              PER: precision:  98.71%; recall:  99.35%; FB1:  99.03  1854
+num_proposed:8642
+num_correct:8436
+num_gold:8603
+precision=0.9762
+recall=0.9806
+f1=0.9784
+weights were saved to finetuning1/3.pt
+=========test at epoch=3=========
+processed 50350 tokens with 5648 phrases; found: 5762 phrases; correct: 5182.
+accuracy:  93.50%; (non-O)
+accuracy:  98.33%; precision:  89.93%; recall:  91.75%; FB1:  90.83
+              LOC: precision:  92.96%; recall:  92.57%; FB1:  92.76  1661
+             MISC: precision:  73.32%; recall:  82.62%; FB1:  77.70  791
+              ORG: precision:  88.58%; recall:  89.64%; FB1:  89.11  1681
+              PER: precision:  96.32%; recall:  97.03%; FB1:  96.67  1629
+num_proposed:8318
+num_correct:7585
+num_gold:8112
+precision=0.9119
+recall=0.9350
+f1=0.9233
+=========eval at epoch=4=========
+processed 55044 tokens with 5942 phrases; found: 5976 phrases; correct: 5828.
+accuracy:  98.85%; (non-O)
+accuracy:  99.71%; precision:  97.52%; recall:  98.08%; FB1:  97.80
+              LOC: precision:  98.97%; recall:  99.07%; FB1:  99.02  1839
+             MISC: precision:  93.17%; recall:  94.69%; FB1:  93.92  937
+              ORG: precision:  96.23%; recall:  97.17%; FB1:  96.70  1354
+              PER: precision:  99.24%; recall:  99.46%; FB1:  99.35  1846
+num_proposed:8637
+num_correct:8504
+num_gold:8603
+precision=0.9846
+recall=0.9885
+f1=0.9865
+weights were saved to finetuning1/4.pt
+=========test at epoch=4=========
+processed 50350 tokens with 5648 phrases; found: 5783 phrases; correct: 5214.
+accuracy:  93.96%; (non-O)
+accuracy:  98.34%; precision:  90.16%; recall:  92.32%; FB1:  91.23
+              LOC: precision:  94.28%; recall:  92.93%; FB1:  93.60  1644
+             MISC: precision:  75.96%; recall:  81.48%; FB1:  78.63  753
+              ORG: precision:  86.38%; recall:  92.41%; FB1:  89.30  1777
+              PER: precision:  96.77%; recall:  96.29%; FB1:  96.53  1609
+num_proposed:8364
+num_correct:7622
+num_gold:8112
+precision=0.9113
+recall=0.9396
+f1=0.9252
+=========eval at epoch=5=========
+processed 55044 tokens with 5942 phrases; found: 5969 phrases; correct: 5861.
+accuracy:  99.12%; (non-O)
+accuracy:  99.77%; precision:  98.19%; recall:  98.64%; FB1:  98.41
+              LOC: precision:  98.87%; recall:  99.78%; FB1:  99.32  1854
+             MISC: precision:  94.94%; recall:  95.66%; FB1:  95.30  929
+              ORG: precision:  97.99%; recall:  97.99%; FB1:  97.99  1341
+              PER: precision:  99.30%; recall:  99.46%; FB1:  99.38  1845
+num_proposed:8633
+num_correct:8527
+num_gold:8603
+precision=0.9877
+recall=0.9912
+f1=0.9894
+weights were saved to finetuning1/5.pt
+=========test at epoch=5=========
+processed 50350 tokens with 5648 phrases; found: 5769 phrases; correct: 5210.
+accuracy:  93.84%; (non-O)
+accuracy:  98.37%; precision:  90.31%; recall:  92.25%; FB1:  91.27
+              LOC: precision:  91.89%; recall:  93.71%; FB1:  92.79  1701
+             MISC: precision:  76.57%; recall:  81.48%; FB1:  78.95  747
+              ORG: precision:  87.97%; recall:  91.15%; FB1:  89.53  1721
+              PER: precision:  97.56%; recall:  96.54%; FB1:  97.05  1600
+num_proposed:8335
+num_correct:7612
+num_gold:8112
+precision=0.9133
+recall=0.9384
+f1=0.9256
+=========eval at epoch=6=========
+processed 55044 tokens with 5942 phrases; found: 5953 phrases; correct: 5871.
+accuracy:  99.30%; (non-O)
+accuracy:  99.82%; precision:  98.62%; recall:  98.81%; FB1:  98.71
+              LOC: precision:  98.60%; recall:  99.73%; FB1:  99.16  1858
+             MISC: precision:  96.85%; recall:  96.64%; FB1:  96.74  920
+              ORG: precision:  98.50%; recall:  97.91%; FB1:  98.20  1333
+              PER: precision:  99.62%; recall:  99.62%; FB1:  99.62  1842
+num_proposed:8630
+num_correct:8543
+num_gold:8603
+precision=0.9899
+recall=0.9930
+f1=0.9915
+weights were saved to finetuning1/6.pt
+=========test at epoch=6=========
+processed 50350 tokens with 5648 phrases; found: 5753 phrases; correct: 5206.
+accuracy:  93.84%; (non-O)
+accuracy:  98.42%; precision:  90.49%; recall:  92.17%; FB1:  91.33
+              LOC: precision:  90.92%; recall:  94.24%; FB1:  92.55  1729
+             MISC: precision:  78.92%; recall:  81.05%; FB1:  79.97  721
+              ORG: precision:  88.84%; recall:  90.61%; FB1:  89.72  1694
+              PER: precision:  96.95%; recall:  96.47%; FB1:  96.71  1609
+num_proposed:8296
+num_correct:7612
+num_gold:8112
+precision=0.9176
+recall=0.9384
+f1=0.9278
+=========eval at epoch=7=========
+processed 55044 tokens with 5942 phrases; found: 5964 phrases; correct: 5889.
+accuracy:  99.52%; (non-O)
+accuracy:  99.85%; precision:  98.74%; recall:  99.11%; FB1:  98.92
+              LOC: precision:  99.29%; recall:  99.46%; FB1:  99.37  1840
+             MISC: precision:  96.76%; recall:  97.29%; FB1:  97.03  927
+              ORG: precision:  98.30%; recall:  98.96%; FB1:  98.63  1350
+              PER: precision:  99.51%; recall:  99.78%; FB1:  99.65  1847
+num_proposed:8640
+num_correct:8562
+num_gold:8603
+precision=0.9910
+recall=0.9952
+f1=0.9931
+weights were saved to finetuning1/7.pt
+=========test at epoch=7=========
+processed 50350 tokens with 5648 phrases; found: 5792 phrases; correct: 5221.
+accuracy:  94.18%; (non-O)
+accuracy:  98.37%; precision:  90.14%; recall:  92.44%; FB1:  91.28
+              LOC: precision:  93.04%; recall:  93.71%; FB1:  93.37  1680
+             MISC: precision:  75.33%; recall:  81.77%; FB1:  78.42  762
+              ORG: precision:  87.56%; recall:  91.93%; FB1:  89.69  1744
+              PER: precision:  96.95%; recall:  96.29%; FB1:  96.62  1606
+num_proposed:8373
+num_correct:7640
+num_gold:8112
+precision=0.9125
+recall=0.9418
+f1=0.9269
+=========eval at epoch=8=========
+processed 55044 tokens with 5942 phrases; found: 5956 phrases; correct: 5899.
+accuracy:  99.62%; (non-O)
+accuracy:  99.88%; precision:  99.04%; recall:  99.28%; FB1:  99.16
+              LOC: precision:  98.98%; recall: 100.00%; FB1:  99.49  1856
+             MISC: precision:  97.83%; recall:  97.94%; FB1:  97.89  923
+              ORG: precision:  99.03%; recall:  98.58%; FB1:  98.80  1335
+              PER: precision:  99.73%; recall:  99.73%; FB1:  99.73  1842
+num_proposed:8632
+num_correct:8570
+num_gold:8603
+precision=0.9928
+recall=0.9962
+f1=0.9945
+weights were saved to finetuning1/8.pt
+=========test at epoch=8=========
+processed 50350 tokens with 5648 phrases; found: 5796 phrases; correct: 5215.
+accuracy:  93.95%; (non-O)
+accuracy:  98.34%; precision:  89.98%; recall:  92.33%; FB1:  91.14
+              LOC: precision:  91.36%; recall:  94.48%; FB1:  92.90  1725
+             MISC: precision:  73.57%; recall:  82.48%; FB1:  77.77  787
+              ORG: precision:  89.96%; recall:  90.07%; FB1:  90.01  1663
+              PER: precision:  96.48%; recall:  96.72%; FB1:  96.60  1621
+num_proposed:8370
+num_correct:7621
+num_gold:8112
+precision=0.9105
+recall=0.9395
+f1=0.9248
+=========eval at epoch=9=========
+processed 55044 tokens with 5942 phrases; found: 5951 phrases; correct: 5910.
+accuracy:  99.73%; (non-O)
+accuracy:  99.91%; precision:  99.31%; recall:  99.46%; FB1:  99.39
+              LOC: precision:  99.51%; recall:  99.73%; FB1:  99.62  1841
+             MISC: precision:  98.81%; recall:  98.81%; FB1:  98.81  922
+              ORG: precision:  99.10%; recall:  98.96%; FB1:  99.03  1339
+              PER: precision:  99.51%; recall:  99.89%; FB1:  99.70  1849
+num_proposed:8623
+num_correct:8580
+num_gold:8603
+precision=0.9950
+recall=0.9973
+f1=0.9962
+weights were saved to finetuning1/9.pt
+=========test at epoch=9=========
+processed 50350 tokens with 5648 phrases; found: 5778 phrases; correct: 5222.
+accuracy:  94.21%; (non-O)
+accuracy:  98.40%; precision:  90.38%; recall:  92.46%; FB1:  91.41
+              LOC: precision:  93.64%; recall:  93.53%; FB1:  93.58  1666
+             MISC: precision:  75.85%; recall:  82.76%; FB1:  79.16  766
+              ORG: precision:  88.97%; recall:  90.79%; FB1:  89.87  1695
+              PER: precision:  95.28%; recall:  97.28%; FB1:  96.27  1651
+num_proposed:8351
+num_correct:7642
+num_gold:8112
+precision=0.9151
+recall=0.9421
+f1=0.9284
+=========eval at epoch=10=========
+processed 55044 tokens with 5942 phrases; found: 5950 phrases; correct: 5914.
+accuracy:  99.74%; (non-O)
+accuracy:  99.92%; precision:  99.39%; recall:  99.53%; FB1:  99.46
+              LOC: precision:  99.62%; recall:  99.67%; FB1:  99.65  1838
+             MISC: precision:  99.24%; recall:  98.70%; FB1:  98.97  917
+              ORG: precision:  98.67%; recall:  99.48%; FB1:  99.07  1352
+              PER: precision:  99.78%; recall:  99.84%; FB1:  99.81  1843
+num_proposed:8622
+num_correct:8581
+num_gold:8603
+precision=0.9952
+recall=0.9974
+f1=0.9963
+weights were saved to finetuning1/10.pt
+=========test at epoch=10=========
+processed 50350 tokens with 5648 phrases; found: 5770 phrases; correct: 5214.
+accuracy:  94.24%; (non-O)
+accuracy:  98.39%; precision:  90.36%; recall:  92.32%; FB1:  91.33
+              LOC: precision:  94.29%; recall:  93.05%; FB1:  93.66  1646
+             MISC: precision:  78.71%; recall:  80.06%; FB1:  79.38  714
+              ORG: precision:  85.22%; recall:  92.72%; FB1:  88.81  1807
+              PER: precision:  97.32%; recall:  96.47%; FB1:  96.89  1603
+num_proposed:8372
+num_correct:7645
+num_gold:8112
+precision=0.9132
+recall=0.9424
+f1=0.9276
+2020-10-15 02:00:14.703645: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.2/lib64:
+2020-10-15 02:00:14.703667: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+Learning rate:  4e-06
+/home/t/anaconda3/envs/ai/lib/python3.8/site-packages/transformers/configuration_xlnet.py:204: FutureWarning: This config doesn't use attention memories, a core feature of XLNet. Consider setting `men_len` to a non-zero value, for example `xlnet = XLNetLMHeadModel.from_pretrained('xlnet-base-cased'', mem_len=1024)`, for accurate training performance as well as an order of magnitude faster inference. Starting from version 3.5.0, the default parameter will be 1024, following the implementation in https://arxiv.org/abs/1906.08237
+  warnings.warn(
+=========eval at epoch=1=========
+processed 55044 tokens with 5942 phrases; found: 6032 phrases; correct: 5424.
+accuracy:  92.94%; (non-O)
+accuracy:  98.60%; precision:  89.92%; recall:  91.28%; FB1:  90.60
+              LOC: precision:  91.35%; recall:  96.03%; FB1:  93.63  1931
+             MISC: precision:  74.51%; recall:  78.31%; FB1:  76.36  969
+              ORG: precision:  90.07%; recall:  85.23%; FB1:  87.59  1269
+              PER: precision:  96.35%; recall:  97.45%; FB1:  96.90  1863
+num_proposed:8549
+num_correct:7996
+num_gold:8603
+precision=0.9353
+recall=0.9294
+f1=0.9324
+weights were saved to finetuning1/1.pt
+=========test at epoch=1=========
+processed 50350 tokens with 5648 phrases; found: 5833 phrases; correct: 4939.
+accuracy:  90.30%; (non-O)
+accuracy:  97.63%; precision:  84.67%; recall:  87.45%; FB1:  86.04
+              LOC: precision:  85.34%; recall:  92.15%; FB1:  88.61  1801
+             MISC: precision:  61.35%; recall:  73.93%; FB1:  67.05  846
+              ORG: precision:  85.35%; recall:  79.95%; FB1:  82.56  1556
+              PER: precision:  95.40%; recall:  96.17%; FB1:  95.78  1630
+num_proposed:8363
+num_correct:7325
+num_gold:8112
+precision=0.8759
+recall=0.9030
+f1=0.8892
+=========eval at epoch=2=========
+processed 55044 tokens with 5942 phrases; found: 5979 phrases; correct: 5682.
+accuracy:  96.91%; (non-O)
+accuracy:  99.34%; precision:  95.03%; recall:  95.62%; FB1:  95.33
+              LOC: precision:  96.66%; recall:  97.82%; FB1:  97.24  1859
+             MISC: precision:  88.10%; recall:  88.29%; FB1:  88.19  924
+              ORG: precision:  94.49%; recall:  93.29%; FB1:  93.88  1324
+              PER: precision:  97.22%; recall:  98.81%; FB1:  98.01  1872
+num_proposed:8624
+num_correct:8337
+num_gold:8603
+precision=0.9667
+recall=0.9691
+f1=0.9679
+weights were saved to finetuning1/2.pt
+=========test at epoch=2=========
+processed 50350 tokens with 5648 phrases; found: 5763 phrases; correct: 5148.
+accuracy:  93.04%; (non-O)
+accuracy:  98.19%; precision:  89.33%; recall:  91.15%; FB1:  90.23
+              LOC: precision:  92.96%; recall:  92.69%; FB1:  92.82  1663
+             MISC: precision:  71.58%; recall:  77.49%; FB1:  74.42  760
+              ORG: precision:  88.21%; recall:  89.64%; FB1:  88.92  1688
+              PER: precision:  94.98%; recall:  97.03%; FB1:  95.99  1652
+num_proposed:8328
+num_correct:7547
+num_gold:8112
+precision=0.9062
+recall=0.9304
+f1=0.9181
+=========eval at epoch=3=========
+processed 55044 tokens with 5942 phrases; found: 5974 phrases; correct: 5753.
+accuracy:  97.77%; (non-O)
+accuracy:  99.53%; precision:  96.30%; recall:  96.82%; FB1:  96.56
+              LOC: precision:  98.20%; recall:  97.77%; FB1:  97.98  1829
+             MISC: precision:  91.91%; recall:  92.41%; FB1:  92.16  927
+              ORG: precision:  93.67%; recall:  96.05%; FB1:  94.85  1375
+              PER: precision:  98.59%; recall:  98.64%; FB1:  98.62  1843
+num_proposed:8618
+num_correct:8411
+num_gold:8603
+precision=0.9760
+recall=0.9777
+f1=0.9768
+weights were saved to finetuning1/3.pt
+=========test at epoch=3=========
+processed 50350 tokens with 5648 phrases; found: 5775 phrases; correct: 5176.
+accuracy:  93.11%; (non-O)
+accuracy:  98.22%; precision:  89.63%; recall:  91.64%; FB1:  90.62
+              LOC: precision:  93.96%; recall:  92.39%; FB1:  93.17  1640
+             MISC: precision:  74.43%; recall:  79.63%; FB1:  76.94  751
+              ORG: precision:  86.33%; recall:  90.85%; FB1:  88.53  1748
+              PER: precision:  95.78%; recall:  96.91%; FB1:  96.34  1636
+num_proposed:8338
+num_correct:7553
+num_gold:8112
+precision=0.9059
+recall=0.9311
+f1=0.9183
+=========eval at epoch=4=========
+processed 55044 tokens with 5942 phrases; found: 5988 phrases; correct: 5812.
+accuracy:  98.58%; (non-O)
+accuracy:  99.63%; precision:  97.06%; recall:  97.81%; FB1:  97.44
+              LOC: precision:  97.85%; recall:  99.18%; FB1:  98.51  1862
+             MISC: precision:  92.66%; recall:  94.47%; FB1:  93.56  940
+              ORG: precision:  95.80%; recall:  96.87%; FB1:  96.33  1356
+              PER: precision:  99.45%; recall:  98.81%; FB1:  99.13  1830
+num_proposed:8657
+num_correct:8481
+num_gold:8603
+precision=0.9797
+recall=0.9858
+f1=0.9827
+weights were saved to finetuning1/4.pt
+=========test at epoch=4=========
+processed 50350 tokens with 5648 phrases; found: 5802 phrases; correct: 5188.
+accuracy:  93.63%; (non-O)
+accuracy:  98.24%; precision:  89.42%; recall:  91.86%; FB1:  90.62
+              LOC: precision:  92.24%; recall:  93.41%; FB1:  92.82  1689
+             MISC: precision:  73.24%; recall:  81.48%; FB1:  77.14  781
+              ORG: precision:  86.61%; recall:  91.15%; FB1:  88.82  1748
+              PER: precision:  97.47%; recall:  95.49%; FB1:  96.47  1584
+num_proposed:8385
+num_correct:7595
+num_gold:8112
+precision=0.9058
+recall=0.9363
+f1=0.9208
+=========eval at epoch=5=========
+processed 55044 tokens with 5942 phrases; found: 5966 phrases; correct: 5836.
+accuracy:  98.80%; (non-O)
+accuracy:  99.74%; precision:  97.82%; recall:  98.22%; FB1:  98.02
+              LOC: precision:  98.38%; recall:  99.24%; FB1:  98.81  1853
+             MISC: precision:  94.28%; recall:  94.69%; FB1:  94.48  926
+              ORG: precision:  97.18%; recall:  97.61%; FB1:  97.40  1347
+              PER: precision:  99.51%; recall:  99.40%; FB1:  99.46  1840
+num_proposed:8607
+num_correct:8500
+num_gold:8603
+precision=0.9876
+recall=0.9880
+f1=0.9878
+weights were saved to finetuning1/5.pt
+=========test at epoch=5=========
+processed 50350 tokens with 5648 phrases; found: 5755 phrases; correct: 5212.
+accuracy:  93.73%; (non-O)
+accuracy:  98.37%; precision:  90.56%; recall:  92.28%; FB1:  91.41
+              LOC: precision:  92.66%; recall:  93.82%; FB1:  93.24  1689
+             MISC: precision:  77.29%; recall:  80.48%; FB1:  78.86  731
+              ORG: precision:  88.55%; recall:  91.27%; FB1:  89.89  1712
+              PER: precision:  96.49%; recall:  96.85%; FB1:  96.67  1623
+num_proposed:8312
+num_correct:7603
+num_gold:8112
+precision=0.9147
+recall=0.9373
+f1=0.9258
+=========eval at epoch=6=========
+processed 55044 tokens with 5942 phrases; found: 5970 phrases; correct: 5863.
+accuracy:  99.22%; (non-O)
+accuracy:  99.78%; precision:  98.21%; recall:  98.67%; FB1:  98.44
+              LOC: precision:  98.81%; recall:  99.07%; FB1:  98.94  1842
+             MISC: precision:  96.10%; recall:  96.31%; FB1:  96.21  924
+              ORG: precision:  97.07%; recall:  98.66%; FB1:  97.86  1363
+              PER: precision:  99.51%; recall:  99.46%; FB1:  99.48  1841
+num_proposed:8646
+num_correct:8536
+num_gold:8603
+precision=0.9873
+recall=0.9922
+f1=0.9897
+weights were saved to finetuning1/6.pt
+=========test at epoch=6=========
+processed 50350 tokens with 5648 phrases; found: 5798 phrases; correct: 5219.
+accuracy:  94.12%; (non-O)
+accuracy:  98.30%; precision:  90.01%; recall:  92.40%; FB1:  91.19
+              LOC: precision:  93.39%; recall:  93.23%; FB1:  93.31  1665
+             MISC: precision:  77.26%; recall:  80.34%; FB1:  78.77  730
+              ORG: precision:  86.02%; recall:  93.02%; FB1:  89.38  1796
+              PER: precision:  96.76%; recall:  96.17%; FB1:  96.46  1607
+num_proposed:8400
+num_correct:7635
+num_gold:8112
+precision=0.9089
+recall=0.9412
+f1=0.9248
+=========eval at epoch=7=========
+processed 55044 tokens with 5942 phrases; found: 5950 phrases; correct: 5881.
+accuracy:  99.41%; (non-O)
+accuracy:  99.85%; precision:  98.84%; recall:  98.97%; FB1:  98.91
+              LOC: precision:  98.81%; recall:  99.84%; FB1:  99.32  1856
+             MISC: precision:  96.64%; recall:  96.75%; FB1:  96.69  923
+              ORG: precision:  99.10%; recall:  98.28%; FB1:  98.69  1330
+              PER: precision:  99.78%; recall:  99.73%; FB1:  99.76  1841
+num_proposed:8616
+num_correct:8552
+num_gold:8603
+precision=0.9926
+recall=0.9941
+f1=0.9933
+weights were saved to finetuning1/7.pt
+=========test at epoch=7=========
+processed 50350 tokens with 5648 phrases; found: 5716 phrases; correct: 5195.
+accuracy:  93.58%; (non-O)
+accuracy:  98.46%; precision:  90.89%; recall:  91.98%; FB1:  91.43
+              LOC: precision:  91.28%; recall:  94.18%; FB1:  92.71  1721
+             MISC: precision:  77.41%; recall:  81.05%; FB1:  79.19  735
+              ORG: precision:  89.85%; recall:  90.61%; FB1:  90.23  1675
+              PER: precision:  97.79%; recall:  95.86%; FB1:  96.81  1585
+num_proposed:8247
+num_correct:7591
+num_gold:8112
+precision=0.9205
+recall=0.9358
+f1=0.9281
+=========eval at epoch=8=========
+processed 55044 tokens with 5942 phrases; found: 5963 phrases; correct: 5887.
+accuracy:  99.50%; (non-O)
+accuracy:  99.86%; precision:  98.73%; recall:  99.07%; FB1:  98.90
+              LOC: precision:  99.14%; recall:  99.89%; FB1:  99.51  1851
+             MISC: precision:  97.40%; recall:  97.40%; FB1:  97.40  922
+              ORG: precision:  98.00%; recall:  98.43%; FB1:  98.21  1347
+              PER: precision:  99.51%; recall:  99.57%; FB1:  99.54  1843
+num_proposed:8633
+num_correct:8560
+num_gold:8603
+precision=0.9915
+recall=0.9950
+f1=0.9933
+weights were saved to finetuning1/8.pt
+=========test at epoch=8=========
+processed 50350 tokens with 5648 phrases; found: 5747 phrases; correct: 5205.
+accuracy:  93.86%; (non-O)
+accuracy:  98.38%; precision:  90.57%; recall:  92.16%; FB1:  91.36
+              LOC: precision:  91.84%; recall:  93.76%; FB1:  92.79  1703
+             MISC: precision:  76.36%; recall:  80.06%; FB1:  78.16  736
+              ORG: precision:  88.80%; recall:  91.63%; FB1:  90.19  1714
+              PER: precision:  97.68%; recall:  96.29%; FB1:  96.98  1594
+num_proposed:8329
+num_correct:7614
+num_gold:8112
+precision=0.9142
+recall=0.9386
+f1=0.9262
+=========eval at epoch=9=========
+processed 55044 tokens with 5942 phrases; found: 5948 phrases; correct: 5908.
+accuracy:  99.70%; (non-O)
+accuracy:  99.91%; precision:  99.33%; recall:  99.43%; FB1:  99.38
+              LOC: precision:  99.62%; recall:  99.62%; FB1:  99.62  1837
+             MISC: precision:  98.58%; recall:  98.16%; FB1:  98.37  918
+              ORG: precision:  98.89%; recall:  99.48%; FB1:  99.18  1349
+              PER: precision:  99.73%; recall:  99.84%; FB1:  99.78  1844
+num_proposed:8618
+num_correct:8577
+num_gold:8603
+precision=0.9952
+recall=0.9970
+f1=0.9961
+weights were saved to finetuning1/9.pt
+=========test at epoch=9=========
+processed 50350 tokens with 5648 phrases; found: 5755 phrases; correct: 5229.
+accuracy:  94.13%; (non-O)
+accuracy:  98.44%; precision:  90.86%; recall:  92.58%; FB1:  91.71
+              LOC: precision:  93.24%; recall:  93.41%; FB1:  93.32  1671
+             MISC: precision:  78.16%; recall:  81.05%; FB1:  79.58  728
+              ORG: precision:  89.35%; recall:  92.41%; FB1:  90.86  1718
+              PER: precision:  95.67%; recall:  96.91%; FB1:  96.28  1638
+num_proposed:8317
+num_correct:7636
+num_gold:8112
+precision=0.9181
+recall=0.9413
+f1=0.9296
+=========eval at epoch=10=========
+processed 55044 tokens with 5942 phrases; found: 5951 phrases; correct: 5918.
+accuracy:  99.84%; (non-O)
+accuracy:  99.94%; precision:  99.45%; recall:  99.60%; FB1:  99.52
+              LOC: precision:  99.78%; recall:  99.84%; FB1:  99.81  1838
+             MISC: precision:  98.27%; recall:  98.81%; FB1:  98.54  927
+              ORG: precision:  99.26%; recall:  99.55%; FB1:  99.40  1345
+              PER: precision:  99.84%; recall:  99.78%; FB1:  99.81  1841
+num_proposed:8624
+num_correct:8589
+num_gold:8603
+precision=0.9959
+recall=0.9984
+f1=0.9972
+weights were saved to finetuning1/10.pt
+=========test at epoch=10=========
+processed 50350 tokens with 5648 phrases; found: 5768 phrases; correct: 5228.
+accuracy:  94.19%; (non-O)
+accuracy:  98.45%; precision:  90.64%; recall:  92.56%; FB1:  91.59
+              LOC: precision:  94.07%; recall:  93.29%; FB1:  93.68  1654
+             MISC: precision:  76.22%; recall:  82.62%; FB1:  79.29  761
+              ORG: precision:  87.83%; recall:  92.53%; FB1:  90.12  1750
+              PER: precision:  97.01%; recall:  96.17%; FB1:  96.58  1603
+num_proposed:8320
+num_correct:7641
+num_gold:8112
+precision=0.9184
+recall=0.9419
+f1=0.9300
+2020-10-15 02:33:24.936844: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.2/lib64:
+2020-10-15 02:33:24.936866: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+Learning rate:  3e-06
+/home/t/anaconda3/envs/ai/lib/python3.8/site-packages/transformers/configuration_xlnet.py:204: FutureWarning: This config doesn't use attention memories, a core feature of XLNet. Consider setting `men_len` to a non-zero value, for example `xlnet = XLNetLMHeadModel.from_pretrained('xlnet-base-cased'', mem_len=1024)`, for accurate training performance as well as an order of magnitude faster inference. Starting from version 3.5.0, the default parameter will be 1024, following the implementation in https://arxiv.org/abs/1906.08237
+  warnings.warn(
+=========eval at epoch=1=========
+processed 55044 tokens with 5942 phrases; found: 6129 phrases; correct: 5321.
+accuracy:  91.97%; (non-O)
+accuracy:  98.22%; precision:  86.82%; recall:  89.55%; FB1:  88.16
+              LOC: precision:  90.61%; recall:  92.98%; FB1:  91.78  1885
+             MISC: precision:  77.34%; recall:  68.87%; FB1:  72.86  821
+              ORG: precision:  76.50%; recall:  88.59%; FB1:  82.10  1553
+              PER: precision:  95.72%; recall:  97.18%; FB1:  96.44  1870
+num_proposed:8760
+num_correct:7912
+num_gold:8603
+precision=0.9032
+recall=0.9197
+f1=0.9114
+weights were saved to finetuning1/1.pt
+=========test at epoch=1=========
+processed 50350 tokens with 5648 phrases; found: 5901 phrases; correct: 4901.
+accuracy:  90.42%; (non-O)
+accuracy:  97.29%; precision:  83.05%; recall:  86.77%; FB1:  84.87
+              LOC: precision:  89.06%; recall:  88.31%; FB1:  88.68  1654
+             MISC: precision:  67.88%; recall:  61.11%; FB1:  64.32  632
+              ORG: precision:  73.77%; recall:  86.88%; FB1:  79.79  1956
+              PER: precision:  93.79%; recall:  96.23%; FB1:  94.99  1659
+num_proposed:8586
+num_correct:7335
+num_gold:8112
+precision=0.8543
+recall=0.9042
+f1=0.8785
+=========eval at epoch=2=========
+processed 55044 tokens with 5942 phrases; found: 6021 phrases; correct: 5618.
+accuracy:  95.79%; (non-O)
+accuracy:  99.09%; precision:  93.31%; recall:  94.55%; FB1:  93.92
+              LOC: precision:  93.90%; recall:  98.04%; FB1:  95.93  1918
+             MISC: precision:  84.34%; recall:  84.71%; FB1:  84.52  926
+              ORG: precision:  91.65%; recall:  91.65%; FB1:  91.65  1341
+              PER: precision:  98.42%; recall:  98.10%; FB1:  98.26  1836
+num_proposed:8651
+num_correct:8241
+num_gold:8603
+precision=0.9526
+recall=0.9579
+f1=0.9553
+weights were saved to finetuning1/2.pt
+=========test at epoch=2=========
+processed 50350 tokens with 5648 phrases; found: 5820 phrases; correct: 5094.
+accuracy:  92.31%; (non-O)
+accuracy:  97.94%; precision:  87.53%; recall:  90.19%; FB1:  88.84
+              LOC: precision:  89.37%; recall:  92.75%; FB1:  91.03  1731
+             MISC: precision:  70.16%; recall:  76.35%; FB1:  73.12  764
+              ORG: precision:  84.52%; recall:  87.42%; FB1:  85.94  1718
+              PER: precision:  97.01%; recall:  96.41%; FB1:  96.71  1607
+num_proposed:8407
+num_correct:7488
+num_gold:8112
+precision=0.8907
+recall=0.9231
+f1=0.9066
+=========eval at epoch=3=========
+processed 55044 tokens with 5942 phrases; found: 6008 phrases; correct: 5711.
+accuracy:  97.01%; (non-O)
+accuracy:  99.34%; precision:  95.06%; recall:  96.11%; FB1:  95.58
+              LOC: precision:  97.10%; recall:  98.31%; FB1:  97.70  1860
+             MISC: precision:  85.13%; recall:  91.87%; FB1:  88.37  995
+              ORG: precision:  94.94%; recall:  92.32%; FB1:  93.61  1304
+              PER: precision:  98.43%; recall:  98.81%; FB1:  98.62  1849
+num_proposed:8648
+num_correct:8346
+num_gold:8603
+precision=0.9651
+recall=0.9701
+f1=0.9676
+weights were saved to finetuning1/3.pt
+=========test at epoch=3=========
+processed 50350 tokens with 5648 phrases; found: 5816 phrases; correct: 5153.
+accuracy:  93.10%; (non-O)
+accuracy:  98.11%; precision:  88.60%; recall:  91.24%; FB1:  89.90
+              LOC: precision:  91.12%; recall:  93.47%; FB1:  92.28  1711
+             MISC: precision:  66.08%; recall:  80.77%; FB1:  72.69  858
+              ORG: precision:  90.09%; recall:  87.60%; FB1:  88.83  1615
+              PER: precision:  96.32%; recall:  97.22%; FB1:  96.77  1632
+num_proposed:8387
+num_correct:7552
+num_gold:8112
+precision=0.9004
+recall=0.9310
+f1=0.9154
+=========eval at epoch=4=========
+processed 55044 tokens with 5942 phrases; found: 5997 phrases; correct: 5776.
+accuracy:  98.19%; (non-O)
+accuracy:  99.56%; precision:  96.31%; recall:  97.21%; FB1:  96.76
+              LOC: precision:  98.10%; recall:  98.53%; FB1:  98.32  1845
+             MISC: precision:  89.23%; recall:  92.52%; FB1:  90.84  956
+              ORG: precision:  95.61%; recall:  95.82%; FB1:  95.72  1344
+              PER: precision:  98.70%; recall:  99.24%; FB1:  98.97  1852
+num_proposed:8651
+num_correct:8447
+num_gold:8603
+precision=0.9764
+recall=0.9819
+f1=0.9791
+weights were saved to finetuning1/4.pt
+=========test at epoch=4=========
+processed 50350 tokens with 5648 phrases; found: 5793 phrases; correct: 5185.
+accuracy:  93.80%; (non-O)
+accuracy:  98.25%; precision:  89.50%; recall:  91.80%; FB1:  90.64
+              LOC: precision:  92.88%; recall:  93.11%; FB1:  92.99  1672
+             MISC: precision:  73.04%; recall:  79.49%; FB1:  76.13  764
+              ORG: precision:  88.78%; recall:  90.07%; FB1:  89.42  1685
+              PER: precision:  94.38%; recall:  97.59%; FB1:  95.96  1672
+num_proposed:8382
+num_correct:7609
+num_gold:8112
+precision=0.9078
+recall=0.9380
+f1=0.9226
+=========eval at epoch=5=========
+processed 55044 tokens with 5942 phrases; found: 5995 phrases; correct: 5800.
+accuracy:  98.49%; (non-O)
+accuracy:  99.59%; precision:  96.75%; recall:  97.61%; FB1:  97.18
+              LOC: precision:  97.91%; recall:  99.29%; FB1:  98.59  1863
+             MISC: precision:  90.89%; recall:  94.14%; FB1:  92.49  955
+              ORG: precision:  95.81%; recall:  95.60%; FB1:  95.71  1338
+              PER: precision:  99.29%; recall:  99.13%; FB1:  99.21  1839
+num_proposed:8677
+num_correct:8473
+num_gold:8603
+precision=0.9765
+recall=0.9849
+f1=0.9807
+weights were saved to finetuning1/5.pt
+=========test at epoch=5=========
+processed 50350 tokens with 5648 phrases; found: 5790 phrases; correct: 5168.
+accuracy:  93.84%; (non-O)
+accuracy:  98.19%; precision:  89.26%; recall:  91.50%; FB1:  90.37
+              LOC: precision:  91.38%; recall:  93.47%; FB1:  92.41  1706
+             MISC: precision:  70.27%; recall:  81.48%; FB1:  75.46  814
+              ORG: precision:  87.82%; recall:  89.40%; FB1:  88.60  1691
+              PER: precision:  98.29%; recall:  95.98%; FB1:  97.12  1579
+num_proposed:8434
+num_correct:7612
+num_gold:8112
+precision=0.9025
+recall=0.9384
+f1=0.9201
+=========eval at epoch=6=========
+processed 55044 tokens with 5942 phrases; found: 5956 phrases; correct: 5824.
+accuracy:  98.61%; (non-O)
+accuracy:  99.71%; precision:  97.78%; recall:  98.01%; FB1:  97.90
+              LOC: precision:  98.65%; recall:  99.29%; FB1:  98.97  1849
+             MISC: precision:  94.47%; recall:  94.58%; FB1:  94.53  923
+              ORG: precision:  97.59%; recall:  96.57%; FB1:  97.08  1327
+              PER: precision:  98.71%; recall:  99.51%; FB1:  99.11  1857
+num_proposed:8599
+num_correct:8483
+num_gold:8603
+precision=0.9865
+recall=0.9861
+f1=0.9863
+weights were saved to finetuning1/6.pt
+=========test at epoch=6=========
+processed 50350 tokens with 5648 phrases; found: 5734 phrases; correct: 5201.
+accuracy:  93.70%; (non-O)
+accuracy:  98.41%; precision:  90.70%; recall:  92.09%; FB1:  91.39
+              LOC: precision:  92.74%; recall:  93.41%; FB1:  93.07  1680
+             MISC: precision:  77.67%; recall:  80.77%; FB1:  79.19  730
+              ORG: precision:  88.82%; recall:  90.85%; FB1:  89.82  1699
+              PER: precision:  96.43%; recall:  96.91%; FB1:  96.67  1625
+num_proposed:8274
+num_correct:7601
+num_gold:8112
+precision=0.9187
+recall=0.9370
+f1=0.9277
+=========eval at epoch=7=========
+processed 55044 tokens with 5942 phrases; found: 5964 phrases; correct: 5853.
+accuracy:  99.04%; (non-O)
+accuracy:  99.77%; precision:  98.14%; recall:  98.50%; FB1:  98.32
+              LOC: precision:  99.24%; recall:  99.24%; FB1:  99.24  1837
+             MISC: precision:  95.17%; recall:  96.10%; FB1:  95.63  931
+              ORG: precision:  97.47%; recall:  97.54%; FB1:  97.50  1342
+              PER: precision:  99.03%; recall:  99.67%; FB1:  99.35  1854
+num_proposed:8625
+num_correct:8520
+num_gold:8603
+precision=0.9878
+recall=0.9904
+f1=0.9891
+weights were saved to finetuning1/7.pt
+=========test at epoch=7=========
+processed 50350 tokens with 5648 phrases; found: 5776 phrases; correct: 5220.
+accuracy:  94.02%; (non-O)
+accuracy:  98.36%; precision:  90.37%; recall:  92.42%; FB1:  91.39
+              LOC: precision:  93.45%; recall:  93.29%; FB1:  93.37  1665
+             MISC: precision:  75.67%; recall:  80.63%; FB1:  78.07  748
+              ORG: precision:  88.59%; recall:  92.59%; FB1:  90.55  1736
+              PER: precision:  95.88%; recall:  96.47%; FB1:  96.18  1627
+num_proposed:8346
+num_correct:7627
+num_gold:8112
+precision=0.9139
+recall=0.9402
+f1=0.9268
+=========eval at epoch=8=========
+processed 55044 tokens with 5942 phrases; found: 5948 phrases; correct: 5870.
+accuracy:  99.27%; (non-O)
+accuracy:  99.83%; precision:  98.69%; recall:  98.79%; FB1:  98.74
+              LOC: precision:  99.30%; recall:  99.78%; FB1:  99.54  1846
+             MISC: precision:  96.33%; recall:  96.85%; FB1:  96.59  927
+              ORG: precision:  98.87%; recall:  97.61%; FB1:  98.24  1324
+              PER: precision:  99.14%; recall:  99.62%; FB1:  99.38  1851
+num_proposed:8615
+num_correct:8540
+num_gold:8603
+precision=0.9913
+recall=0.9927
+f1=0.9920
+weights were saved to finetuning1/8.pt
+=========test at epoch=8=========
+processed 50350 tokens with 5648 phrases; found: 5723 phrases; correct: 5206.
+accuracy:  93.91%; (non-O)
+accuracy:  98.43%; precision:  90.97%; recall:  92.17%; FB1:  91.57
+              LOC: precision:  92.77%; recall:  93.82%; FB1:  93.29  1687
+             MISC: precision:  77.00%; recall:  81.05%; FB1:  78.97  739
+              ORG: precision:  89.45%; recall:  90.37%; FB1:  89.91  1678
+              PER: precision:  97.04%; recall:  97.16%; FB1:  97.10  1619
+num_proposed:8295
+num_correct:7618
+num_gold:8112
+precision=0.9184
+recall=0.9391
+f1=0.9286
+=========eval at epoch=9=========
+processed 55044 tokens with 5942 phrases; found: 5966 phrases; correct: 5881.
+accuracy:  99.41%; (non-O)
+accuracy:  99.84%; precision:  98.58%; recall:  98.97%; FB1:  98.77
+              LOC: precision:  99.51%; recall:  99.51%; FB1:  99.51  1837
+             MISC: precision:  96.66%; recall:  97.29%; FB1:  96.97  928
+              ORG: precision:  97.78%; recall:  98.43%; FB1:  98.10  1350
+              PER: precision:  99.19%; recall:  99.67%; FB1:  99.43  1851
+num_proposed:8629
+num_correct:8552
+num_gold:8603
+precision=0.9911
+recall=0.9941
+f1=0.9926
+weights were saved to finetuning1/9.pt
+=========test at epoch=9=========
+processed 50350 tokens with 5648 phrases; found: 5789 phrases; correct: 5229.
+accuracy:  94.17%; (non-O)
+accuracy:  98.35%; precision:  90.33%; recall:  92.58%; FB1:  91.44
+              LOC: precision:  94.19%; recall:  93.23%; FB1:  93.70  1651
+             MISC: precision:  75.59%; recall:  81.62%; FB1:  78.49  758
+              ORG: precision:  87.77%; recall:  91.99%; FB1:  89.83  1741
+              PER: precision:  95.97%; recall:  97.28%; FB1:  96.62  1639
+num_proposed:8386
+num_correct:7639
+num_gold:8112
+precision=0.9109
+recall=0.9417
+f1=0.9261
+=========eval at epoch=10=========
+processed 55044 tokens with 5942 phrases; found: 5959 phrases; correct: 5903.
+accuracy:  99.65%; (non-O)
+accuracy:  99.89%; precision:  99.06%; recall:  99.34%; FB1:  99.20
+              LOC: precision:  99.57%; recall:  99.84%; FB1:  99.70  1842
+             MISC: precision:  96.68%; recall:  97.94%; FB1:  97.31  934
+              ORG: precision:  99.03%; recall:  99.18%; FB1:  99.11  1343
+              PER: precision:  99.78%; recall:  99.67%; FB1:  99.73  1840
+num_proposed:8632
+num_correct:8573
+num_gold:8603
+precision=0.9932
+recall=0.9965
+f1=0.9948
+weights were saved to finetuning1/10.pt
+=========test at epoch=10=========
+processed 50350 tokens with 5648 phrases; found: 5752 phrases; correct: 5199.
+accuracy:  93.87%; (non-O)
+accuracy:  98.35%; precision:  90.39%; recall:  92.05%; FB1:  91.21
+              LOC: precision:  94.34%; recall:  92.87%; FB1:  93.60  1642
+             MISC: precision:  74.16%; recall:  81.77%; FB1:  77.78  774
+              ORG: precision:  87.00%; recall:  91.87%; FB1:  89.37  1754
+              PER: precision:  97.98%; recall:  95.86%; FB1:  96.91  1582
+num_proposed:8340
+num_correct:7615
+num_gold:8112
+precision=0.9131
+recall=0.9387
+f1=0.9257
+2020-10-15 03:06:35.784252: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.2/lib64:
+2020-10-15 03:06:35.784275: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+Learning rate:  2e-06
+/home/t/anaconda3/envs/ai/lib/python3.8/site-packages/transformers/configuration_xlnet.py:204: FutureWarning: This config doesn't use attention memories, a core feature of XLNet. Consider setting `men_len` to a non-zero value, for example `xlnet = XLNetLMHeadModel.from_pretrained('xlnet-base-cased'', mem_len=1024)`, for accurate training performance as well as an order of magnitude faster inference. Starting from version 3.5.0, the default parameter will be 1024, following the implementation in https://arxiv.org/abs/1906.08237
+  warnings.warn(
+=========eval at epoch=1=========
+processed 55044 tokens with 5942 phrases; found: 6018 phrases; correct: 4987.
+accuracy:  86.69%; (non-O)
+accuracy:  97.49%; precision:  82.87%; recall:  83.93%; FB1:  83.39
+              LOC: precision:  80.08%; recall:  91.89%; FB1:  85.58  2108
+             MISC: precision:  67.89%; recall:  54.34%; FB1:  60.36  738
+              ORG: precision:  77.31%; recall:  77.48%; FB1:  77.39  1344
+              PER: precision:  96.23%; recall:  95.49%; FB1:  95.86  1828
+num_proposed:8507
+num_correct:7458
+num_gold:8603
+precision=0.8767
+recall=0.8669
+f1=0.8718
+weights were saved to finetuning1/1.pt
+=========test at epoch=1=========
+processed 50350 tokens with 5648 phrases; found: 5789 phrases; correct: 4603.
+accuracy:  85.72%; (non-O)
+accuracy:  96.91%; precision:  79.51%; recall:  81.50%; FB1:  80.49
+              LOC: precision:  75.39%; recall:  89.99%; FB1:  82.04  1991
+             MISC: precision:  62.97%; recall:  52.56%; FB1:  57.30  586
+              ORG: precision:  74.28%; recall:  73.21%; FB1:  73.74  1637
+              PER: precision:  96.32%; recall:  93.82%; FB1:  95.05  1575
+num_proposed:8268
+num_correct:6954
+num_gold:8112
+precision=0.8411
+recall=0.8572
+f1=0.8491
+=========eval at epoch=2=========
+processed 55044 tokens with 5942 phrases; found: 6031 phrases; correct: 5458.
+accuracy:  93.61%; (non-O)
+accuracy:  98.72%; precision:  90.50%; recall:  91.85%; FB1:  91.17
+              LOC: precision:  92.53%; recall:  95.70%; FB1:  94.09  1900
+             MISC: precision:  75.21%; recall:  78.63%; FB1:  76.88  964
+              ORG: precision:  89.01%; recall:  88.22%; FB1:  88.61  1329
+              PER: precision:  97.50%; recall:  97.29%; FB1:  97.39  1838
+num_proposed:8579
+num_correct:8053
+num_gold:8603
+precision=0.9387
+recall=0.9361
+f1=0.9374
+weights were saved to finetuning1/2.pt
+=========test at epoch=2=========
+processed 50350 tokens with 5648 phrases; found: 5773 phrases; correct: 4986.
+accuracy:  90.77%; (non-O)
+accuracy:  97.87%; precision:  86.37%; recall:  88.28%; FB1:  87.31
+              LOC: precision:  89.80%; recall:  91.31%; FB1:  90.55  1696
+             MISC: precision:  63.98%; recall:  71.37%; FB1:  67.47  783
+              ORG: precision:  84.02%; recall:  85.13%; FB1:  84.57  1683
+              PER: precision:  96.09%; recall:  95.73%; FB1:  95.91  1611
+num_proposed:8251
+num_correct:7363
+num_gold:8112
+precision=0.8924
+recall=0.9077
+f1=0.9000
+=========eval at epoch=3=========
+processed 55044 tokens with 5942 phrases; found: 6032 phrases; correct: 5634.
+accuracy:  95.98%; (non-O)
+accuracy:  99.14%; precision:  93.40%; recall:  94.82%; FB1:  94.10
+              LOC: precision:  95.81%; recall:  97.11%; FB1:  96.46  1862
+             MISC: precision:  81.84%; recall:  86.98%; FB1:  84.33  980
+              ORG: precision:  92.07%; recall:  92.69%; FB1:  92.38  1350
+              PER: precision:  98.10%; recall:  97.99%; FB1:  98.04  1840
+num_proposed:8637
+num_correct:8257
+num_gold:8603
+precision=0.9560
+recall=0.9598
+f1=0.9579
+weights were saved to finetuning1/3.pt
+=========test at epoch=3=========
+processed 50350 tokens with 5648 phrases; found: 5796 phrases; correct: 5084.
+accuracy:  92.21%; (non-O)
+accuracy:  98.03%; precision:  87.72%; recall:  90.01%; FB1:  88.85
+              LOC: precision:  91.15%; recall:  91.97%; FB1:  91.55  1683
+             MISC: precision:  68.49%; recall:  76.78%; FB1:  72.40  787
+              ORG: precision:  84.18%; recall:  88.08%; FB1:  86.08  1738
+              PER: precision:  97.48%; recall:  95.73%; FB1:  96.60  1588
+num_proposed:8356
+num_correct:7480
+num_gold:8112
+precision=0.8952
+recall=0.9221
+f1=0.9084
+=========eval at epoch=4=========
+processed 55044 tokens with 5942 phrases; found: 6010 phrases; correct: 5689.
+accuracy:  96.95%; (non-O)
+accuracy:  99.30%; precision:  94.66%; recall:  95.74%; FB1:  95.20
+              LOC: precision:  96.12%; recall:  98.37%; FB1:  97.23  1880
+             MISC: precision:  86.00%; recall:  87.96%; FB1:  86.97  943
+              ORG: precision:  93.74%; recall:  93.74%; FB1:  93.74  1341
+              PER: precision:  98.27%; recall:  98.48%; FB1:  98.37  1846
+num_proposed:8662
+num_correct:8341
+num_gold:8603
+precision=0.9629
+recall=0.9695
+f1=0.9662
+weights were saved to finetuning1/4.pt
+=========test at epoch=4=========
+processed 50350 tokens with 5648 phrases; found: 5786 phrases; correct: 5138.
+accuracy:  92.99%; (non-O)
+accuracy:  98.16%; precision:  88.80%; recall:  90.97%; FB1:  89.87
+              LOC: precision:  90.71%; recall:  93.05%; FB1:  91.86  1711
+             MISC: precision:  71.94%; recall:  77.07%; FB1:  74.42  752
+              ORG: precision:  87.12%; recall:  89.16%; FB1:  88.13  1700
+              PER: precision:  96.36%; recall:  96.72%; FB1:  96.54  1623
+num_proposed:8356
+num_correct:7543
+num_gold:8112
+precision=0.9027
+recall=0.9299
+f1=0.9161
+=========eval at epoch=5=========
+processed 55044 tokens with 5942 phrases; found: 5977 phrases; correct: 5749.
+accuracy:  97.63%; (non-O)
+accuracy:  99.50%; precision:  96.19%; recall:  96.75%; FB1:  96.47
+              LOC: precision:  97.53%; recall:  98.86%; FB1:  98.19  1862
+             MISC: precision:  90.16%; recall:  90.46%; FB1:  90.31  925
+              ORG: precision:  94.51%; recall:  94.93%; FB1:  94.72  1347
+              PER: precision:  99.08%; recall:  99.13%; FB1:  99.10  1843
+num_proposed:8606
+num_correct:8399
+num_gold:8603
+precision=0.9759
+recall=0.9763
+f1=0.9761
+weights were saved to finetuning1/5.pt
+=========test at epoch=5=========
+processed 50350 tokens with 5648 phrases; found: 5744 phrases; correct: 5172.
+accuracy:  93.16%; (non-O)
+accuracy:  98.34%; precision:  90.04%; recall:  91.57%; FB1:  90.80
+              LOC: precision:  90.90%; recall:  93.47%; FB1:  92.17  1715
+             MISC: precision:  77.32%; recall:  78.21%; FB1:  77.76  710
+              ORG: precision:  88.38%; recall:  89.77%; FB1:  89.07  1687
+              PER: precision:  96.38%; recall:  97.28%; FB1:  96.83  1632
+num_proposed:8260
+num_correct:7557
+num_gold:8112
+precision=0.9149
+recall=0.9316
+f1=0.9232
+=========eval at epoch=6=========
+processed 55044 tokens with 5942 phrases; found: 5983 phrases; correct: 5793.
+accuracy:  98.24%; (non-O)
+accuracy:  99.60%; precision:  96.82%; recall:  97.49%; FB1:  97.16
+              LOC: precision:  98.01%; recall:  99.13%; FB1:  98.57  1858
+             MISC: precision:  90.66%; recall:  93.71%; FB1:  92.16  953
+              ORG: precision:  96.03%; recall:  95.60%; FB1:  95.81  1335
+              PER: precision:  99.40%; recall:  99.13%; FB1:  99.27  1837
+num_proposed:8630
+num_correct:8452
+num_gold:8603
+precision=0.9794
+recall=0.9824
+f1=0.9809
+weights were saved to finetuning1/6.pt
+=========test at epoch=6=========
+processed 50350 tokens with 5648 phrases; found: 5756 phrases; correct: 5180.
+accuracy:  93.36%; (non-O)
+accuracy:  98.36%; precision:  89.99%; recall:  91.71%; FB1:  90.85
+              LOC: precision:  91.76%; recall:  93.47%; FB1:  92.60  1699
+             MISC: precision:  74.97%; recall:  81.91%; FB1:  78.28  767
+              ORG: precision:  87.42%; recall:  89.95%; FB1:  88.66  1709
+              PER: precision:  98.17%; recall:  95.98%; FB1:  97.06  1581
+num_proposed:8284
+num_correct:7573
+num_gold:8112
+precision=0.9142
+recall=0.9336
+f1=0.9238
+=========eval at epoch=7=========
+processed 55044 tokens with 5942 phrases; found: 5988 phrases; correct: 5817.
+accuracy:  98.63%; (non-O)
+accuracy:  99.67%; precision:  97.14%; recall:  97.90%; FB1:  97.52
+              LOC: precision:  97.95%; recall:  98.86%; FB1:  98.40  1854
+             MISC: precision:  93.07%; recall:  93.17%; FB1:  93.12  923
+              ORG: precision:  96.32%; recall:  97.46%; FB1:  96.89  1357
+              PER: precision:  98.98%; recall:  99.62%; FB1:  99.30  1854
+num_proposed:8639
+num_correct:8485
+num_gold:8603
+precision=0.9822
+recall=0.9863
+f1=0.9842
+weights were saved to finetuning1/7.pt
+=========test at epoch=7=========
+processed 50350 tokens with 5648 phrases; found: 5780 phrases; correct: 5196.
+accuracy:  93.71%; (non-O)
+accuracy:  98.34%; precision:  89.90%; recall:  92.00%; FB1:  90.93
+              LOC: precision:  92.34%; recall:  93.29%; FB1:  92.81  1685
+             MISC: precision:  78.72%; recall:  79.06%; FB1:  78.89  705
+              ORG: precision:  86.56%; recall:  91.09%; FB1:  88.77  1748
+              PER: precision:  95.74%; recall:  97.22%; FB1:  96.47  1642
+num_proposed:8334
+num_correct:7602
+num_gold:8112
+precision=0.9122
+recall=0.9371
+f1=0.9245
+=========eval at epoch=8=========
+processed 55044 tokens with 5942 phrases; found: 5978 phrases; correct: 5842.
+accuracy:  98.99%; (non-O)
+accuracy:  99.73%; precision:  97.72%; recall:  98.32%; FB1:  98.02
+              LOC: precision:  99.07%; recall:  99.07%; FB1:  99.07  1837
+             MISC: precision:  93.29%; recall:  95.01%; FB1:  94.14  939
+              ORG: precision:  96.90%; recall:  97.76%; FB1:  97.33  1353
+              PER: precision:  99.24%; recall:  99.62%; FB1:  99.43  1849
+num_proposed:8645
+num_correct:8516
+num_gold:8603
+precision=0.9851
+recall=0.9899
+f1=0.9875
+weights were saved to finetuning1/8.pt
+=========test at epoch=8=========
+processed 50350 tokens with 5648 phrases; found: 5767 phrases; correct: 5203.
+accuracy:  93.82%; (non-O)
+accuracy:  98.41%; precision:  90.22%; recall:  92.12%; FB1:  91.16
+              LOC: precision:  92.67%; recall:  93.23%; FB1:  92.95  1678
+             MISC: precision:  76.45%; recall:  80.91%; FB1:  78.62  743
+              ORG: precision:  87.41%; recall:  91.09%; FB1:  89.21  1731
+              PER: precision:  97.03%; recall:  96.91%; FB1:  96.97  1615
+num_proposed:8318
+num_correct:7611
+num_gold:8112
+precision=0.9150
+recall=0.9382
+f1=0.9265
+=========eval at epoch=9=========
+processed 55044 tokens with 5942 phrases; found: 5989 phrases; correct: 5855.
+accuracy:  99.19%; (non-O)
+accuracy:  99.74%; precision:  97.76%; recall:  98.54%; FB1:  98.15
+              LOC: precision:  98.76%; recall:  99.35%; FB1:  99.05  1848
+             MISC: precision:  93.20%; recall:  95.12%; FB1:  94.15  941
+              ORG: precision:  97.84%; recall:  98.06%; FB1:  97.95  1344
+              PER: precision:  99.03%; recall:  99.78%; FB1:  99.41  1856
+num_proposed:8666
+num_correct:8533
+num_gold:8603
+precision=0.9847
+recall=0.9919
+f1=0.9882
+weights were saved to finetuning1/9.pt
+=========test at epoch=9=========
+processed 50350 tokens with 5648 phrases; found: 5809 phrases; correct: 5217.
+accuracy:  94.13%; (non-O)
+accuracy:  98.34%; precision:  89.81%; recall:  92.37%; FB1:  91.07
+              LOC: precision:  92.57%; recall:  93.41%; FB1:  92.99  1683
+             MISC: precision:  76.88%; recall:  80.06%; FB1:  78.44  731
+              ORG: precision:  87.80%; recall:  91.39%; FB1:  89.56  1729
+              PER: precision:  94.78%; recall:  97.65%; FB1:  96.19  1666
+num_proposed:8390
+num_correct:7636
+num_gold:8112
+precision=0.9101
+recall=0.9413
+f1=0.9255
+=========eval at epoch=10=========
+processed 55044 tokens with 5942 phrases; found: 5962 phrases; correct: 5859.
+accuracy:  99.24%; (non-O)
+accuracy:  99.79%; precision:  98.27%; recall:  98.60%; FB1:  98.44
+              LOC: precision:  99.18%; recall:  99.29%; FB1:  99.24  1839
+             MISC: precision:  95.27%; recall:  96.10%; FB1:  95.68  930
+              ORG: precision:  97.98%; recall:  97.84%; FB1:  97.91  1339
+              PER: precision:  99.08%; recall:  99.73%; FB1:  99.40  1854
+num_proposed:8640
+num_correct:8538
+num_gold:8603
+precision=0.9882
+recall=0.9924
+f1=0.9903
+weights were saved to finetuning1/10.pt
+=========test at epoch=10=========
+processed 50350 tokens with 5648 phrases; found: 5770 phrases; correct: 5214.
+accuracy:  94.02%; (non-O)
+accuracy:  98.40%; precision:  90.36%; recall:  92.32%; FB1:  91.33
+              LOC: precision:  93.29%; recall:  93.29%; FB1:  93.29  1668
+             MISC: precision:  77.28%; recall:  80.91%; FB1:  79.05  735
+              ORG: precision:  88.38%; recall:  91.09%; FB1:  89.71  1712
+              PER: precision:  95.29%; recall:  97.53%; FB1:  96.39  1655
+num_proposed:8332
+num_correct:7627
+num_gold:8112
+precision=0.9154
+recall=0.9402
+f1=0.9276
+2020-10-15 03:39:44.443825: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.2/lib64:
+2020-10-15 03:39:44.443846: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+Learning rate:  1e-06
+/home/t/anaconda3/envs/ai/lib/python3.8/site-packages/transformers/configuration_xlnet.py:204: FutureWarning: This config doesn't use attention memories, a core feature of XLNet. Consider setting `men_len` to a non-zero value, for example `xlnet = XLNetLMHeadModel.from_pretrained('xlnet-base-cased'', mem_len=1024)`, for accurate training performance as well as an order of magnitude faster inference. Starting from version 3.5.0, the default parameter will be 1024, following the implementation in https://arxiv.org/abs/1906.08237
+  warnings.warn(
+=========eval at epoch=1=========
+processed 55044 tokens with 5942 phrases; found: 5697 phrases; correct: 4363.
+accuracy:  78.61%; (non-O)
+accuracy:  96.08%; precision:  76.58%; recall:  73.43%; FB1:  74.97
+              LOC: precision:  73.33%; recall:  83.67%; FB1:  78.16  2096
+             MISC: precision:  54.57%; recall:  21.37%; FB1:  30.71  361
+              ORG: precision:  64.47%; recall:  66.96%; FB1:  65.69  1393
+              PER: precision:  93.72%; recall:  93.97%; FB1:  93.85  1847
+num_proposed:8133
+num_correct:6763
+num_gold:8603
+precision=0.8316
+recall=0.7861
+f1=0.8082
+weights were saved to finetuning1/1.pt
+=========test at epoch=1=========
+processed 50350 tokens with 5648 phrases; found: 5484 phrases; correct: 4140.
+accuracy:  79.57%; (non-O)
+accuracy:  95.87%; precision:  75.49%; recall:  73.30%; FB1:  74.38
+              LOC: precision:  71.86%; recall:  83.27%; FB1:  77.15  1933
+             MISC: precision:  44.72%; recall:  15.67%; FB1:  23.21  246
+              ORG: precision:  66.28%; recall:  68.99%; FB1:  67.61  1729
+              PER: precision:  94.86%; recall:  92.46%; FB1:  93.64  1576
+num_proposed:7895
+num_correct:6455
+num_gold:8112
+precision=0.8176
+recall=0.7957
+f1=0.8065
+=========eval at epoch=2=========
+processed 55044 tokens with 5942 phrases; found: 6032 phrases; correct: 5145.
+accuracy:  88.81%; (non-O)
+accuracy:  97.87%; precision:  85.30%; recall:  86.59%; FB1:  85.94
+              LOC: precision:  84.72%; recall:  92.32%; FB1:  88.36  2002
+             MISC: precision:  71.43%; recall:  61.28%; FB1:  65.97  791
+              ORG: precision:  79.10%; recall:  83.82%; FB1:  81.39  1421
+              PER: precision:  96.81%; recall:  95.55%; FB1:  96.17  1818
+num_proposed:8523
+num_correct:7640
+num_gold:8603
+precision=0.8964
+recall=0.8881
+f1=0.8922
+weights were saved to finetuning1/2.pt
+=========test at epoch=2=========
+processed 50350 tokens with 5648 phrases; found: 5777 phrases; correct: 4783.
+accuracy:  88.02%; (non-O)
+accuracy:  97.30%; precision:  82.79%; recall:  84.68%; FB1:  83.73
+              LOC: precision:  81.53%; recall:  90.53%; FB1:  85.80  1852
+             MISC: precision:  64.11%; recall:  55.98%; FB1:  59.77  613
+              ORG: precision:  77.63%; recall:  81.28%; FB1:  79.41  1739
+              PER: precision:  97.27%; recall:  94.62%; FB1:  95.92  1573
+num_proposed:8279
+num_correct:7140
+num_gold:8112
+precision=0.8624
+recall=0.8802
+f1=0.8712
+=========eval at epoch=3=========
+processed 55044 tokens with 5942 phrases; found: 6037 phrases; correct: 5366.
+accuracy:  92.12%; (non-O)
+accuracy:  98.47%; precision:  88.89%; recall:  90.31%; FB1:  89.59
+              LOC: precision:  89.28%; recall:  95.65%; FB1:  92.35  1968
+             MISC: precision:  74.28%; recall:  72.99%; FB1:  73.63  906
+              ORG: precision:  86.27%; recall:  85.76%; FB1:  86.01  1333
+              PER: precision:  97.60%; recall:  96.96%; FB1:  97.28  1830
+num_proposed:8544
+num_correct:7925
+num_gold:8603
+precision=0.9276
+recall=0.9212
+f1=0.9244
+weights were saved to finetuning1/3.pt
+=========test at epoch=3=========
+processed 50350 tokens with 5648 phrases; found: 5757 phrases; correct: 4925.
+accuracy:  90.00%; (non-O)
+accuracy:  97.71%; precision:  85.55%; recall:  87.20%; FB1:  86.37
+              LOC: precision:  85.71%; recall:  91.67%; FB1:  88.59  1784
+             MISC: precision:  65.35%; recall:  65.81%; FB1:  65.58  707
+              ORG: precision:  83.53%; recall:  83.68%; FB1:  83.61  1664
+              PER: precision:  96.38%; recall:  95.49%; FB1:  95.93  1602
+num_proposed:8260
+num_correct:7301
+num_gold:8112
+precision=0.8839
+recall=0.9000
+f1=0.8919
+=========eval at epoch=4=========
+processed 55044 tokens with 5942 phrases; found: 6022 phrases; correct: 5533.
+accuracy:  94.64%; (non-O)
+accuracy:  98.88%; precision:  91.88%; recall:  93.12%; FB1:  92.49
+              LOC: precision:  93.68%; recall:  95.97%; FB1:  94.81  1882
+             MISC: precision:  80.69%; recall:  80.69%; FB1:  80.69  922
+              ORG: precision:  88.77%; recall:  91.35%; FB1:  90.04  1380
+              PER: precision:  97.99%; recall:  97.77%; FB1:  97.88  1838
+num_proposed:8623
+num_correct:8142
+num_gold:8603
+precision=0.9442
+recall=0.9464
+f1=0.9453
+weights were saved to finetuning1/4.pt
+=========test at epoch=4=========
+processed 50350 tokens with 5648 phrases; found: 5783 phrases; correct: 5060.
+accuracy:  92.01%; (non-O)
+accuracy:  97.95%; precision:  87.50%; recall:  89.59%; FB1:  88.53
+              LOC: precision:  90.86%; recall:  91.19%; FB1:  91.02  1674
+             MISC: precision:  69.51%; recall:  72.08%; FB1:  70.77  728
+              ORG: precision:  84.06%; recall:  88.92%; FB1:  86.42  1757
+              PER: precision:  95.81%; recall:  96.23%; FB1:  96.02  1624
+num_proposed:8360
+num_correct:7464
+num_gold:8112
+precision=0.8928
+recall=0.9201
+f1=0.9063
+=========eval at epoch=5=========
+processed 55044 tokens with 5942 phrases; found: 6004 phrases; correct: 5599.
+accuracy:  95.69%; (non-O)
+accuracy:  99.10%; precision:  93.25%; recall:  94.23%; FB1:  93.74
+              LOC: precision:  95.25%; recall:  97.22%; FB1:  96.23  1875
+             MISC: precision:  82.14%; recall:  84.27%; FB1:  83.19  946
+              ORG: precision:  91.37%; recall:  91.57%; FB1:  91.47  1344
+              PER: precision:  98.31%; recall:  98.15%; FB1:  98.23  1839
+num_proposed:8609
+num_correct:8232
+num_gold:8603
+precision=0.9562
+recall=0.9569
+f1=0.9565
+weights were saved to finetuning1/5.pt
+=========test at epoch=5=========
+processed 50350 tokens with 5648 phrases; found: 5745 phrases; correct: 5087.
+accuracy:  92.15%; (non-O)
+accuracy:  98.08%; precision:  88.55%; recall:  90.07%; FB1:  89.30
+              LOC: precision:  91.27%; recall:  91.49%; FB1:  91.38  1672
+             MISC: precision:  72.45%; recall:  74.93%; FB1:  73.67  726
+              ORG: precision:  85.19%; recall:  88.98%; FB1:  87.04  1735
+              PER: precision:  96.59%; recall:  96.29%; FB1:  96.44  1612
+num_proposed:8303
+num_correct:7475
+num_gold:8112
+precision=0.9003
+recall=0.9215
+f1=0.9108
+=========eval at epoch=6=========
+processed 55044 tokens with 5942 phrases; found: 6002 phrases; correct: 5673.
+accuracy:  96.52%; (non-O)
+accuracy:  99.27%; precision:  94.52%; recall:  95.47%; FB1:  94.99
+              LOC: precision:  95.84%; recall:  97.88%; FB1:  96.85  1876
+             MISC: precision:  85.90%; recall:  87.85%; FB1:  86.86  943
+              ORG: precision:  92.90%; recall:  93.66%; FB1:  93.28  1352
+              PER: precision:  98.80%; recall:  98.21%; FB1:  98.50  1831
+num_proposed:8628
+num_correct:8304
+num_gold:8603
+precision=0.9624
+recall=0.9652
+f1=0.9638
+weights were saved to finetuning1/6.pt
+=========test at epoch=6=========
+processed 50350 tokens with 5648 phrases; found: 5736 phrases; correct: 5119.
+accuracy:  92.48%; (non-O)
+accuracy:  98.16%; precision:  89.24%; recall:  90.63%; FB1:  89.93
+              LOC: precision:  91.91%; recall:  92.63%; FB1:  92.27  1681
+             MISC: precision:  73.28%; recall:  77.35%; FB1:  75.26  741
+              ORG: precision:  86.00%; recall:  89.52%; FB1:  87.73  1729
+              PER: precision:  97.41%; recall:  95.49%; FB1:  96.44  1585
+num_proposed:8297
+num_correct:7502
+num_gold:8112
+precision=0.9042
+recall=0.9248
+f1=0.9144
+=========eval at epoch=7=========
+processed 55044 tokens with 5942 phrases; found: 6002 phrases; correct: 5703.
+accuracy:  97.12%; (non-O)
+accuracy:  99.36%; precision:  95.02%; recall:  95.98%; FB1:  95.50
+              LOC: precision:  97.20%; recall:  98.15%; FB1:  97.67  1855
+             MISC: precision:  85.67%; recall:  88.83%; FB1:  87.22  956
+              ORG: precision:  93.77%; recall:  94.33%; FB1:  94.05  1349
+              PER: precision:  98.59%; recall:  98.59%; FB1:  98.59  1842
+num_proposed:8636
+num_correct:8355
+num_gold:8603
+precision=0.9675
+recall=0.9712
+f1=0.9693
+weights were saved to finetuning1/7.pt
+=========test at epoch=7=========
+processed 50350 tokens with 5648 phrases; found: 5752 phrases; correct: 5150.
+accuracy:  93.08%; (non-O)
+accuracy:  98.24%; precision:  89.53%; recall:  91.18%; FB1:  90.35
+              LOC: precision:  92.09%; recall:  92.87%; FB1:  92.48  1682
+             MISC: precision:  73.16%; recall:  78.06%; FB1:  75.53  749
+              ORG: precision:  87.78%; recall:  89.52%; FB1:  88.64  1694
+              PER: precision:  96.25%; recall:  96.85%; FB1:  96.55  1627
+num_proposed:8314
+num_correct:7551
+num_gold:8112
+precision=0.9082
+recall=0.9308
+f1=0.9194
+=========eval at epoch=8=========
+processed 55044 tokens with 5942 phrases; found: 5990 phrases; correct: 5735.
+accuracy:  97.55%; (non-O)
+accuracy:  99.45%; precision:  95.74%; recall:  96.52%; FB1:  96.13
+              LOC: precision:  97.52%; recall:  98.53%; FB1:  98.02  1856
+             MISC: precision:  88.14%; recall:  90.24%; FB1:  89.17  944
+              ORG: precision:  94.50%; recall:  94.85%; FB1:  94.68  1346
+              PER: precision:  98.75%; recall:  98.86%; FB1:  98.81  1844
+num_proposed:8632
+num_correct:8392
+num_gold:8603
+precision=0.9722
+recall=0.9755
+f1=0.9738
+weights were saved to finetuning1/8.pt
+=========test at epoch=8=========
+processed 50350 tokens with 5648 phrases; found: 5744 phrases; correct: 5157.
+accuracy:  93.15%; (non-O)
+accuracy:  98.24%; precision:  89.78%; recall:  91.31%; FB1:  90.54
+              LOC: precision:  92.75%; recall:  92.87%; FB1:  92.81  1670
+             MISC: precision:  74.32%; recall:  78.35%; FB1:  76.28  740
+              ORG: precision:  87.70%; recall:  89.70%; FB1:  88.69  1699
+              PER: precision:  95.90%; recall:  96.97%; FB1:  96.43  1635
+num_proposed:8321
+num_correct:7556
+num_gold:8112
+precision=0.9081
+recall=0.9315
+f1=0.9196
+=========eval at epoch=9=========
+processed 55044 tokens with 5942 phrases; found: 6016 phrases; correct: 5745.
+accuracy:  97.74%; (non-O)
+accuracy:  99.45%; precision:  95.50%; recall:  96.68%; FB1:  96.09
+              LOC: precision:  97.05%; recall:  98.64%; FB1:  97.84  1867
+             MISC: precision:  86.83%; recall:  91.54%; FB1:  89.12  972
+              ORG: precision:  94.98%; recall:  94.48%; FB1:  94.73  1334
+              PER: precision:  98.86%; recall:  98.91%; FB1:  98.89  1843
+num_proposed:8673
+num_correct:8409
+num_gold:8603
+precision=0.9696
+recall=0.9774
+f1=0.9735
+weights were saved to finetuning1/9.pt
+=========test at epoch=9=========
+processed 50350 tokens with 5648 phrases; found: 5787 phrases; correct: 5175.
+accuracy:  93.49%; (non-O)
+accuracy:  98.18%; precision:  89.42%; recall:  91.63%; FB1:  90.51
+              LOC: precision:  91.75%; recall:  93.35%; FB1:  92.54  1697
+             MISC: precision:  71.28%; recall:  79.91%; FB1:  75.35  787
+              ORG: precision:  88.28%; recall:  89.83%; FB1:  89.05  1690
+              PER: precision:  97.02%; recall:  96.78%; FB1:  96.90  1613
+num_proposed:8403
+num_correct:7584
+num_gold:8112
+precision=0.9025
+recall=0.9349
+f1=0.9184
+=========eval at epoch=10=========
+processed 55044 tokens with 5942 phrases; found: 5997 phrases; correct: 5788.
+accuracy:  98.28%; (non-O)
+accuracy:  99.56%; precision:  96.51%; recall:  97.41%; FB1:  96.96
+              LOC: precision:  98.31%; recall:  98.42%; FB1:  98.37  1839
+             MISC: precision:  90.72%; recall:  92.19%; FB1:  91.45  937
+              ORG: precision:  94.81%; recall:  96.79%; FB1:  95.79  1369
+              PER: precision:  98.92%; recall:  99.46%; FB1:  99.19  1852
+num_proposed:8664
+num_correct:8455
+num_gold:8603
+precision=0.9759
+recall=0.9828
+f1=0.9793
+weights were saved to finetuning1/10.pt
+=========test at epoch=10=========
+processed 50350 tokens with 5648 phrases; found: 5774 phrases; correct: 5179.
+accuracy:  93.49%; (non-O)
+accuracy:  98.25%; precision:  89.70%; recall:  91.70%; FB1:  90.68
+              LOC: precision:  92.65%; recall:  92.99%; FB1:  92.82  1674
+             MISC: precision:  75.38%; recall:  77.64%; FB1:  76.49  723
+              ORG: precision:  86.44%; recall:  91.33%; FB1:  88.82  1755
+              PER: precision:  96.55%; recall:  96.85%; FB1:  96.70  1622
+num_proposed:8368
+num_correct:7584
+num_gold:8112
+precision=0.9063
+recall=0.9349
+f1=0.9204

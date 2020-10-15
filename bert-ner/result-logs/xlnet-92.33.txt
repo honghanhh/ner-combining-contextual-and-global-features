@@ -147,3 +147,1742 @@ batch_size 8
 lr 1e-5
 n_epochs 4
 drop_out 0.5
+
+
+----------------------------------------------------------------------------------------------------------
+=====sanity check======
+words: <cls> Puebla 3 3 0 0 7 2 9 <sep>
+x: [   3 5269   93 7140  198  198  700  700  425  159  664    4]
+is_heads: [1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1]
+y: [0 5 0 0 1 1 1 1 1 1 1 0]
+tags: <PAD> I-ORG O O O O O O O <PAD>
+seqlen: 12
+=======================
+=========eval at epoch=1=========
+processed 55044 tokens with 5942 phrases; found: 6003 phrases; correct: 5714.
+accuracy:  97.45%; (non-O)
+accuracy:  99.37%; precision:  95.19%; recall:  96.16%; FB1:  95.67
+              LOC: precision:  97.05%; recall:  98.53%; FB1:  97.78  1865
+             MISC: precision:  86.75%; recall:  90.89%; FB1:  88.77  966
+              ORG: precision:  95.02%; recall:  92.54%; FB1:  93.77  1306
+              PER: precision:  97.80%; recall:  99.08%; FB1:  98.44  1866
+num_proposed:8688
+num_correct:8384
+num_gold:8603
+precision=0.9650
+recall=0.9745
+f1=0.9698
+weights were saved to finetuning1/1.pt
+=========test at epoch=1=========
+processed 50350 tokens with 5648 phrases; found: 5820 phrases; correct: 5147.
+accuracy:  93.27%; (non-O)
+accuracy:  98.14%; precision:  88.44%; recall:  91.13%; FB1:  89.76
+              LOC: precision:  92.90%; recall:  92.51%; FB1:  92.70  1661
+             MISC: precision:  70.45%; recall:  80.48%; FB1:  75.13  802
+              ORG: precision:  88.00%; recall:  88.32%; FB1:  88.16  1667
+              PER: precision:  93.02%; recall:  97.22%; FB1:  95.07  1690
+num_proposed:8408
+num_correct:7566
+num_gold:8112
+precision=0.8999
+recall=0.9327
+f1=0.9160
+=====sanity check======
+words: <cls> KANSAS CITY 60 73 .451 19 1/2 <sep>
+x: [    3   574 17852  5713 29884  1639  8465    17     9  2967   174  1029
+  4193     4]
+is_heads: [1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1]
+y: [0 5 0 0 5 1 1 1 0 0 0 1 1 0]
+tags: <PAD> I-ORG I-ORG O O O O O <PAD>
+seqlen: 14
+=======================
+=========eval at epoch=2=========
+processed 55044 tokens with 5942 phrases; found: 5948 phrases; correct: 5829.
+accuracy:  98.67%; (non-O)
+accuracy:  99.72%; precision:  98.00%; recall:  98.10%; FB1:  98.05
+              LOC: precision:  98.97%; recall:  98.91%; FB1:  98.94  1836
+             MISC: precision:  94.12%; recall:  95.44%; FB1:  94.78  935
+              ORG: precision:  97.89%; recall:  96.94%; FB1:  97.41  1328
+              PER: precision:  99.08%; recall:  99.46%; FB1:  99.27  1849
+num_proposed:8599
+num_correct:8489
+num_gold:8603
+precision=0.9872
+recall=0.9867
+f1=0.9870
+weights were saved to finetuning1/2.pt
+=========test at epoch=2=========
+processed 50350 tokens with 5648 phrases; found: 5676 phrases; correct: 5145.
+accuracy:  92.76%; (non-O)
+accuracy:  98.31%; precision:  90.64%; recall:  91.09%; FB1:  90.87
+              LOC: precision:  93.77%; recall:  92.93%; FB1:  93.35  1653
+             MISC: precision:  74.70%; recall:  79.91%; FB1:  77.22  751
+              ORG: precision:  89.24%; recall:  88.92%; FB1:  89.08  1655
+              PER: precision:  96.29%; recall:  96.29%; FB1:  96.29  1617
+num_proposed:8209
+num_correct:7525
+num_gold:8112
+precision=0.9167
+recall=0.9276
+f1=0.9221
+=====sanity check======
+words: <cls> While 57 percent of the population supported negotiations with ETA ( Basque Homeland and Freedom ) , 30 percent opposed it , the survey by the state-controlled Centre for Sociological Studies ( CIS ) found . <sep>
+x: [    3   747  6474   141    20    18   749  2332  2464    33 16019    17
+    10 14816 17092    21  8282    17    11    17    19   544   141  3168
+    36    17    19    18  2342    37    18   204    13  7255  3708    28
+   346  2294  4010  4627    17    10    17 19174    17    11   255    17
+     9     4]
+is_heads: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1]
+y: [0 1 1 1 1 1 1 1 1 1 5 1 0 5 5 5 5 1 0 1 0 1 1 1 1 1 0 1 1 1 1 1 0 0 5 5 5
+ 0 0 5 1 0 5 0 1 0 1 1 0 0]
+tags: <PAD> O O O O O O O O O I-ORG O I-ORG I-ORG I-ORG I-ORG O O O O O O O O O O O O I-ORG I-ORG I-ORG I-ORG O I-ORG O O O <PAD>
+seqlen: 50
+=======================
+=========eval at epoch=3=========
+processed 55044 tokens with 5942 phrases; found: 5947 phrases; correct: 5853.
+accuracy:  99.04%; (non-O)
+accuracy:  99.80%; precision:  98.42%; recall:  98.50%; FB1:  98.46
+              LOC: precision:  99.18%; recall:  98.86%; FB1:  99.02  1831
+             MISC: precision:  95.39%; recall:  96.42%; FB1:  95.90  932
+              ORG: precision:  97.99%; recall:  98.14%; FB1:  98.06  1343
+              PER: precision:  99.51%; recall:  99.46%; FB1:  99.48  1841
+num_proposed:8597
+num_correct:8520
+num_gold:8603
+precision=0.9910
+recall=0.9904
+f1=0.9907
+weights were saved to finetuning1/3.pt
+=========test at epoch=3=========
+processed 50350 tokens with 5648 phrases; found: 5705 phrases; correct: 5150.
+accuracy:  92.99%; (non-O)
+accuracy:  98.34%; precision:  90.27%; recall:  91.18%; FB1:  90.72
+              LOC: precision:  93.87%; recall:  92.75%; FB1:  93.31  1648
+             MISC: precision:  74.04%; recall:  80.06%; FB1:  76.93  759
+              ORG: precision:  88.55%; recall:  90.37%; FB1:  89.45  1695
+              PER: precision:  96.07%; recall:  95.24%; FB1:  95.65  1603
+num_proposed:8230
+num_correct:7543
+num_gold:8112
+precision=0.9165
+recall=0.9299
+f1=0.9231
+=====sanity check======
+words: <cls> TEXAS AT KANSAS CITY <sep>
+x: [    3   430  6916  5713  5966   574 17852  5713 29884     4]
+is_heads: [1, 1, 0, 0, 1, 1, 0, 0, 1, 1]
+y: [0 5 0 0 1 2 0 0 2 0]
+tags: <PAD> I-ORG O I-LOC I-LOC <PAD>
+seqlen: 10
+=======================
+=========eval at epoch=4=========
+processed 55044 tokens with 5942 phrases; found: 5957 phrases; correct: 5881.
+accuracy:  99.23%; (non-O)
+accuracy:  99.81%; precision:  98.72%; recall:  98.97%; FB1:  98.85
+              LOC: precision:  99.24%; recall:  99.40%; FB1:  99.32  1840
+             MISC: precision:  97.39%; recall:  97.29%; FB1:  97.34  921
+              ORG: precision:  97.78%; recall:  98.43%; FB1:  98.10  1350
+              PER: precision:  99.57%; recall:  99.78%; FB1:  99.67  1846
+num_proposed:8621
+num_correct:8537
+num_gold:8603
+precision=0.9903
+recall=0.9923
+f1=0.9913
+weights were saved to finetuning1/4.pt
+=========test at epoch=4=========
+processed 50350 tokens with 5648 phrases; found: 5726 phrases; correct: 5178.
+accuracy:  93.57%; (non-O)
+accuracy:  98.39%; precision:  90.43%; recall:  91.68%; FB1:  91.05
+              LOC: precision:  93.16%; recall:  93.11%; FB1:  93.13  1667
+             MISC: precision:  79.32%; recall:  79.77%; FB1:  79.55  706
+              ORG: precision:  87.07%; recall:  90.43%; FB1:  88.72  1725
+              PER: precision:  96.01%; recall:  96.66%; FB1:  96.33  1628
+num_proposed:8281
+num_correct:7590
+num_gold:8112
+precision=0.9166
+recall=0.9357
+f1=0.9260
+
+batch_size 8
+lr 2e-5
+n_epochs 4
+drop_out 0.5
+
+(ai) ➜  bert-ner git:(master) ✗ python train.py --logdir finetuning1 --finetuning --batch_size 8 --lr 2e-5 --n_epochs 10
+
+2020-10-14 00:22:09.488007: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.2/lib64:/usr/local/cuda-10.2/lib64:
+2020-10-14 00:22:09.488028: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+/home/t/anaconda3/envs/ai/lib/python3.8/site-packages/transformers/configuration_xlnet.py:204: FutureWarning: This config doesn't use attention memories, a core feature of XLNet. Consider setting `men_len` to a non-zero value, for example `xlnet = XLNetLMHeadModel.from_pretrained('xlnet-base-cased'', mem_len=1024)`, for accurate training performance as well as an order of magnitude faster inference. Starting from version 3.5.0, the default parameter will be 1024, following the implementation in https://arxiv.org/abs/1906.08237
+  warnings.warn(
+=====sanity check======
+words: <cls> 1930 - Belgian King Baudouin I born . <sep>
+x: [    3  4974    17    13  7920  1261 17233 16655   153    35  1094    17
+     9     4]
+is_heads: [1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1]
+y: [0 1 1 0 6 1 4 0 0 4 1 1 0 0]
+tags: <PAD> O O I-MISC O I-PER I-PER O O <PAD>
+seqlen: 14
+=======================
+=========eval at epoch=1=========
+processed 55044 tokens with 5942 phrases; found: 6047 phrases; correct: 5701.
+accuracy:  97.50%; (non-O)
+accuracy:  99.23%; precision:  94.28%; recall:  95.94%; FB1:  95.10
+              LOC: precision:  96.07%; recall:  98.48%; FB1:  97.26  1883
+             MISC: precision:  83.89%; recall:  89.80%; FB1:  86.75  987
+              ORG: precision:  94.34%; recall:  93.29%; FB1:  93.81  1326
+              PER: precision:  97.95%; recall:  98.43%; FB1:  98.19  1851
+num_proposed:8788
+num_correct:8388
+num_gold:8603
+precision=0.9545
+recall=0.9750
+f1=0.9646
+weights were saved to finetuning1/1.pt
+=========test at epoch=1=========
+processed 50350 tokens with 5648 phrases; found: 5879 phrases; correct: 5104.
+accuracy:  93.33%; (non-O)
+accuracy:  97.83%; precision:  86.82%; recall:  90.37%; FB1:  88.56
+              LOC: precision:  88.61%; recall:  93.71%; FB1:  91.08  1764
+             MISC: precision:  68.39%; recall:  77.35%; FB1:  72.59  794
+              ORG: precision:  85.84%; recall:  86.88%; FB1:  86.36  1681
+              PER: precision:  94.82%; recall:  96.17%; FB1:  95.49  1640
+num_proposed:8604
+num_correct:7571
+num_gold:8112
+precision=0.8799
+recall=0.9333
+f1=0.9058
+=====sanity check======
+words: <cls> At California , Tino Martinez 's two-run homer keyed a three-run first and Andy Pettitte became the league 's first 19-game winner as the New York Yankees beat the Angels 6-2 . <sep>
+x: [    3   296   848    17    19   430  2844 10113    17    26    23    87
+    13  2169 13491   792    68    24   139    13  2169    89    21  6184
+   395 10536  7936   403    18  1594    17    26    23    89  1029    13
+  3671  2353    34    18   158   313  6445  1469    18 10916   284    13
+   184    17     9     4]
+is_heads: [1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1]
+y: [0 1 2 1 0 4 0 4 1 0 0 1 0 0 1 1 0 1 1 0 0 1 1 4 4 0 0 1 1 1 1 0 0 1 1 0 0
+ 1 1 1 5 5 5 1 1 5 1 0 0 1 0 0]
+tags: <PAD> O I-LOC O I-PER I-PER O O O O O O O O I-PER I-PER O O O O O O O O O I-ORG I-ORG I-ORG O O I-ORG O O <PAD>
+seqlen: 52
+=======================
+=========eval at epoch=2=========
+processed 55044 tokens with 5942 phrases; found: 6010 phrases; correct: 5795.
+accuracy:  98.78%; (non-O)
+accuracy:  99.54%; precision:  96.42%; recall:  97.53%; FB1:  96.97
+              LOC: precision:  99.08%; recall:  99.13%; FB1:  99.10  1838
+             MISC: precision:  91.60%; recall:  93.49%; FB1:  92.54  941
+              ORG: precision:  92.48%; recall:  97.24%; FB1:  94.80  1410
+              PER: precision:  99.29%; recall:  98.15%; FB1:  98.72  1821
+num_proposed:8734
+num_correct:8498
+num_gold:8603
+precision=0.9730
+recall=0.9878
+f1=0.9803
+weights were saved to finetuning1/2.pt
+=========test at epoch=2=========
+processed 50350 tokens with 5648 phrases; found: 5832 phrases; correct: 5064.
+accuracy:  92.71%; (non-O)
+accuracy:  97.82%; precision:  86.83%; recall:  89.66%; FB1:  88.22
+              LOC: precision:  94.23%; recall:  91.13%; FB1:  92.65  1613
+             MISC: precision:  70.63%; recall:  78.77%; FB1:  74.48  783
+              ORG: precision:  78.34%; recall:  90.37%; FB1:  83.93  1916
+              PER: precision:  98.03%; recall:  92.15%; FB1:  95.00  1520
+num_proposed:8562
+num_correct:7521
+num_gold:8112
+precision=0.8784
+recall=0.9271
+f1=0.9021
+=====sanity check======
+words: <cls> Florida 10 ST LOUIS 9 <sep>
+x: [    3  1442   241  7843   657 15478    96    83   664     4]
+is_heads: [1, 1, 1, 1, 1, 0, 0, 0, 1, 1]
+y: [0 5 1 5 5 0 0 0 1 0]
+tags: <PAD> I-ORG O I-ORG I-ORG O <PAD>
+seqlen: 10
+=======================
+=========eval at epoch=3=========
+processed 55044 tokens with 5942 phrases; found: 5972 phrases; correct: 5847.
+accuracy:  99.04%; (non-O)
+accuracy:  99.75%; precision:  97.91%; recall:  98.40%; FB1:  98.15
+              LOC: precision:  99.24%; recall:  99.51%; FB1:  99.37  1842
+             MISC: precision:  94.96%; recall:  96.10%; FB1:  95.53  933
+              ORG: precision:  95.98%; recall:  97.91%; FB1:  96.94  1368
+              PER: precision:  99.51%; recall:  98.81%; FB1:  99.16  1829
+num_proposed:8636
+num_correct:8520
+num_gold:8603
+precision=0.9866
+recall=0.9904
+f1=0.9885
+weights were saved to finetuning1/3.pt
+=========test at epoch=3=========
+processed 50350 tokens with 5648 phrases; found: 5782 phrases; correct: 5201.
+accuracy:  94.00%; (non-O)
+accuracy:  98.36%; precision:  89.95%; recall:  92.09%; FB1:  91.01
+              LOC: precision:  93.39%; recall:  93.17%; FB1:  93.28  1664
+             MISC: precision:  76.58%; recall:  81.05%; FB1:  78.75  743
+              ORG: precision:  85.95%; recall:  91.69%; FB1:  88.73  1772
+              PER: precision:  97.01%; recall:  96.17%; FB1:  96.58  1603
+num_proposed:8356
+num_correct:7625
+num_gold:8112
+precision=0.9125
+recall=0.9400
+f1=0.9260
+=====sanity check======
+words: <cls> " I get the feeling that everything is done here for the American players and they forget about all the other players , " said Stich , who lost the 1994 Open final to Andre Agassi . <sep>
+x: [    3    17    12    35   133    18  1803    29   931    27   588   193
+    28    18   242   793    21    63  3795    75    71    18    86   793
+    17    19    17    12    42   524  5069    17    19    61   581    18
+  2228  1828   484    22  6562 18110    17     9     4]
+is_heads: [1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1]
+y: [0 1 0 1 1 1 1 1 1 1 1 1 1 1 6 1 1 1 1 1 1 1 1 1 1 0 1 0 1 4 0 1 0 1 1 1 1
+ 6 1 1 4 4 1 0 0]
+tags: <PAD> O O O O O O O O O O O O I-MISC O O O O O O O O O O O O I-PER O O O O O I-MISC O O I-PER I-PER O <PAD>
+seqlen: 45
+=======================
+=========eval at epoch=4=========
+processed 55044 tokens with 5942 phrases; found: 5972 phrases; correct: 5872.
+accuracy:  99.30%; (non-O)
+accuracy:  99.80%; precision:  98.33%; recall:  98.82%; FB1:  98.57
+              LOC: precision:  99.18%; recall:  99.35%; FB1:  99.27  1840
+             MISC: precision:  96.96%; recall:  96.85%; FB1:  96.91  921
+              ORG: precision:  96.79%; recall:  98.96%; FB1:  97.86  1371
+              PER: precision:  99.29%; recall:  99.19%; FB1:  99.24  1840
+num_proposed:8634
+num_correct:8543
+num_gold:8603
+precision=0.9895
+recall=0.9930
+f1=0.9912
+weights were saved to finetuning1/4.pt
+=========test at epoch=4=========
+processed 50350 tokens with 5648 phrases; found: 5820 phrases; correct: 5186.
+accuracy:  93.39%; (non-O)
+accuracy:  98.14%; precision:  89.11%; recall:  91.82%; FB1:  90.44
+              LOC: precision:  93.96%; recall:  93.29%; FB1:  93.62  1656
+             MISC: precision:  78.75%; recall:  79.20%; FB1:  78.98  706
+              ORG: precision:  82.33%; recall:  93.68%; FB1:  87.64  1890
+              PER: precision:  96.81%; recall:  93.88%; FB1:  95.32  1568
+num_proposed:8425
+num_correct:7576
+num_gold:8112
+precision=0.8992
+recall=0.9339
+f1=0.9162
+=====sanity check======
+words: <cls> The judge died later in hospital . <sep>
+x: [   3   32 2144  650  266   25 1460   17    9    4]
+is_heads: [1, 1, 1, 1, 1, 1, 1, 1, 0, 1]
+y: [0 1 1 1 1 1 1 1 0 0]
+tags: <PAD> O O O O O O O <PAD>
+seqlen: 10
+=======================
+=========eval at epoch=5=========
+processed 55044 tokens with 5942 phrases; found: 5962 phrases; correct: 5890.
+accuracy:  99.51%; (non-O)
+accuracy:  99.87%; precision:  98.79%; recall:  99.12%; FB1:  98.96
+              LOC: precision:  99.24%; recall:  99.67%; FB1:  99.46  1845
+             MISC: precision:  97.51%; recall:  97.51%; FB1:  97.51  922
+              ORG: precision:  98.15%; recall:  98.73%; FB1:  98.44  1349
+              PER: precision:  99.46%; recall:  99.67%; FB1:  99.57  1846
+num_proposed:8611
+num_correct:8561
+num_gold:8603
+precision=0.9942
+recall=0.9951
+f1=0.9947
+weights were saved to finetuning1/5.pt
+=========test at epoch=5=========
+processed 50350 tokens with 5648 phrases; found: 5767 phrases; correct: 5204.
+accuracy:  93.68%; (non-O)
+accuracy:  98.42%; precision:  90.24%; recall:  92.14%; FB1:  91.18
+              LOC: precision:  93.83%; recall:  92.99%; FB1:  93.41  1653
+             MISC: precision:  79.52%; recall:  80.77%; FB1:  80.14  713
+              ORG: precision:  86.04%; recall:  91.99%; FB1:  88.91  1776
+              PER: precision:  95.88%; recall:  96.35%; FB1:  96.11  1625
+num_proposed:8283
+num_correct:7599
+num_gold:8112
+precision=0.9174
+recall=0.9368
+f1=0.9270
+=====sanity check======
+words: <cls> Hurricane expected to veer north of Caribbean . <sep>
+x: [   3 7616  558   22   17  189  118 1012   20 6008   17    9    4]
+is_heads: [1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1]
+y: [0 1 1 1 1 0 0 1 1 2 1 0 0]
+tags: <PAD> O O O O O O I-LOC O <PAD>
+seqlen: 13
+=======================
+=========eval at epoch=6=========
+processed 55044 tokens with 5942 phrases; found: 5959 phrases; correct: 5904.
+accuracy:  99.71%; (non-O)
+accuracy:  99.90%; precision:  99.08%; recall:  99.36%; FB1:  99.22
+              LOC: precision:  99.67%; recall:  99.78%; FB1:  99.73  1839
+             MISC: precision:  97.19%; recall:  97.61%; FB1:  97.40  926
+              ORG: precision:  98.96%; recall:  99.33%; FB1:  99.14  1346
+              PER: precision:  99.51%; recall:  99.84%; FB1:  99.67  1848
+num_proposed:8627
+num_correct:8578
+num_gold:8603
+precision=0.9943
+recall=0.9971
+f1=0.9957
+weights were saved to finetuning1/6.pt
+=========test at epoch=6=========
+processed 50350 tokens with 5648 phrases; found: 5821 phrases; correct: 5208.
+accuracy:  93.95%; (non-O)
+accuracy:  98.20%; precision:  89.47%; recall:  92.21%; FB1:  90.82
+              LOC: precision:  93.66%; recall:  92.93%; FB1:  93.29  1655
+             MISC: precision:  78.42%; recall:  81.77%; FB1:  80.06  732
+              ORG: precision:  84.69%; recall:  91.93%; FB1:  88.16  1803
+              PER: precision:  95.46%; recall:  96.29%; FB1:  95.87  1631
+num_proposed:8441
+num_correct:7621
+num_gold:8112
+precision=0.9029
+recall=0.9395
+f1=0.9208
+=====sanity check======
+words: <cls> BASEBALL - MAJOR LEAGUE RESULTS MONDAY . <sep>
+x: [    3   322 21020   698  9704    17    13  7720   989  4859    17  5004
+ 13684 16801    17 16402 10237  6519    17 18967 14874    17     9     4]
+is_heads: [1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1]
+y: [0 1 0 0 0 1 0 6 0 0 6 0 0 0 1 0 0 0 1 0 0 1 0 0]
+tags: <PAD> O O I-MISC I-MISC O O O <PAD>
+seqlen: 24
+=======================
+=========eval at epoch=7=========
+processed 55044 tokens with 5942 phrases; found: 5957 phrases; correct: 5900.
+accuracy:  99.65%; (non-O)
+accuracy:  99.89%; precision:  99.04%; recall:  99.29%; FB1:  99.17
+              LOC: precision:  99.08%; recall:  99.89%; FB1:  99.48  1852
+             MISC: precision:  97.20%; recall:  97.83%; FB1:  97.51  928
+              ORG: precision:  99.40%; recall:  98.81%; FB1:  99.10  1333
+              PER: precision:  99.67%; recall:  99.78%; FB1:  99.73  1844
+num_proposed:8629
+num_correct:8573
+num_gold:8603
+precision=0.9935
+recall=0.9965
+f1=0.9950
+weights were saved to finetuning1/7.pt
+=========test at epoch=7=========
+processed 50350 tokens with 5648 phrases; found: 5793 phrases; correct: 5173.
+accuracy:  93.42%; (non-O)
+accuracy:  98.22%; precision:  89.30%; recall:  91.59%; FB1:  90.43
+              LOC: precision:  89.54%; recall:  94.42%; FB1:  91.92  1759
+             MISC: precision:  74.58%; recall:  81.48%; FB1:  77.88  767
+              ORG: precision:  89.57%; recall:  88.44%; FB1:  89.00  1640
+              PER: precision:  95.70%; recall:  96.29%; FB1:  95.99  1627
+num_proposed:8380
+num_correct:7578
+num_gold:8112
+precision=0.9043
+recall=0.9342
+f1=0.9190
+=====sanity check======
+words: <cls> of Japanese rider Noriyuki Haga for using an illegal carburettor <sep>
+x: [    3    20  1175 12017   336  1204 27926 17020   101    28   381    48
+  2501   398  5482  3841   218     4]
+is_heads: [1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1]
+y: [0 1 6 1 4 0 0 4 0 1 1 1 1 1 0 0 0 0]
+tags: <PAD> O I-MISC O I-PER I-PER O O O O O <PAD>
+seqlen: 18
+=======================
+=========eval at epoch=8=========
+processed 55044 tokens with 5942 phrases; found: 5948 phrases; correct: 5905.
+accuracy:  99.69%; (non-O)
+accuracy:  99.90%; precision:  99.28%; recall:  99.38%; FB1:  99.33
+              LOC: precision:  99.24%; recall:  99.62%; FB1:  99.43  1844
+             MISC: precision:  98.70%; recall:  98.48%; FB1:  98.59  920
+              ORG: precision:  99.33%; recall:  99.11%; FB1:  99.22  1338
+              PER: precision:  99.57%; recall:  99.78%; FB1:  99.67  1846
+num_proposed:8618
+num_correct:8576
+num_gold:8603
+precision=0.9951
+recall=0.9969
+f1=0.9960
+weights were saved to finetuning1/8.pt
+=========test at epoch=8=========
+processed 50350 tokens with 5648 phrases; found: 5790 phrases; correct: 5231.
+accuracy:  94.16%; (non-O)
+accuracy:  98.42%; precision:  90.35%; recall:  92.62%; FB1:  91.47
+              LOC: precision:  93.20%; recall:  94.54%; FB1:  93.87  1692
+             MISC: precision:  82.28%; recall:  81.34%; FB1:  81.81  694
+              ORG: precision:  88.47%; recall:  90.97%; FB1:  89.70  1708
+              PER: precision:  92.69%; recall:  97.22%; FB1:  94.90  1696
+num_proposed:8343
+num_correct:7638
+num_gold:8112
+precision=0.9155
+recall=0.9416
+f1=0.9284
+=====sanity check======
+words: <cls> Costa Rican officials on Monday had given different names for the couple . <sep>
+x: [    3  6782 18032   361    31   380    54   502   332  1931    28    18
+  1259    17     9     4]
+is_heads: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1]
+y: [0 6 6 1 1 1 1 1 1 1 1 1 1 1 0 0]
+tags: <PAD> I-MISC I-MISC O O O O O O O O O O O <PAD>
+seqlen: 16
+=======================
+=========eval at epoch=9=========
+processed 55044 tokens with 5942 phrases; found: 5957 phrases; correct: 5915.
+accuracy:  99.78%; (non-O)
+accuracy:  99.92%; precision:  99.29%; recall:  99.55%; FB1:  99.42
+              LOC: precision:  99.78%; recall:  99.89%; FB1:  99.84  1839
+             MISC: precision:  98.59%; recall:  98.70%; FB1:  98.64  923
+              ORG: precision:  98.45%; recall:  99.48%; FB1:  98.96  1355
+              PER: precision:  99.78%; recall:  99.67%; FB1:  99.73  1840
+num_proposed:8628
+num_correct:8584
+num_gold:8603
+precision=0.9949
+recall=0.9978
+f1=0.9963
+weights were saved to finetuning1/9.pt
+=========test at epoch=9=========
+processed 50350 tokens with 5648 phrases; found: 5812 phrases; correct: 5218.
+accuracy:  94.11%; (non-O)
+accuracy:  98.31%; precision:  89.78%; recall:  92.39%; FB1:  91.06
+              LOC: precision:  94.65%; recall:  93.41%; FB1:  94.03  1646
+             MISC: precision:  80.00%; recall:  81.48%; FB1:  80.73  715
+              ORG: precision:  83.58%; recall:  92.84%; FB1:  87.96  1845
+              PER: precision:  96.26%; recall:  95.61%; FB1:  95.94  1606
+num_proposed:8406
+num_correct:7634
+num_gold:8112
+precision=0.9082
+recall=0.9411
+f1=0.9243
+=====sanity check======
+words: <cls> PHILADELPHIA AT SAN DIEGO <sep>
+x: [    3    17 10668    96  5876 26894 10668  5464  5966 20478   347  9850
+  9042     4]
+is_heads: [1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1]
+y: [0 5 0 0 0 0 0 0 1 2 2 0 0 0]
+tags: <PAD> I-ORG O I-LOC I-LOC <PAD>
+seqlen: 14
+=======================
+=========eval at epoch=10=========
+processed 55044 tokens with 5942 phrases; found: 5959 phrases; correct: 5895.
+accuracy:  99.55%; (non-O)
+accuracy:  99.87%; precision:  98.93%; recall:  99.21%; FB1:  99.07
+              LOC: precision:  99.56%; recall:  99.62%; FB1:  99.59  1838
+             MISC: precision:  97.93%; recall:  97.40%; FB1:  97.66  917
+              ORG: precision:  98.01%; recall:  99.18%; FB1:  98.59  1357
+              PER: precision:  99.46%; recall:  99.73%; FB1:  99.59  1847
+num_proposed:8619
+num_correct:8564
+num_gold:8603
+precision=0.9936
+recall=0.9955
+f1=0.9945
+weights were saved to finetuning1/10.pt
+=========test at epoch=10=========
+processed 50350 tokens with 5648 phrases; found: 5779 phrases; correct: 5193.
+accuracy:  93.87%; (non-O)
+accuracy:  98.29%; precision:  89.86%; recall:  91.94%; FB1:  90.89
+              LOC: precision:  95.11%; recall:  92.21%; FB1:  93.64  1617
+             MISC: precision:  80.54%; recall:  80.20%; FB1:  80.37  699
+              ORG: precision:  84.07%; recall:  93.44%; FB1:  88.51  1846
+              PER: precision:  95.24%; recall:  95.24%; FB1:  95.24  1617
+num_proposed:8381
+num_correct:7615
+num_gold:8112
+precision=0.9086
+recall=0.9387
+f1=0.9234
+(ai) ➜  bert-ner git:(master) ✗
+
+
+
+(ai) ➜  bert-ner git:(master) ✗ python train.py --logdir finetuning1 --finetuning --batch_size 8 --lr 3e-5 --n_epochs 10
+
+2020-10-14 01:05:10.546627: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.2/lib64:/usr/local/cuda-10.2/lib64:
+2020-10-14 01:05:10.546649: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+/home/t/anaconda3/envs/ai/lib/python3.8/site-packages/transformers/configuration_xlnet.py:204: FutureWarning: This config doesn't use attention memories, a core feature of XLNet. Consider setting `men_len` to a non-zero value, for example `xlnet = XLNetLMHeadModel.from_pretrained('xlnet-base-cased'', mem_len=1024)`, for accurate training performance as well as an order of magnitude faster inference. Starting from version 3.5.0, the default parameter will be 1024, following the implementation in https://arxiv.org/abs/1906.08237
+  warnings.warn(
+=====sanity check======
+words: <cls> However , he singled out " Mission : Impossible " as an especially entertaining movie , Daily Variety said . <sep>
+x: [    3   476    17    19    43 15994    78    17    12  6864    17    60
+    35    98 22406    17    12    34    48   941 12723  1432    17    19
+  4721    17 26019    42    17     9     4]
+is_heads: [1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1]
+y: [0 1 1 0 1 1 1 1 0 6 6 0 6 0 0 1 0 1 1 1 1 1 1 0 5 5 0 1 1 0 0]
+tags: <PAD> O O O O O O I-MISC I-MISC I-MISC O O O O O O O I-ORG I-ORG O O <PAD>
+seqlen: 31
+=======================
+=========eval at epoch=1=========
+processed 55044 tokens with 5942 phrases; found: 5983 phrases; correct: 5763.
+accuracy:  97.80%; (non-O)
+accuracy:  99.52%; precision:  96.32%; recall:  96.99%; FB1:  96.65
+              LOC: precision:  98.53%; recall:  98.53%; FB1:  98.53  1837
+             MISC: precision:  93.48%; recall:  91.76%; FB1:  92.61  905
+              ORG: precision:  92.54%; recall:  96.27%; FB1:  94.37  1395
+              PER: precision:  98.37%; recall:  98.59%; FB1:  98.48  1846
+num_proposed:8619
+num_correct:8414
+num_gold:8603
+precision=0.9762
+recall=0.9780
+f1=0.9771
+weights were saved to finetuning1/1.pt
+=========test at epoch=1=========
+processed 50350 tokens with 5648 phrases; found: 5752 phrases; correct: 5170.
+accuracy:  93.39%; (non-O)
+accuracy:  98.31%; precision:  89.88%; recall:  91.54%; FB1:  90.70
+              LOC: precision:  93.14%; recall:  92.81%; FB1:  92.97  1662
+             MISC: precision:  77.67%; recall:  77.78%; FB1:  77.72  703
+              ORG: precision:  86.32%; recall:  91.15%; FB1:  88.67  1754
+              PER: precision:  95.65%; recall:  96.60%; FB1:  96.12  1633
+num_proposed:8311
+num_correct:7576
+num_gold:8112
+precision=0.9116
+recall=0.9339
+f1=0.9226
+=====sanity check======
+words: <cls> " During the scuffle , Moura threw the first punch . <sep>
+x: [    3    17    12   940    18 30943    17    19  1458  3417  4133    18
+    89  8977    17     9     4]
+is_heads: [1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1]
+y: [0 1 0 1 1 1 1 0 4 0 1 1 1 1 1 0 0]
+tags: <PAD> O O O O O I-PER O O O O O <PAD>
+seqlen: 17
+=======================
+=========eval at epoch=2=========
+processed 55044 tokens with 5942 phrases; found: 5976 phrases; correct: 5808.
+accuracy:  98.52%; (non-O)
+accuracy:  99.67%; precision:  97.19%; recall:  97.74%; FB1:  97.47
+              LOC: precision:  97.85%; recall:  99.24%; FB1:  98.54  1863
+             MISC: precision:  94.75%; recall:  93.93%; FB1:  94.34  914
+              ORG: precision:  95.25%; recall:  97.09%; FB1:  96.16  1367
+              PER: precision:  99.18%; recall:  98.64%; FB1:  98.91  1832
+num_proposed:8623
+num_correct:8476
+num_gold:8603
+precision=0.9830
+recall=0.9852
+f1=0.9841
+weights were saved to finetuning1/2.pt
+=========test at epoch=2=========
+processed 50350 tokens with 5648 phrases; found: 5782 phrases; correct: 5178.
+accuracy:  93.40%; (non-O)
+accuracy:  98.31%; precision:  89.55%; recall:  91.68%; FB1:  90.60
+              LOC: precision:  92.27%; recall:  92.99%; FB1:  92.62  1681
+             MISC: precision:  77.73%; recall:  81.05%; FB1:  79.36  732
+              ORG: precision:  85.30%; recall:  91.21%; FB1:  88.16  1776
+              PER: precision:  96.86%; recall:  95.42%; FB1:  96.14  1593
+num_proposed:8330
+num_correct:7577
+num_gold:8112
+precision=0.9096
+recall=0.9340
+f1=0.9217
+=====sanity check======
+words: <cls> Ukraine 's declaration of independence in 1991 , backed nine-to-one by a referendum in December of that year , effectively dealt a death blow to the Soviet empire and ended more than three centuries of rule from Moscow . <sep>
+x: [   3 4879   17   26   23 6981   20 3090   25 2840   17   19 4793 1349
+   13  261   13 1112   37   24 6279   25  683   20   29  119   17   19
+ 3810 8302   24  513 4309   22   18 2312 9161   21 1348   70  100  139
+ 5007   20 1614   40 2794   17    9    4]
+is_heads: [1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1]
+y: [0 2 1 0 0 1 1 1 1 1 1 0 1 1 0 0 0 0 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 6 1
+ 1 1 1 1 1 1 1 1 1 2 1 0 0]
+tags: <PAD> I-LOC O O O O O O O O O O O O O O O O O O O O O O O O O I-MISC O O O O O O O O O O I-LOC O <PAD>
+seqlen: 50
+=======================
+=========eval at epoch=3=========
+processed 55044 tokens with 5942 phrases; found: 5977 phrases; correct: 5854.
+accuracy:  99.14%; (non-O)
+accuracy:  99.77%; precision:  97.94%; recall:  98.52%; FB1:  98.23
+              LOC: precision:  99.07%; recall:  98.64%; FB1:  98.85  1829
+             MISC: precision:  94.89%; recall:  96.75%; FB1:  95.81  940
+              ORG: precision:  97.41%; recall:  98.14%; FB1:  97.77  1351
+              PER: precision:  98.76%; recall:  99.57%; FB1:  99.16  1857
+num_proposed:8645
+num_correct:8529
+num_gold:8603
+precision=0.9866
+recall=0.9914
+f1=0.9890
+weights were saved to finetuning1/3.pt
+=========test at epoch=3=========
+processed 50350 tokens with 5648 phrases; found: 5806 phrases; correct: 5161.
+accuracy:  93.33%; (non-O)
+accuracy:  98.17%; precision:  88.89%; recall:  91.38%; FB1:  90.12
+              LOC: precision:  94.58%; recall:  91.07%; FB1:  92.79  1606
+             MISC: precision:  73.68%; recall:  81.34%; FB1:  77.32  775
+              ORG: precision:  86.44%; recall:  90.61%; FB1:  88.48  1741
+              PER: precision:  92.99%; recall:  96.85%; FB1:  94.88  1684
+num_proposed:8393
+num_correct:7571
+num_gold:8112
+precision=0.9021
+recall=0.9333
+f1=0.9174
+=====sanity check======
+words: <cls> BELGRADE 1996-08-29 <sep>
+x: [    3    17 26983 18221  9575  2025    13  3383    13  2821     4]
+is_heads: [1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1]
+y: [0 2 0 0 0 1 0 0 0 0 0]
+tags: <PAD> I-LOC O <PAD>
+seqlen: 11
+=======================
+=========eval at epoch=4=========
+processed 55044 tokens with 5942 phrases; found: 5954 phrases; correct: 5818.
+accuracy:  98.99%; (non-O)
+accuracy:  99.70%; precision:  97.72%; recall:  97.91%; FB1:  97.81
+              LOC: precision:  98.75%; recall:  98.91%; FB1:  98.83  1840
+             MISC: precision:  95.40%; recall:  94.58%; FB1:  94.99  914
+              ORG: precision:  95.74%; recall:  97.24%; FB1:  96.49  1362
+              PER: precision:  99.29%; recall:  99.08%; FB1:  99.18  1838
+num_proposed:8650
+num_correct:8516
+num_gold:8603
+precision=0.9845
+recall=0.9899
+f1=0.9872
+weights were saved to finetuning1/4.pt
+=========test at epoch=4=========
+processed 50350 tokens with 5648 phrases; found: 5721 phrases; correct: 5124.
+accuracy:  92.96%; (non-O)
+accuracy:  98.27%; precision:  89.56%; recall:  90.72%; FB1:  90.14
+              LOC: precision:  92.92%; recall:  92.09%; FB1:  92.50  1653
+             MISC: precision:  79.80%; recall:  78.21%; FB1:  78.99  688
+              ORG: precision:  84.84%; recall:  89.95%; FB1:  87.32  1761
+              PER: precision:  95.43%; recall:  95.55%; FB1:  95.49  1619
+num_proposed:8279
+num_correct:7541
+num_gold:8112
+precision=0.9109
+recall=0.9296
+f1=0.9201
+=====sanity check======
+words: <cls> India RBI chief sees cut in cash reserve ratio . <sep>
+x: [    3   837 10026   735  6872   778    25  1454  4910  5806    17     9
+     4]
+is_heads: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1]
+y: [0 2 5 1 1 1 1 1 1 1 1 0 0]
+tags: <PAD> I-LOC I-ORG O O O O O O O O <PAD>
+seqlen: 13
+=======================
+=========eval at epoch=5=========
+processed 55044 tokens with 5942 phrases; found: 5947 phrases; correct: 5892.
+accuracy:  99.43%; (non-O)
+accuracy:  99.87%; precision:  99.08%; recall:  99.16%; FB1:  99.12
+              LOC: precision:  99.46%; recall:  99.67%; FB1:  99.56  1841
+             MISC: precision:  97.50%; recall:  97.40%; FB1:  97.45  921
+              ORG: precision:  98.88%; recall:  98.81%; FB1:  98.84  1340
+              PER: precision:  99.62%; recall:  99.78%; FB1:  99.70  1845
+num_proposed:8607
+num_correct:8554
+num_gold:8603
+precision=0.9938
+recall=0.9943
+f1=0.9941
+weights were saved to finetuning1/5.pt
+=========test at epoch=5=========
+processed 50350 tokens with 5648 phrases; found: 5706 phrases; correct: 5177.
+accuracy:  93.27%; (non-O)
+accuracy:  98.37%; precision:  90.73%; recall:  91.66%; FB1:  91.19
+              LOC: precision:  92.24%; recall:  93.35%; FB1:  92.79  1688
+             MISC: precision:  80.37%; recall:  80.48%; FB1:  80.43  703
+              ORG: precision:  88.86%; recall:  90.25%; FB1:  89.55  1687
+              PER: precision:  95.58%; recall:  96.23%; FB1:  95.90  1628
+num_proposed:8244
+num_correct:7566
+num_gold:8112
+precision=0.9178
+recall=0.9327
+f1=0.9252
+=====sanity check======
+words: <cls> " That baked lasagna better be good for $ 8.50 , " said New Yorker Rebecca Weinstein , a U.S. Open regular who was eating a sandwich she had brought from home . <sep>
+x: [    3    17    12   357 20056  2483  1512  9085   352    39   195    28
+  6490   541     9  1464    17    19    17    12    42   158   313   118
+ 15775 29901    17    19    24   128     9    83     9  1828  1467    61
+    30  4099    24 16041    85    54   959    40   192    17     9     4]
+is_heads: [1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1]
+y: [0 1 0 1 1 1 0 0 1 1 1 1 1 1 0 0 1 0 1 0 1 6 6 0 4 4 1 0 1 6 0 0 0 6 1 1 1
+ 1 1 1 1 1 1 1 1 1 0 0]
+tags: <PAD> O O O O O O O O O O O O O I-MISC I-MISC I-PER I-PER O O I-MISC I-MISC O O O O O O O O O O O O <PAD>
+seqlen: 48
+=======================
+=========eval at epoch=6=========
+processed 55044 tokens with 5942 phrases; found: 5944 phrases; correct: 5895.
+accuracy:  99.62%; (non-O)
+accuracy:  99.90%; precision:  99.18%; recall:  99.21%; FB1:  99.19
+              LOC: precision:  99.24%; recall:  99.78%; FB1:  99.51  1847
+             MISC: precision:  97.84%; recall:  98.05%; FB1:  97.94  924
+              ORG: precision:  99.17%; recall:  98.36%; FB1:  98.76  1330
+              PER: precision:  99.78%; recall:  99.84%; FB1:  99.81  1843
+num_proposed:8619
+num_correct:8570
+num_gold:8603
+precision=0.9943
+recall=0.9962
+f1=0.9952
+weights were saved to finetuning1/6.pt
+=========test at epoch=6=========
+processed 50350 tokens with 5648 phrases; found: 5725 phrases; correct: 5177.
+accuracy:  93.57%; (non-O)
+accuracy:  98.35%; precision:  90.43%; recall:  91.66%; FB1:  91.04
+              LOC: precision:  93.19%; recall:  93.47%; FB1:  93.33  1673
+             MISC: precision:  76.02%; recall:  82.62%; FB1:  79.18  763
+              ORG: precision:  88.20%; recall:  89.58%; FB1:  88.89  1687
+              PER: precision:  96.75%; recall:  95.86%; FB1:  96.30  1602
+num_proposed:8296
+num_correct:7590
+num_gold:8112
+precision=0.9149
+recall=0.9357
+f1=0.9252
+=====sanity check======
+words: <cls> Spitzbergen lies some 500 miles ( 800 km ) off the northern tip of Norway and endures one of the most extreme climates on the planet . <sep>
+x: [    3 12961  3607  3216   254  3516   106  2450  1071    17    10  6216
+  3101    17    11   177    18  1478  5149    20  5279    21 16544    23
+    65    20    18   127  4545  2749    23    31    18  4915    17     9
+     4]
+is_heads: [1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1]
+y: [0 2 0 0 0 1 1 1 1 1 0 1 1 1 0 1 1 1 1 1 2 1 1 0 1 1 1 1 1 1 0 1 1 1 1 0 0]
+tags: <PAD> I-LOC O O O O O O O O O O O O O I-LOC O O O O O O O O O O O O <PAD>
+seqlen: 37
+=======================
+=========eval at epoch=7=========
+processed 55044 tokens with 5942 phrases; found: 5958 phrases; correct: 5898.
+accuracy:  99.62%; (non-O)
+accuracy:  99.88%; precision:  98.99%; recall:  99.26%; FB1:  99.13
+              LOC: precision:  98.76%; recall:  99.56%; FB1:  99.16  1852
+             MISC: precision:  98.59%; recall:  98.59%; FB1:  98.59  922
+              ORG: precision:  98.44%; recall:  99.11%; FB1:  98.77  1350
+              PER: precision:  99.84%; recall:  99.40%; FB1:  99.62  1834
+num_proposed:8632
+num_correct:8570
+num_gold:8603
+precision=0.9928
+recall=0.9962
+f1=0.9945
+weights were saved to finetuning1/7.pt
+=========test at epoch=7=========
+processed 50350 tokens with 5648 phrases; found: 5772 phrases; correct: 5169.
+accuracy:  93.27%; (non-O)
+accuracy:  98.28%; precision:  89.55%; recall:  91.52%; FB1:  90.53
+              LOC: precision:  92.35%; recall:  93.41%; FB1:  92.88  1687
+             MISC: precision:  78.88%; recall:  82.48%; FB1:  80.64  734
+              ORG: precision:  85.08%; recall:  90.97%; FB1:  87.93  1776
+              PER: precision:  96.57%; recall:  94.06%; FB1:  95.30  1575
+num_proposed:8319
+num_correct:7566
+num_gold:8112
+precision=0.9095
+recall=0.9327
+f1=0.9209
+=====sanity check======
+words: <cls> 5. Tom Steels ( Belgium ) Mapei <sep>
+x: [   3  306    9 1928 9007   23   17   10 5663   17   11 9595 5730    4]
+is_heads: [1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1]
+y: [0 1 0 4 4 0 1 0 2 1 0 5 0 0]
+tags: <PAD> O I-PER I-PER O I-LOC O I-ORG <PAD>
+seqlen: 14
+=======================
+=========eval at epoch=8=========
+processed 55044 tokens with 5942 phrases; found: 5940 phrases; correct: 5900.
+accuracy:  99.63%; (non-O)
+accuracy:  99.91%; precision:  99.33%; recall:  99.29%; FB1:  99.31
+              LOC: precision:  99.84%; recall:  99.51%; FB1:  99.67  1831
+             MISC: precision:  97.41%; recall:  97.83%; FB1:  97.62  926
+              ORG: precision:  99.40%; recall:  99.25%; FB1:  99.33  1339
+              PER: precision:  99.73%; recall:  99.84%; FB1:  99.78  1844
+num_proposed:8602
+num_correct:8571
+num_gold:8603
+precision=0.9964
+recall=0.9963
+f1=0.9963
+weights were saved to finetuning1/8.pt
+=========test at epoch=8=========
+processed 50350 tokens with 5648 phrases; found: 5686 phrases; correct: 5179.
+accuracy:  93.04%; (non-O)
+accuracy:  98.37%; precision:  91.08%; recall:  91.70%; FB1:  91.39
+              LOC: precision:  94.90%; recall:  91.55%; FB1:  93.19  1609
+             MISC: precision:  79.83%; recall:  81.77%; FB1:  80.79  719
+              ORG: precision:  87.08%; recall:  91.69%; FB1:  89.33  1749
+              PER: precision:  96.64%; recall:  96.17%; FB1:  96.40  1609
+num_proposed:8208
+num_correct:7547
+num_gold:8112
+precision=0.9195
+recall=0.9304
+f1=0.9249
+=====sanity check======
+words: <cls> -- Dhaka Newsroom 880-2-506363 <sep>
+x: [    3    17    13    13 19813  1419  2962   541  2728    13   184    13
+  1464  4539  4539     4]
+is_heads: [1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1]
+y: [0 1 0 0 5 5 0 1 0 0 0 0 0 0 0 0]
+tags: <PAD> O I-ORG I-ORG O <PAD>
+seqlen: 16
+=======================
+=========eval at epoch=9=========
+processed 55044 tokens with 5942 phrases; found: 5942 phrases; correct: 5904.
+accuracy:  99.69%; (non-O)
+accuracy:  99.91%; precision:  99.36%; recall:  99.36%; FB1:  99.36
+              LOC: precision:  99.46%; recall:  99.95%; FB1:  99.70  1846
+             MISC: precision:  98.47%; recall:  98.05%; FB1:  98.26  918
+              ORG: precision:  99.18%; recall:  98.66%; FB1:  98.92  1334
+              PER: precision:  99.84%; recall:  99.95%; FB1:  99.89  1844
+num_proposed:8620
+num_correct:8576
+num_gold:8603
+precision=0.9949
+recall=0.9969
+f1=0.9959
+weights were saved to finetuning1/9.pt
+=========test at epoch=9=========
+processed 50350 tokens with 5648 phrases; found: 5743 phrases; correct: 5142.
+accuracy:  93.01%; (non-O)
+accuracy:  98.15%; precision:  89.54%; recall:  91.04%; FB1:  90.28
+              LOC: precision:  91.70%; recall:  93.41%; FB1:  92.55  1699
+             MISC: precision:  77.32%; recall:  80.63%; FB1:  78.94  732
+              ORG: precision:  87.45%; recall:  87.66%; FB1:  87.55  1665
+              PER: precision:  94.84%; recall:  96.60%; FB1:  95.71  1647
+num_proposed:8358
+num_correct:7545
+num_gold:8112
+precision=0.9027
+recall=0.9301
+f1=0.9162
+=====sanity check======
+words: <cls> Tan Fook ( Malaysia ) 15-5 15-3 <sep>
+x: [   3 4998  518 8851   17   10 4017   17   11  382   13  217  382   13
+  233    4]
+is_heads: [1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 1]
+y: [0 4 4 0 1 0 2 1 0 1 0 0 1 0 0 0]
+tags: <PAD> I-PER I-PER O I-LOC O O O <PAD>
+seqlen: 16
+=======================
+=========eval at epoch=10=========
+processed 55044 tokens with 5942 phrases; found: 5951 phrases; correct: 5908.
+accuracy:  99.70%; (non-O)
+accuracy:  99.91%; precision:  99.28%; recall:  99.43%; FB1:  99.35
+              LOC: precision:  99.51%; recall:  99.84%; FB1:  99.67  1843
+             MISC: precision:  98.70%; recall:  98.48%; FB1:  98.59  920
+              ORG: precision:  99.18%; recall:  98.88%; FB1:  99.03  1337
+              PER: precision:  99.41%; recall:  99.89%; FB1:  99.65  1851
+num_proposed:8625
+num_correct:8577
+num_gold:8603
+precision=0.9944
+recall=0.9970
+f1=0.9957
+weights were saved to finetuning1/10.pt
+=========test at epoch=10=========
+processed 50350 tokens with 5648 phrases; found: 5772 phrases; correct: 5194.
+accuracy:  93.70%; (non-O)
+accuracy:  98.29%; precision:  89.99%; recall:  91.96%; FB1:  90.96
+              LOC: precision:  92.09%; recall:  93.59%; FB1:  92.83  1695
+             MISC: precision:  78.49%; recall:  81.62%; FB1:  80.03  730
+              ORG: precision:  88.66%; recall:  89.95%; FB1:  89.30  1685
+              PER: precision:  94.22%; recall:  96.85%; FB1:  95.52  1662
+num_proposed:8344
+num_correct:7601
+num_gold:8112
+precision=0.9110
+recall=0.9370
+f1=0.9238
+
+
+ython train.py --logdir finetuning1 --finetuning --batch_size 8 --lr 4e-5 --n_epochs 10
+
+2020-10-14 22:33:37.855520: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.2/lib64:/usr/local/cuda-10.2/lib64:
+2020-10-14 22:33:37.855581: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+/home/t/anaconda3/envs/ai/lib/python3.8/site-packages/transformers/configuration_xlnet.py:204: FutureWarning: This config doesn't use attention memories, a core feature of XLNet. Consider setting `men_len` to a non-zero value, for example `xlnet = XLNetLMHeadModel.from_pretrained('xlnet-base-cased'', mem_len=1024)`, for accurate training performance as well as an order of magnitude faster inference. Starting from version 3.5.0, the default parameter will be 1024, following the implementation in https://arxiv.org/abs/1906.08237
+  warnings.warn(
+=====sanity check======
+words: <cls> behind <sep>
+x: [  3 583   4]
+is_heads: [1, 1, 1]
+y: [0 1 0]
+tags: <PAD> O <PAD>
+seqlen: 3
+=======================
+=========eval at epoch=1=========
+processed 55044 tokens with 5942 phrases; found: 5960 phrases; correct: 5697.
+accuracy:  96.95%; (non-O)
+accuracy:  99.35%; precision:  95.59%; recall:  95.88%; FB1:  95.73
+              LOC: precision:  94.87%; recall:  98.75%; FB1:  96.77  1912
+             MISC: precision:  90.48%; recall:  91.76%; FB1:  91.11  935
+              ORG: precision:  96.11%; recall:  92.10%; FB1:  94.06  1285
+              PER: precision:  98.58%; recall:  97.83%; FB1:  98.20  1828
+num_proposed:8646
+num_correct:8341
+num_gold:8603
+precision=0.9647
+recall=0.9695
+f1=0.9671
+weights were saved to finetuning1/1.pt
+=========test at epoch=1=========
+processed 50350 tokens with 5648 phrases; found: 5725 phrases; correct: 5087.
+accuracy:  92.18%; (non-O)
+accuracy:  98.09%; precision:  88.86%; recall:  90.07%; FB1:  89.46
+              LOC: precision:  86.90%; recall:  94.66%; FB1:  90.62  1817
+             MISC: precision:  74.73%; recall:  78.77%; FB1:  76.70  740
+              ORG: precision:  91.05%; recall:  85.13%; FB1:  87.99  1553
+              PER: precision:  95.42%; recall:  95.30%; FB1:  95.36  1615
+num_proposed:8321
+num_correct:7478
+num_gold:8112
+precision=0.8987
+recall=0.9218
+f1=0.9101
+=====sanity check======
+words: <cls> Result of English rugby league premiership semifinal played on Saturday : <sep>
+x: [    3 31386    20   897  7902  1594 26173 14100   507    31   582    17
+    60     4]
+is_heads: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1]
+y: [0 1 1 6 1 1 1 1 1 1 1 1 0 0]
+tags: <PAD> O O I-MISC O O O O O O O O <PAD>
+seqlen: 14
+=======================
+=========eval at epoch=2=========
+processed 55044 tokens with 5942 phrases; found: 5960 phrases; correct: 5800.
+accuracy:  98.57%; (non-O)
+accuracy:  99.66%; precision:  97.32%; recall:  97.61%; FB1:  97.46
+              LOC: precision:  98.16%; recall:  98.75%; FB1:  98.45  1848
+             MISC: precision:  95.81%; recall:  94.36%; FB1:  95.08  908
+              ORG: precision:  94.68%; recall:  96.94%; FB1:  95.80  1373
+              PER: precision:  99.18%; recall:  98.59%; FB1:  98.88  1831
+num_proposed:8616
+num_correct:8480
+num_gold:8603
+precision=0.9842
+recall=0.9857
+f1=0.9850
+weights were saved to finetuning1/2.pt
+=========test at epoch=2=========
+processed 50350 tokens with 5648 phrases; found: 5783 phrases; correct: 5140.
+accuracy:  92.76%; (non-O)
+accuracy:  98.07%; precision:  88.88%; recall:  91.01%; FB1:  89.93
+              LOC: precision:  91.74%; recall:  93.17%; FB1:  92.44  1694
+             MISC: precision:  82.05%; recall:  78.77%; FB1:  80.38  674
+              ORG: precision:  82.20%; recall:  91.45%; FB1:  86.58  1848
+              PER: precision:  96.62%; recall:  93.63%; FB1:  95.10  1567
+num_proposed:8398
+num_correct:7525
+num_gold:8112
+precision=0.8960
+recall=0.9276
+f1=0.9116
+=====sanity check======
+words: <cls> At Trent Bridge : Nottinghamshire 446-9 declared ( G. Archer <sep>
+x: [    3   296 12664  4023    17    60 17916  7503   268  3903    13   490
+  2632    17    10   457     9 18381     4]
+is_heads: [1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1]
+y: [0 1 2 2 1 0 5 0 1 0 0 0 1 1 0 4 0 4 0]
+tags: <PAD> O I-LOC I-LOC O I-ORG O O O I-PER I-PER <PAD>
+seqlen: 19
+=======================
+=========eval at epoch=3=========
+processed 55044 tokens with 5942 phrases; found: 5969 phrases; correct: 5860.
+accuracy:  99.13%; (non-O)
+accuracy:  99.78%; precision:  98.17%; recall:  98.62%; FB1:  98.40
+              LOC: precision:  98.92%; recall:  99.56%; FB1:  99.24  1849
+             MISC: precision:  95.78%; recall:  95.99%; FB1:  95.88  924
+              ORG: precision:  97.05%; recall:  98.06%; FB1:  97.55  1355
+              PER: precision:  99.46%; recall:  99.40%; FB1:  99.43  1841
+num_proposed:8628
+num_correct:8528
+num_gold:8603
+precision=0.9884
+recall=0.9913
+f1=0.9898
+weights were saved to finetuning1/3.pt
+=========test at epoch=3=========
+processed 50350 tokens with 5648 phrases; found: 5751 phrases; correct: 5154.
+accuracy:  93.06%; (non-O)
+accuracy:  98.24%; precision:  89.62%; recall:  91.25%; FB1:  90.43
+              LOC: precision:  93.59%; recall:  91.85%; FB1:  92.71  1637
+             MISC: precision:  78.98%; recall:  79.20%; FB1:  79.09  704
+              ORG: precision:  84.65%; recall:  91.93%; FB1:  88.14  1804
+              PER: precision:  95.83%; recall:  95.18%; FB1:  95.50  1606
+num_proposed:8321
+num_correct:7549
+num_gold:8112
+precision=0.9072
+recall=0.9306
+f1=0.9188
+=====sanity check======
+words: <cls> Francisco Cea ( Spain ) 70 71 76 , Gavin Levenson ( South <sep>
+x: [    3  2463  6590   101    17    10  1959    17    11  2415  8542  7908
+    17    19 18575  1302  3138   672    17    10   334     4]
+is_heads: [1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1]
+y: [0 4 4 0 1 0 2 1 0 1 1 1 1 0 4 4 0 0 1 0 2 0]
+tags: <PAD> I-PER I-PER O I-LOC O O O O O I-PER I-PER O I-LOC <PAD>
+seqlen: 22
+=======================
+=========eval at epoch=4=========
+processed 55044 tokens with 5942 phrases; found: 5947 phrases; correct: 5861.
+accuracy:  99.22%; (non-O)
+accuracy:  99.81%; precision:  98.55%; recall:  98.64%; FB1:  98.60
+              LOC: precision:  99.29%; recall:  99.29%; FB1:  99.29  1837
+             MISC: precision:  96.02%; recall:  96.75%; FB1:  96.38  929
+              ORG: precision:  98.21%; recall:  97.99%; FB1:  98.10  1338
+              PER: precision:  99.35%; recall:  99.40%; FB1:  99.38  1843
+num_proposed:8616
+num_correct:8536
+num_gold:8603
+precision=0.9907
+recall=0.9922
+f1=0.9915
+weights were saved to finetuning1/4.pt
+=========test at epoch=4=========
+processed 50350 tokens with 5648 phrases; found: 5706 phrases; correct: 5145.
+accuracy:  93.08%; (non-O)
+accuracy:  98.28%; precision:  90.17%; recall:  91.09%; FB1:  90.63
+              LOC: precision:  93.52%; recall:  92.51%; FB1:  93.01  1650
+             MISC: precision:  75.10%; recall:  83.33%; FB1:  79.00  779
+              ORG: precision:  87.39%; recall:  89.70%; FB1:  88.53  1705
+              PER: precision:  97.14%; recall:  94.43%; FB1:  95.77  1572
+num_proposed:8282
+num_correct:7551
+num_gold:8112
+precision=0.9117
+recall=0.9308
+f1=0.9212
+=====sanity check======
+words: <cls> " We had to build our own earth shelters to survive the fighting , " said Rajab Adinayev , a bearded elderly Tajik in a long white shirt . <sep>
+x: [    3    17    12   169    54    22  1266   120   224  2965 16025    22
+  4338    18  1501    17    19    17    12    42 14368   508    79  3041
+ 19587    17    19    24 14386    68  6924 30025    25    24   206   817
+  5169    17     9     4]
+is_heads: [1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1]
+y: [0 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 1 4 0 4 0 0 1 0 1 1 0 1 6 1 1 1 1 1
+ 1 0 0]
+tags: <PAD> O O O O O O O O O O O O O O O O I-PER I-PER O O O O I-MISC O O O O O O <PAD>
+seqlen: 40
+=======================
+=========eval at epoch=5=========
+processed 55044 tokens with 5942 phrases; found: 5955 phrases; correct: 5765.
+accuracy:  97.41%; (non-O)
+accuracy:  99.52%; precision:  96.81%; recall:  97.02%; FB1:  96.92
+              LOC: precision:  99.18%; recall:  99.35%; FB1:  99.27  1840
+             MISC: precision:  98.10%; recall:  95.01%; FB1:  96.53  893
+              ORG: precision:  90.19%; recall:  98.73%; FB1:  94.27  1468
+              PER: precision:  99.20%; recall:  94.46%; FB1:  96.77  1754
+num_proposed:8633
+num_correct:8380
+num_gold:8603
+precision=0.9707
+recall=0.9741
+f1=0.9724
+weights were saved to finetuning1/5.pt
+=========test at epoch=5=========
+processed 50350 tokens with 5648 phrases; found: 5769 phrases; correct: 4915.
+accuracy:  88.60%; (non-O)
+accuracy:  97.36%; precision:  85.20%; recall:  87.02%; FB1:  86.10
+              LOC: precision:  92.65%; recall:  92.15%; FB1:  92.40  1659
+             MISC: precision:  85.85%; recall:  77.78%; FB1:  81.61  636
+              ORG: precision:  72.05%; recall:  91.87%; FB1:  80.76  2118
+              PER: precision:  96.31%; recall:  80.77%; FB1:  87.86  1356
+num_proposed:8409
+num_correct:7187
+num_gold:8112
+precision=0.8547
+recall=0.8860
+f1=0.8700
+=====sanity check======
+words: <cls> Atletico Madrid 3 ( Juan Lopez 28th minute , Juan Esnaider 58th , Milinko Pantic 75th ) Barcelona 1 ( Hristo Stoichkov 55th ) . <sep>
+x: [    3 20528  5102   198    17    10  5371  9968  1576   138  1901    17
+    19  5371  5991   597 12927  6547   138    17    19  7204   153  1507
+  3103  2139  4551   138    17    11  6988   156    17    10   732 26505
+  7093  5069  6525  4619   138    17    11    17     9     4]
+is_heads: [1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1]
+y: [0 5 5 1 1 0 4 4 1 0 1 1 0 4 4 0 0 1 0 1 0 4 0 0 4 0 1 0 1 0 5 1 1 0 4 0 4
+ 0 0 1 0 1 0 1 0 0]
+tags: <PAD> I-ORG I-ORG O O I-PER I-PER O O O I-PER I-PER O O I-PER I-PER O O I-ORG O O I-PER I-PER O O O <PAD>
+seqlen: 46
+=======================
+=========eval at epoch=6=========
+processed 55044 tokens with 5942 phrases; found: 5955 phrases; correct: 5865.
+accuracy:  99.31%; (non-O)
+accuracy:  99.83%; precision:  98.49%; recall:  98.70%; FB1:  98.60
+              LOC: precision:  99.29%; recall:  99.62%; FB1:  99.46  1843
+             MISC: precision:  96.54%; recall:  96.96%; FB1:  96.75  926
+              ORG: precision:  97.54%; recall:  97.46%; FB1:  97.50  1340
+              PER: precision:  99.35%; recall:  99.57%; FB1:  99.46  1846
+num_proposed:8613
+num_correct:8544
+num_gold:8603
+precision=0.9920
+recall=0.9931
+f1=0.9926
+weights were saved to finetuning1/6.pt
+=========test at epoch=6=========
+processed 50350 tokens with 5648 phrases; found: 5727 phrases; correct: 5157.
+accuracy:  93.10%; (non-O)
+accuracy:  98.27%; precision:  90.05%; recall:  91.31%; FB1:  90.67
+              LOC: precision:  92.96%; recall:  92.69%; FB1:  92.82  1663
+             MISC: precision:  75.06%; recall:  82.76%; FB1:  78.73  774
+              ORG: precision:  90.05%; recall:  88.80%; FB1:  89.42  1638
+              PER: precision:  94.13%; recall:  96.17%; FB1:  95.14  1652
+num_proposed:8300
+num_correct:7552
+num_gold:8112
+precision=0.9099
+recall=0.9310
+f1=0.9203
+=====sanity check======
+words: <cls> He said Australian diplomats in Nairobi were working with the Roman Catholic church in southern Sudan and with U.S. and Italian diplomats in the region to help free the missionaries . <sep>
+x: [    3    69    42  1293  7494    25 16238    55   481    33    18  2365
+  2335  1151    25  1335  5666    21    33   128     9    83     9    21
+  1652  7494    25    18   653    22   222   325    18 20157    17     9
+     4]
+is_heads: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1]
+y: [0 1 1 6 1 1 2 1 1 1 1 6 6 1 1 1 2 1 1 2 0 0 0 1 6 1 1 1 1 1 1 1 1 1 1 0 0]
+tags: <PAD> O O I-MISC O O I-LOC O O O O I-MISC I-MISC O O O I-LOC O O I-LOC O I-MISC O O O O O O O O O O <PAD>
+seqlen: 37
+=======================
+=========eval at epoch=7=========
+processed 55044 tokens with 5942 phrases; found: 5951 phrases; correct: 5879.
+accuracy:  99.33%; (non-O)
+accuracy:  99.84%; precision:  98.79%; recall:  98.94%; FB1:  98.86
+              LOC: precision:  98.86%; recall:  99.46%; FB1:  99.16  1848
+             MISC: precision:  96.88%; recall:  97.51%; FB1:  97.19  928
+              ORG: precision:  98.88%; recall:  98.36%; FB1:  98.62  1334
+              PER: precision:  99.62%; recall:  99.57%; FB1:  99.59  1841
+num_proposed:8619
+num_correct:8545
+num_gold:8603
+precision=0.9914
+recall=0.9933
+f1=0.9923
+weights were saved to finetuning1/7.pt
+=========test at epoch=7=========
+processed 50350 tokens with 5648 phrases; found: 5739 phrases; correct: 5139.
+accuracy:  92.73%; (non-O)
+accuracy:  98.21%; precision:  89.55%; recall:  90.99%; FB1:  90.26
+              LOC: precision:  89.85%; recall:  93.41%; FB1:  91.59  1734
+             MISC: precision:  78.08%; recall:  81.20%; FB1:  79.61  730
+              ORG: precision:  89.06%; recall:  88.68%; FB1:  88.87  1654
+              PER: precision:  94.88%; recall:  95.11%; FB1:  95.00  1621
+num_proposed:8302
+num_correct:7522
+num_gold:8112
+precision=0.9060
+recall=0.9273
+f1=0.9165
+=====sanity check======
+words: <cls> SOCCER - ENGLISH PREMIER LEAGUE SUMMARY . <sep>
+x: [    3  8281   323 27183    17    13 22747 26443 11040  6031    17  5004
+ 13684 16801    17  4933 12964 25700    17     9     4]
+is_heads: [1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1]
+y: [0 1 0 0 1 0 6 1 0 0 1 0 0 0 1 0 0 0 1 0 0]
+tags: <PAD> O O I-MISC O O O O <PAD>
+seqlen: 21
+=======================
+=========eval at epoch=8=========
+processed 55044 tokens with 5942 phrases; found: 5973 phrases; correct: 5902.
+accuracy:  99.66%; (non-O)
+accuracy:  99.86%; precision:  98.81%; recall:  99.33%; FB1:  99.07
+              LOC: precision:  99.46%; recall:  99.62%; FB1:  99.54  1840
+             MISC: precision:  97.95%; recall:  98.26%; FB1:  98.11  925
+              ORG: precision:  97.36%; recall:  98.96%; FB1:  98.15  1363
+              PER: precision:  99.67%; recall:  99.84%; FB1:  99.76  1845
+num_proposed:8645
+num_correct:8574
+num_gold:8603
+precision=0.9918
+recall=0.9966
+f1=0.9942
+weights were saved to finetuning1/8.pt
+=========test at epoch=8=========
+processed 50350 tokens with 5648 phrases; found: 5887 phrases; correct: 5147.
+accuracy:  93.17%; (non-O)
+accuracy:  98.08%; precision:  87.43%; recall:  91.13%; FB1:  89.24
+              LOC: precision:  92.37%; recall:  92.21%; FB1:  92.29  1665
+             MISC: precision:  77.73%; recall:  82.05%; FB1:  79.83  741
+              ORG: precision:  81.40%; recall:  90.91%; FB1:  85.89  1855
+              PER: precision:  93.67%; recall:  94.19%; FB1:  93.93  1626
+num_proposed:8446
+num_correct:7558
+num_gold:8112
+precision=0.8949
+recall=0.9317
+f1=0.9129
+=====sanity check======
+words: <cls> Perry , a Liberian Senate member during the 1980s , returned to Monrovia on August 22 after West African leaders nominated her for the job under a peace deal signed in Nigeria 's capital Abuja five days earlier . <sep>
+x: [    3  7443    17    19    24 23490  1477   552   181    18  1910    23
+    17    19  1061    22 30015    31   707  1334    99   585  1098   783
+  5869    62    28    18   625   168    24   784   629  1145    25  4941
+    17    26    23   688 27358   298   307   743    17     9     4]
+is_heads: [1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1]
+y: [0 4 1 0 1 6 5 1 1 1 1 0 1 0 1 1 2 1 1 1 1 6 6 1 1 1 1 1 1 1 1 1 1 1 1 2 1
+ 0 0 1 2 1 1 1 1 0 0]
+tags: <PAD> I-PER O O I-MISC I-ORG O O O O O O O I-LOC O O O O I-MISC I-MISC O O O O O O O O O O O O I-LOC O O I-LOC O O O O <PAD>
+seqlen: 47
+=======================
+=========eval at epoch=9=========
+processed 55044 tokens with 5942 phrases; found: 5935 phrases; correct: 5871.
+accuracy:  99.52%; (non-O)
+accuracy:  99.85%; precision:  98.92%; recall:  98.81%; FB1:  98.86
+              LOC: precision:  98.16%; recall:  98.69%; FB1:  98.43  1847
+             MISC: precision:  97.94%; recall:  97.94%; FB1:  97.94  922
+              ORG: precision:  99.70%; recall:  98.43%; FB1:  99.06  1324
+              PER: precision:  99.62%; recall:  99.62%; FB1:  99.62  1842
+num_proposed:8634
+num_correct:8562
+num_gold:8603
+precision=0.9917
+recall=0.9952
+f1=0.9934
+weights were saved to finetuning1/9.pt
+=========test at epoch=9=========
+processed 50350 tokens with 5648 phrases; found: 5767 phrases; correct: 5126.
+accuracy:  93.11%; (non-O)
+accuracy:  98.11%; precision:  88.89%; recall:  90.76%; FB1:  89.81
+              LOC: precision:  87.96%; recall:  93.29%; FB1:  90.54  1769
+             MISC: precision:  77.84%; recall:  81.05%; FB1:  79.41  731
+              ORG: precision:  90.16%; recall:  87.72%; FB1:  88.92  1616
+              PER: precision:  93.52%; recall:  95.49%; FB1:  94.49  1651
+num_proposed:8392
+num_correct:7553
+num_gold:8112
+precision=0.9000
+recall=0.9311
+f1=0.9153
+=====sanity check======
+words: <cls> We 've got to make up some ground . " <sep>
+x: [  3 169  17  26 189 345  22 144  76 106 881  17   9  17  12   4]
+is_heads: [1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1]
+y: [0 1 1 0 0 1 1 1 1 1 1 1 0 1 0 0]
+tags: <PAD> O O O O O O O O O O <PAD>
+seqlen: 16
+=======================
+=========eval at epoch=10=========
+processed 55044 tokens with 5942 phrases; found: 5936 phrases; correct: 5878.
+accuracy:  99.54%; (non-O)
+accuracy:  99.87%; precision:  99.02%; recall:  98.92%; FB1:  98.97
+              LOC: precision:  99.84%; recall:  98.86%; FB1:  99.34  1819
+             MISC: precision:  96.02%; recall:  96.85%; FB1:  96.44  930
+              ORG: precision:  98.81%; recall:  99.18%; FB1:  99.00  1346
+              PER: precision:  99.89%; recall:  99.84%; FB1:  99.86  1841
+num_proposed:8628
+num_correct:8563
+num_gold:8603
+precision=0.9925
+recall=0.9954
+f1=0.9939
+weights were saved to finetuning1/10.pt
+=========test at epoch=10=========
+processed 50350 tokens with 5648 phrases; found: 5741 phrases; correct: 5133.
+accuracy:  93.08%; (non-O)
+accuracy:  98.12%; precision:  89.41%; recall:  90.88%; FB1:  90.14
+              LOC: precision:  94.11%; recall:  91.01%; FB1:  92.53  1613
+             MISC: precision:  76.71%; recall:  81.62%; FB1:  79.09  747
+              ORG: precision:  86.17%; recall:  90.37%; FB1:  88.22  1742
+              PER: precision:  94.02%; recall:  95.30%; FB1:  94.66  1639
+num_proposed:8372
+num_correct:7551
+num_gold:8112
+precision=0.9019
+recall=0.9308
+f1=0.9162
+
+(ai) ➜  bert-ner git:(master) ✗ python train.py --logdir finetuning1 --finetuning --batch_size 8 --lr 5e-5 --n_epochs 10
+
+2020-10-14 16:30:35.885042: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.2/lib64:/usr/local/cuda-10.2/lib64:
+2020-10-14 16:30:35.885064: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+/home/t/anaconda3/envs/ai/lib/python3.8/site-packages/transformers/configuration_xlnet.py:204: FutureWarning: This config doesn't use attention memories, a core feature of XLNet. Consider setting `men_len` to a non-zero value, for example `xlnet = XLNetLMHeadModel.from_pretrained('xlnet-base-cased'', mem_len=1024)`, for accurate training performance as well as an order of magnitude faster inference. Starting from version 3.5.0, the default parameter will be 1024, following the implementation in https://arxiv.org/abs/1906.08237
+  warnings.warn(
+=====sanity check======
+words: <cls> Middlesex 199 and 426 , Hampshire 232 and 205 ( A. Fraser 5-79 , P. Tufnell 4-39 ) . <sep>
+x: [    3 26632   156  2692    21   268  2998    17    19  7146    17 24943
+    21   378   217    17    10    79     9 16709   306    13  4971    17
+    19   395     9  2505   722  9217   268    13  3562    17    11    17
+     9     4]
+is_heads: [1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1]
+y: [0 5 1 0 1 1 0 1 0 5 1 0 1 1 0 1 0 4 0 4 1 0 0 1 0 4 0 4 0 0 1 0 0 1 0 1 0
+ 0]
+tags: <PAD> I-ORG O O O O I-ORG O O O O I-PER I-PER O O I-PER I-PER O O O <PAD>
+seqlen: 38
+=======================
+=========eval at epoch=1=========
+processed 55044 tokens with 5942 phrases; found: 5954 phrases; correct: 5737.
+accuracy:  97.49%; (non-O)
+accuracy:  99.46%; precision:  96.36%; recall:  96.55%; FB1:  96.45
+              LOC: precision:  98.36%; recall:  98.20%; FB1:  98.28  1834
+             MISC: precision:  88.47%; recall:  92.41%; FB1:  90.40  963
+              ORG: precision:  96.50%; recall:  94.56%; FB1:  95.52  1314
+              PER: precision:  98.37%; recall:  98.43%; FB1:  98.40  1843
+num_proposed:8595
+num_correct:8387
+num_gold:8603
+precision=0.9758
+recall=0.9749
+f1=0.9753
+weights were saved to finetuning1/1.pt
+=========test at epoch=1=========
+processed 50350 tokens with 5648 phrases; found: 5696 phrases; correct: 5096.
+accuracy:  92.11%; (non-O)
+accuracy:  98.19%; precision:  89.47%; recall:  90.23%; FB1:  89.84
+              LOC: precision:  92.32%; recall:  91.55%; FB1:  91.93  1654
+             MISC: precision:  71.18%; recall:  80.91%; FB1:  75.73  798
+              ORG: precision:  89.32%; recall:  87.60%; FB1:  88.45  1629
+              PER: precision:  95.73%; recall:  95.61%; FB1:  95.67  1615
+num_proposed:8194
+num_correct:7472
+num_gold:8112
+precision=0.9119
+recall=0.9211
+f1=0.9165
+=====sanity check======
+words: <cls> Earlier on Saturday , an Iraqi Kurd leader said both Iraqi troops and Kurdistan Democratic Party ( KDP ) forces were attacking the city of Arbil in northern Iraq . <sep>
+x: [    3  4718    31   582    17    19    48  1582  9702    66   691    42
+   207  1582   872    21 21755  1457   972    17    10   574  6972    17
+    11   742    55  8129    18   285    20  1903  9810    25  1478   606
+    17     9     4]
+is_heads: [1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1]
+y: [0 1 1 1 1 0 1 6 6 0 1 1 1 6 1 1 5 5 5 1 0 5 0 1 0 1 1 1 1 1 1 2 0 1 1 2 1
+ 0 0]
+tags: <PAD> O O O O O I-MISC I-MISC O O O I-MISC O O I-ORG I-ORG I-ORG O I-ORG O O O O O O O I-LOC O O I-LOC O <PAD>
+seqlen: 39
+=======================
+=========eval at epoch=2=========
+processed 55044 tokens with 5942 phrases; found: 6029 phrases; correct: 5758.
+accuracy:  98.08%; (non-O)
+accuracy:  99.38%; precision:  95.51%; recall:  96.90%; FB1:  96.20
+              LOC: precision:  99.28%; recall:  97.99%; FB1:  98.63  1813
+             MISC: precision:  92.12%; recall:  91.32%; FB1:  91.72  914
+              ORG: precision:  88.57%; recall:  97.61%; FB1:  92.87  1478
+              PER: precision:  99.07%; recall:  98.10%; FB1:  98.58  1824
+num_proposed:8756
+num_correct:8438
+num_gold:8603
+precision=0.9637
+recall=0.9808
+f1=0.9722
+weights were saved to finetuning1/2.pt
+=========test at epoch=2=========
+processed 50350 tokens with 5648 phrases; found: 5893 phrases; correct: 5080.
+accuracy:  92.68%; (non-O)
+accuracy:  97.61%; precision:  86.20%; recall:  89.94%; FB1:  88.03
+              LOC: precision:  94.84%; recall:  91.37%; FB1:  93.07  1607
+             MISC: precision:  76.57%; recall:  78.21%; FB1:  77.38  717
+              ORG: precision:  75.40%; recall:  90.79%; FB1:  82.38  2000
+              PER: precision:  95.54%; recall:  92.70%; FB1:  94.10  1569
+num_proposed:8642
+num_correct:7518
+num_gold:8112
+precision=0.8699
+recall=0.9268
+f1=0.8975
+=====sanity check======
+words: <cls> SEOUL 1996-08-31 <sep>
+x: [    3 10807 10237  2025    13  3383    13  3666     4]
+is_heads: [1, 1, 0, 1, 0, 0, 0, 0, 1]
+y: [0 2 0 1 0 0 0 0 0]
+tags: <PAD> I-LOC O <PAD>
+seqlen: 9
+=======================
+=========eval at epoch=3=========
+processed 55044 tokens with 5942 phrases; found: 5964 phrases; correct: 5825.
+accuracy:  98.99%; (non-O)
+accuracy:  99.69%; precision:  97.67%; recall:  98.03%; FB1:  97.85
+              LOC: precision:  98.38%; recall:  99.40%; FB1:  98.89  1856
+             MISC: precision:  93.85%; recall:  95.99%; FB1:  94.91  943
+              ORG: precision:  97.28%; recall:  96.12%; FB1:  96.70  1325
+              PER: precision:  99.18%; recall:  99.08%; FB1:  99.13  1840
+num_proposed:8668
+num_correct:8516
+num_gold:8603
+precision=0.9825
+recall=0.9899
+f1=0.9862
+weights were saved to finetuning1/3.pt
+=========test at epoch=3=========
+processed 50350 tokens with 5648 phrases; found: 5778 phrases; correct: 5106.
+accuracy:  92.54%; (non-O)
+accuracy:  98.10%; precision:  88.37%; recall:  90.40%; FB1:  89.38
+              LOC: precision:  89.33%; recall:  93.41%; FB1:  91.32  1744
+             MISC: precision:  73.88%; recall:  80.20%; FB1:  76.91  762
+              ORG: precision:  87.34%; recall:  87.24%; FB1:  87.29  1659
+              PER: precision:  95.23%; recall:  94.99%; FB1:  95.11  1613
+num_proposed:8354
+num_correct:7507
+num_gold:8112
+precision=0.8986
+recall=0.9254
+f1=0.9118
+=====sanity check======
+words: <cls> -DOCSTART- <sep>
+x: [    3    17    13   417  6586 24531   658    13     4]
+is_heads: [1, 1, 0, 0, 0, 0, 0, 0, 1]
+y: [0 1 0 0 0 0 0 0 0]
+tags: <PAD> O <PAD>
+seqlen: 9
+=======================
+=========eval at epoch=4=========
+processed 55044 tokens with 5942 phrases; found: 5964 phrases; correct: 5833.
+accuracy:  99.01%; (non-O)
+accuracy:  99.73%; precision:  97.80%; recall:  98.17%; FB1:  97.98
+              LOC: precision:  99.02%; recall:  99.02%; FB1:  99.02  1837
+             MISC: precision:  96.15%; recall:  94.90%; FB1:  95.52  910
+              ORG: precision:  95.89%; recall:  97.54%; FB1:  96.71  1364
+              PER: precision:  98.81%; recall:  99.40%; FB1:  99.11  1853
+num_proposed:8652
+num_correct:8518
+num_gold:8603
+precision=0.9845
+recall=0.9901
+f1=0.9873
+weights were saved to finetuning1/4.pt
+=========test at epoch=4=========
+processed 50350 tokens with 5648 phrases; found: 5757 phrases; correct: 5122.
+accuracy:  92.92%; (non-O)
+accuracy:  98.05%; precision:  88.97%; recall:  90.69%; FB1:  89.82
+              LOC: precision:  92.14%; recall:  92.09%; FB1:  92.11  1667
+             MISC: precision:  81.71%; recall:  80.20%; FB1:  80.95  689
+              ORG: precision:  84.58%; recall:  89.16%; FB1:  86.81  1751
+              PER: precision:  93.45%; recall:  95.36%; FB1:  94.40  1650
+num_proposed:8419
+num_correct:7538
+num_gold:8112
+precision=0.8954
+recall=0.9292
+f1=0.9120
+=====sanity check======
+words: <cls> ISSUER : Bay Co Building Authority ST : MI <sep>
+x: [    3    35    83  4933  6031    17    60  1711   659  5087  4454  7843
+    17    60 10427     4]
+is_heads: [1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1]
+y: [0 1 0 0 0 1 0 5 5 5 5 1 1 0 2 0]
+tags: <PAD> O O I-ORG I-ORG I-ORG I-ORG O O I-LOC <PAD>
+seqlen: 16
+=======================
+=========eval at epoch=5=========
+processed 55044 tokens with 5942 phrases; found: 5982 phrases; correct: 5812.
+accuracy:  99.04%; (non-O)
+accuracy:  99.66%; precision:  97.16%; recall:  97.81%; FB1:  97.48
+              LOC: precision:  98.70%; recall:  99.40%; FB1:  99.05  1850
+             MISC: precision:  93.47%; recall:  96.31%; FB1:  94.87  950
+              ORG: precision:  96.06%; recall:  94.56%; FB1:  95.30  1320
+              PER: precision:  98.28%; recall:  99.35%; FB1:  98.81  1862
+num_proposed:8694
+num_correct:8520
+num_gold:8603
+precision=0.9800
+recall=0.9904
+f1=0.9851
+weights were saved to finetuning1/5.pt
+=========test at epoch=5=========
+processed 50350 tokens with 5648 phrases; found: 5816 phrases; correct: 5047.
+accuracy:  91.86%; (non-O)
+accuracy:  97.82%; precision:  86.78%; recall:  89.36%; FB1:  88.05
+              LOC: precision:  88.42%; recall:  93.41%; FB1:  90.85  1762
+             MISC: precision:  66.82%; recall:  80.63%; FB1:  73.08  847
+              ORG: precision:  89.29%; recall:  82.84%; FB1:  85.95  1541
+              PER: precision:  92.86%; recall:  95.67%; FB1:  94.24  1666
+num_proposed:8435
+num_correct:7452
+num_gold:8112
+precision=0.8835
+recall=0.9186
+f1=0.9007
+=====sanity check======
+words: <cls> Los Angeles 5 MONTREAL 1 <sep>
+x: [    3  1368  1600   306    17 18967   658 21310  1039   156     4]
+is_heads: [1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1]
+y: [0 5 5 1 5 0 0 0 0 1 0]
+tags: <PAD> I-ORG I-ORG O I-ORG O <PAD>
+seqlen: 11
+=======================
+=========eval at epoch=6=========
+processed 55044 tokens with 5942 phrases; found: 5954 phrases; correct: 5876.
+accuracy:  99.27%; (non-O)
+accuracy:  99.84%; precision:  98.69%; recall:  98.89%; FB1:  98.79
+              LOC: precision:  98.49%; recall:  99.73%; FB1:  99.11  1860
+             MISC: precision:  97.07%; recall:  96.85%; FB1:  96.96  920
+              ORG: precision:  99.10%; recall:  98.36%; FB1:  98.73  1331
+              PER: precision:  99.40%; recall:  99.46%; FB1:  99.43  1843
+num_proposed:8605
+num_correct:8540
+num_gold:8603
+precision=0.9924
+recall=0.9927
+f1=0.9926
+weights were saved to finetuning1/6.pt
+=========test at epoch=6=========
+processed 50350 tokens with 5648 phrases; found: 5799 phrases; correct: 5092.
+accuracy:  92.04%; (non-O)
+accuracy:  98.06%; precision:  87.81%; recall:  90.16%; FB1:  88.97
+              LOC: precision:  87.67%; recall:  94.24%; FB1:  90.84  1793
+             MISC: precision:  76.45%; recall:  79.06%; FB1:  77.73  726
+              ORG: precision:  86.55%; recall:  87.54%; FB1:  87.04  1680
+              PER: precision:  94.44%; recall:  93.44%; FB1:  93.94  1600
+num_proposed:8317
+num_correct:7466
+num_gold:8112
+precision=0.8977
+recall=0.9204
+f1=0.9089
+=====sanity check======
+words: <cls> This would be the first time that the former Soviet republic has had to call together an electoral college . <sep>
+x: [   3  122   74   39   18   89   92   29   18  317 2312 5932   51   54
+   22  547  511   48 6382 1377   17    9    4]
+is_heads: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1]
+y: [0 1 1 1 1 1 1 1 1 1 6 1 1 1 1 1 1 1 1 1 1 0 0]
+tags: <PAD> O O O O O O O O O I-MISC O O O O O O O O O O <PAD>
+seqlen: 23
+=======================
+=========eval at epoch=7=========
+processed 55044 tokens with 5942 phrases; found: 5960 phrases; correct: 5883.
+accuracy:  99.44%; (non-O)
+accuracy:  99.85%; precision:  98.71%; recall:  99.01%; FB1:  98.86
+              LOC: precision:  99.46%; recall:  99.56%; FB1:  99.51  1839
+             MISC: precision:  97.18%; recall:  97.18%; FB1:  97.18  922
+              ORG: precision:  97.56%; recall:  98.58%; FB1:  98.07  1355
+              PER: precision:  99.57%; recall:  99.67%; FB1:  99.62  1844
+num_proposed:8616
+num_correct:8555
+num_gold:8603
+precision=0.9929
+recall=0.9944
+f1=0.9937
+weights were saved to finetuning1/7.pt
+=========test at epoch=7=========
+processed 50350 tokens with 5648 phrases; found: 5805 phrases; correct: 5093.
+accuracy:  92.41%; (non-O)
+accuracy:  98.03%; precision:  87.73%; recall:  90.17%; FB1:  88.94
+              LOC: precision:  90.64%; recall:  94.06%; FB1:  92.32  1731
+             MISC: precision:  74.80%; recall:  80.34%; FB1:  77.47  754
+              ORG: precision:  85.21%; recall:  87.06%; FB1:  86.12  1697
+              PER: precision:  93.28%; recall:  93.63%; FB1:  93.46  1623
+num_proposed:8374
+num_correct:7496
+num_gold:8112
+precision=0.8952
+recall=0.9241
+f1=0.9094
+=====sanity check======
+words: <cls> Favourite : Mind Games ( 7-4 ) finished 4th <sep>
+x: [    3  3115 18020  9139    17    60 10703  2227    17    10   425    13
+   265    17    11  1250   268   138     4]
+is_heads: [1, 1, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1]
+y: [0 1 0 0 1 0 4 4 1 0 1 0 0 1 0 1 1 0 0]
+tags: <PAD> O O I-PER I-PER O O O O O <PAD>
+seqlen: 19
+=======================
+=========eval at epoch=8=========
+processed 55044 tokens with 5942 phrases; found: 5938 phrases; correct: 5887.
+accuracy:  99.48%; (non-O)
+accuracy:  99.88%; precision:  99.14%; recall:  99.07%; FB1:  99.11
+              LOC: precision:  99.29%; recall:  99.56%; FB1:  99.43  1842
+             MISC: precision:  98.46%; recall:  97.29%; FB1:  97.87  911
+              ORG: precision:  99.10%; recall:  98.58%; FB1:  98.84  1334
+              PER: precision:  99.35%; recall:  99.84%; FB1:  99.59  1851
+num_proposed:8609
+num_correct:8558
+num_gold:8603
+precision=0.9941
+recall=0.9948
+f1=0.9944
+weights were saved to finetuning1/8.pt
+=========test at epoch=8=========
+processed 50350 tokens with 5648 phrases; found: 5716 phrases; correct: 5088.
+accuracy:  92.01%; (non-O)
+accuracy:  98.13%; precision:  89.01%; recall:  90.08%; FB1:  89.55
+              LOC: precision:  92.11%; recall:  91.67%; FB1:  91.89  1660
+             MISC: precision:  79.03%; recall:  78.92%; FB1:  78.97  701
+              ORG: precision:  88.27%; recall:  87.90%; FB1:  88.08  1654
+              PER: precision:  90.83%; recall:  95.55%; FB1:  93.13  1701
+num_proposed:8255
+num_correct:7464
+num_gold:8112
+precision=0.9042
+recall=0.9201
+f1=0.9121
+=====sanity check======
+words: <cls> CRICKET - ENGLAND BEAT PAKISTAN BY 107 RUNS IN SECOND ONE-DAYER . <sep>
+x: [    3 14044 19890  7446    17    13    17 23120 22443   322 24990  7076
+   536 16249  7047 13577 14776    17 13891  6522  7039  9358  6288   417
+    17 11458    13 14874  6031    17     9     4]
+is_heads: [1, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1]
+y: [0 1 0 0 1 0 2 0 0 1 0 2 0 0 0 1 1 1 0 0 1 1 0 0 1 0 0 0 0 1 0 0]
+tags: <PAD> O O I-LOC O I-LOC O O O O O O O <PAD>
+seqlen: 32
+=======================
+=========eval at epoch=9=========
+processed 55044 tokens with 5942 phrases; found: 5939 phrases; correct: 5883.
+accuracy:  99.51%; (non-O)
+accuracy:  99.89%; precision:  99.06%; recall:  99.01%; FB1:  99.03
+              LOC: precision:  99.62%; recall:  99.46%; FB1:  99.54  1834
+             MISC: precision:  98.46%; recall:  97.29%; FB1:  97.87  911
+              ORG: precision:  98.15%; recall:  98.73%; FB1:  98.44  1349
+              PER: precision:  99.46%; recall:  99.62%; FB1:  99.54  1845
+num_proposed:8608
+num_correct:8561
+num_gold:8603
+precision=0.9945
+recall=0.9951
+f1=0.9948
+weights were saved to finetuning1/9.pt
+=========test at epoch=9=========
+processed 50350 tokens with 5648 phrases; found: 5719 phrases; correct: 5104.
+accuracy:  92.65%; (non-O)
+accuracy:  98.19%; precision:  89.25%; recall:  90.37%; FB1:  89.80
+              LOC: precision:  93.30%; recall:  91.85%; FB1:  92.57  1642
+             MISC: precision:  79.57%; recall:  79.91%; FB1:  79.74  705
+              ORG: precision:  86.51%; recall:  88.38%; FB1:  87.43  1697
+              PER: precision:  92.12%; recall:  95.42%; FB1:  93.74  1675
+num_proposed:8290
+num_correct:7516
+num_gold:8112
+precision=0.9066
+recall=0.9265
+f1=0.9165
+=====sanity check======
+words: <cls> Described by one British company as " eco-terrorism " , it is seen as the new business risk of the 1990s . <sep>
+x: [    3 28758    66    37    65   559   226    34    17    12 14390    13
+ 13489    17    12    17    19    36    27   566    34    18   109   264
+  1046    20    18  1722    23    17     9     4]
+is_heads: [1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1]
+y: [0 1 0 1 1 6 1 1 1 0 1 0 0 1 0 1 0 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0]
+tags: <PAD> O O O I-MISC O O O O O O O O O O O O O O O O O O <PAD>
+seqlen: 32
+=======================
+=========eval at epoch=10=========
+processed 55044 tokens with 5942 phrases; found: 5942 phrases; correct: 5864.
+accuracy:  99.14%; (non-O)
+accuracy:  99.84%; precision:  98.69%; recall:  98.69%; FB1:  98.69
+              LOC: precision:  99.19%; recall:  99.62%; FB1:  99.40  1845
+             MISC: precision:  97.36%; recall:  96.10%; FB1:  96.72  910
+              ORG: precision:  97.78%; recall:  98.73%; FB1:  98.26  1354
+              PER: precision:  99.51%; recall:  99.02%; FB1:  99.27  1833
+num_proposed:8583
+num_correct:8529
+num_gold:8603
+precision=0.9937
+recall=0.9914
+f1=0.9926
+weights were saved to finetuning1/10.pt
+=========test at epoch=10=========
+processed 50350 tokens with 5648 phrases; found: 5743 phrases; correct: 5070.
+accuracy:  91.65%; (non-O)
+accuracy:  98.01%; precision:  88.28%; recall:  89.77%; FB1:  89.02
+              LOC: precision:  89.93%; recall:  93.17%; FB1:  91.52  1728
+             MISC: precision:  79.94%; recall:  79.49%; FB1:  79.71  698
+              ORG: precision:  84.00%; recall:  87.54%; FB1:  85.73  1731
+              PER: precision:  94.83%; recall:  93.01%; FB1:  93.91  1586
+num_proposed:8272
+num_correct:7435
+num_gold:8112
+precision=0.8988
+recall=0.9165
+f1=0.9076

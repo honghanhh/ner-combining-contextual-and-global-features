@@ -1,0 +1,162 @@
+(ai) ➜  bert-ner git:(master) ✗ python train.py --logdir finetuning1 --finetuning --batch_size 8 --lr 5e-5 --n_epochs 4
+
+2020-10-13 13:03:00.874119: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.2/lib64:/usr/local/cuda-10.2/lib64:
+2020-10-13 13:03:00.874140: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+/home/t/anaconda3/envs/ai/lib/python3.8/site-packages/transformers/configuration_xlnet.py:204: FutureWarning: This config doesn't use attention memories, a core feature of XLNet. Consider setting `men_len` to a non-zero value, for example `xlnet = XLNetLMHeadModel.from_pretrained('xlnet-base-cased'', mem_len=1024)`, for accurate training performance as well as an order of magnitude faster inference. Starting from version 3.5.0, the default parameter will be 1024, following the implementation in https://arxiv.org/abs/1906.08237
+  warnings.warn(
+=====sanity check======
+words: <cls> But I think he served pretty well when he had to . " <sep>
+x: [   3  130   35  232   43  900 1508  143   90   43   54   22   17    9
+   17   12    4]
+is_heads: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1]
+y: [0 1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0]
+tags: <PAD> O O O O O O O O O O O O O <PAD>
+seqlen: 17
+=======================
+=========eval at epoch=1=========
+processed 55044 tokens with 5942 phrases; found: 5981 phrases; correct: 5692.
+accuracy:  97.55%; (non-O)
+accuracy:  99.35%; precision:  95.17%; recall:  95.79%; FB1:  95.48
+              LOC: precision:  96.66%; recall:  96.08%; FB1:  96.37  1826
+             MISC: precision:  91.15%; recall:  92.73%; FB1:  91.94  938
+              ORG: precision:  94.07%; recall:  93.51%; FB1:  93.79  1333
+              PER: precision:  96.50%; recall:  98.70%; FB1:  97.58  1884
+num_proposed:8696
+num_correct:8392
+num_gold:8603
+precision=0.9650
+recall=0.9755
+f1=0.9702
+=========test at epoch=1=========
+processed 50350 tokens with 5648 phrases; found: 5791 phrases; correct: 5062.
+accuracy:  92.69%; (non-O)
+accuracy:  97.96%; precision:  87.41%; recall:  89.62%; FB1:  88.50
+              LOC: precision:  91.58%; recall:  88.67%; FB1:  90.10  1615
+             MISC: precision:  73.36%; recall:  81.20%; FB1:  77.08  777
+              ORG: precision:  86.56%; recall:  86.45%; FB1:  86.51  1659
+              PER: precision:  90.63%; recall:  97.53%; FB1:  93.95  1740
+num_proposed:8454
+num_correct:7519
+num_gold:8112
+precision=0.8894
+recall=0.9269
+f1=0.9078
+=====sanity check======
+words: <cls> Recalled fly-half Henry Honiball kicked the Springboks into a 6-0 lead after 10 minutes only to see Andrew Mehrtens launch a penalty from eight metres inside his own half to narrow the gap . <sep>
+x: [    3   741  3569  3222    13  5960  2467  2095  1197  2868  7137    18
+ 31528    23    91    24   284    13   279   575    99   241   641   114
+    22   197  3707 12617   213 10555  2498    24  3320    40   869  6531
+   879    45   224   455    22  3519    18  4774    17     9     4]
+is_heads: [1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1]
+y: [0 1 0 1 0 0 4 4 0 0 1 1 5 0 1 1 1 0 0 1 1 1 1 1 1 1 4 4 0 0 1 1 1 1 1 1 1
+ 1 1 1 1 1 1 1 1 0 0]
+tags: <PAD> O O I-PER I-PER O O I-ORG O O O O O O O O O O I-PER I-PER O O O O O O O O O O O O O O O <PAD>
+seqlen: 47
+=======================
+=========eval at epoch=2=========
+processed 55044 tokens with 5942 phrases; found: 5952 phrases; correct: 5753.
+accuracy:  97.66%; (non-O)
+accuracy:  99.53%; precision:  96.66%; recall:  96.82%; FB1:  96.74
+              LOC: precision:  99.27%; recall:  96.30%; FB1:  97.76  1782
+             MISC: precision:  96.52%; recall:  93.38%; FB1:  94.93  892
+              ORG: precision:  90.17%; recall:  98.51%; FB1:  94.16  1465
+              PER: precision:  99.39%; recall:  97.83%; FB1:  98.60  1813
+num_proposed:8616
+num_correct:8402
+num_gold:8603
+precision=0.9752
+recall=0.9766
+f1=0.9759
+=========test at epoch=2=========
+processed 50350 tokens with 5648 phrases; found: 5769 phrases; correct: 5021.
+accuracy:  91.27%; (non-O)
+accuracy:  97.97%; precision:  87.03%; recall:  88.90%; FB1:  87.96
+              LOC: precision:  95.58%; recall:  86.81%; FB1:  90.98  1515
+             MISC: precision:  81.42%; recall:  76.78%; FB1:  79.03  662
+              ORG: precision:  75.28%; recall:  93.86%; FB1:  83.55  2071
+              PER: precision:  96.98%; recall:  91.22%; FB1:  94.01  1521
+num_proposed:8325
+num_correct:7404
+num_gold:8112
+precision=0.8894
+recall=0.9127
+f1=0.9009
+=====sanity check======
+words: <cls> 1860 Munich 1 ( Schwabl 38th ) Borussia Dortmund 3 ( Zorc <sep>
+x: [    3 13994  9120   156    17    10 27399   368  3813   138    17    11
+  5736   415  7192 25379   198    17    10 24523   369     4]
+is_heads: [1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1]
+y: [0 5 5 1 1 0 4 0 1 0 1 0 5 0 0 5 1 1 0 4 0 0]
+tags: <PAD> I-ORG I-ORG O O I-PER O O I-ORG I-ORG O O I-PER <PAD>
+seqlen: 22
+=======================
+=========eval at epoch=3=========
+processed 55044 tokens with 5942 phrases; found: 5942 phrases; correct: 5827.
+accuracy:  98.58%; (non-O)
+accuracy:  99.71%; precision:  98.06%; recall:  98.06%; FB1:  98.06
+              LOC: precision:  98.49%; recall:  99.51%; FB1:  99.00  1856
+             MISC: precision:  96.49%; recall:  95.34%; FB1:  95.91  911
+              ORG: precision:  98.10%; recall:  96.12%; FB1:  97.10  1314
+              PER: precision:  98.39%; recall:  99.40%; FB1:  98.89  1861
+num_proposed:8578
+num_correct:8481
+num_gold:8603
+precision=0.9887
+recall=0.9858
+f1=0.9873
+=========test at epoch=3=========
+processed 50350 tokens with 5648 phrases; found: 5732 phrases; correct: 5135.
+accuracy:  92.71%; (non-O)
+accuracy:  98.27%; precision:  89.58%; recall:  90.92%; FB1:  90.25
+              LOC: precision:  88.80%; recall:  94.12%; FB1:  91.39  1768
+             MISC: precision:  78.84%; recall:  79.63%; FB1:  79.23  709
+              ORG: precision:  89.60%; recall:  87.18%; FB1:  88.37  1616
+              PER: precision:  95.06%; recall:  96.35%; FB1:  95.70  1639
+num_proposed:8240
+num_correct:7521
+num_gold:8112
+precision=0.9127
+recall=0.9271
+f1=0.9199
+=====sanity check======
+words: <cls> Iran has warned Germany that bilateral relations could suffer if it pays heed to the testimony of Banisadr , an architect of Iran 's Islamic revolution who has been a sworn enemy of Tehran since he fell from favour after a year as president . <sep>
+x: [    3  1241    51  2267   998    29  6092  1704   121  4908   108    36
+ 12599    43    68    22    18  5674    20  3481 13106  7841    17    19
+    48  7165    20  1241    17    26    23  1950  5727    61    51    72
+    24 12962  3854    20  6740   196    43   865    40  8485    99    24
+   119    34   379    17     9     4]
+is_heads: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1]
+y: [0 2 1 1 2 1 1 1 1 1 1 1 1 1 0 1 1 1 1 4 0 0 1 0 1 1 1 2 1 0 0 6 1 1 1 1 1
+ 1 1 1 2 1 1 1 1 1 1 1 1 1 1 1 0 0]
+tags: <PAD> I-LOC O O I-LOC O O O O O O O O O O O O O I-PER O O O O I-LOC O I-MISC O O O O O O O O I-LOC O O O O O O O O O O O <PAD>
+seqlen: 54
+=======================
+=========eval at epoch=4=========
+processed 55044 tokens with 5942 phrases; found: 5952 phrases; correct: 5851.
+accuracy:  98.91%; (non-O)
+accuracy:  99.77%; precision:  98.30%; recall:  98.47%; FB1:  98.39
+              LOC: precision:  98.86%; recall:  99.40%; FB1:  99.13  1847
+             MISC: precision:  96.72%; recall:  96.10%; FB1:  96.41  916
+              ORG: precision:  97.47%; recall:  97.54%; FB1:  97.50  1342
+              PER: precision:  99.13%; recall:  99.40%; FB1:  99.27  1847
+num_proposed:8605
+num_correct:8509
+num_gold:8603
+precision=0.9888
+recall=0.9891
+f1=0.9890
+=========test at epoch=4=========
+processed 50350 tokens with 5648 phrases; found: 5728 phrases; correct: 5149.
+accuracy:  92.92%; (non-O)
+accuracy:  98.26%; precision:  89.89%; recall:  91.17%; FB1:  90.52
+              LOC: precision:  90.06%; recall:  93.47%; FB1:  91.73  1731
+             MISC: precision:  82.10%; recall:  80.34%; FB1:  81.21  687
+              ORG: precision:  88.11%; recall:  87.90%; FB1:  88.00  1657
+              PER: precision:  94.74%; recall:  96.85%; FB1:  95.78  1653
+num_proposed:8254
+num_correct:7538
+num_gold:8112
+precision=0.9133
+recall=0.9292
+f1=0.9212
+(ai) ➜  bert-ner git:(master) ✗
