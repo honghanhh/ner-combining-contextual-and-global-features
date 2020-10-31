@@ -8,7 +8,8 @@ import os
 import numpy as np
 import argparse
 from conlleval import evaluate_conll_file
-
+torch.manual_seed(0)
+np.random.seed(0)
 
 def train(model, iterator, optimizer, criterion):
     model.train()
@@ -30,7 +31,7 @@ def train(model, iterator, optimizer, criterion):
         loss.backward()
 
         optimizer.step()
-
+"""
         if i == 0:
             print("=====sanity check======")
             print("words:", words[0])
@@ -41,7 +42,7 @@ def train(model, iterator, optimizer, criterion):
             print("tags:", tags[0])
             print("seqlen:", seqlens[0])
             print("=======================")
-
+"""
         # if i % 10 == 0:  # monitoring
         #     print(f"step: {i}, loss: {loss.item()}")
 
@@ -107,7 +108,7 @@ def eval(model, iterator, f):
         else:
             f1 = 0
 
-    final = f + ".P%.2f_R%.2f_F%.2f" % (precision, recall, f1)
+    final = f + ".P%.2f_R%.2f_%.4f" % (precision, recall, f1)
     with open(final, 'w') as fout:
         result = open("temp", "r").read()
         fout.write(f"{result}\n")

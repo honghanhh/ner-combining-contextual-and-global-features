@@ -13,13 +13,18 @@ class Net(nn.Module):
     def __init__(self, top_rnns=False, vocab_size=None, device='cpu', finetuning=False):
         super().__init__()
         self.xlnet = XLNetModel.from_pretrained('xlnet-base-cased')
-
+        """
+         for name, param in self.xlnet.layer.named_parameters():
+            if not name.startswith('11'): #(name.startswith('8') or name.startswith('9') or name.startswith('10') or name.startswith('11')):
+                param.requires_grad = False
+                print("Frozen layer" + name + "...")
+        """
         self.top_rnns = top_rnns
         if top_rnns:
             self.rnn = nn.LSTM(bidirectional=True, num_layers=2,
                                input_size=768, hidden_size=768//2, batch_first=True)
 
-        self.dropout = nn.Dropout(p=0.5)
+        self.dropout = nn.Dropout(p=0.4)
         self.fc = nn.Linear(768, vocab_size)
 
         self.device = device
