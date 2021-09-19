@@ -2,9 +2,7 @@
 
 ## Description
 
-Named  entity  recognition  (NER)  is  an  information  extraction  techniquethat aims to locate and classify named entities (e.g., organizations, locations,...) within a document into predefined categories. Correctly identifying these phrases plays a significant role in simplifying the progress of retrieving information. However, it is still adifficult task because named entities (NEs) have multiple forms and they are contextdependent.  While  the  context  can  be  represented  by  contextual  features,  the  global relations are often misrepresented by those models. 
-
-We propose the combination of contextual features from XLNet and global features from Graph Convolution Network (GCN) to enhance NER performance. Experiments over a widely-useddataset, CoNLL 2003, show the benefits of our strategy, with results competitive with the state of the art.
+Named  entity  recognition  (NER)  is  an  information extraction  technique that aims to locate and classify named entities within a document into predefined categories. However, it is still a difficult task because named entities (NEs) have multiple forms and they are context dependent. We propose the combination of contextual features from XLNet and global features from Graph Convolution Network (GCN) to enhance NER performance. Experiments over a widely-useddataset, CoNLL 2003, show the benefits of our strategy, with results competitive with the state of the art.
 
 ---
 
