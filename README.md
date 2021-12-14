@@ -50,7 +50,7 @@ The `train.py` contains XLNet model whereas the `combined_train.py` includes the
 
 ---
 ## References
-- Named entity recognition architecture combining contextual and global features.
+Hanh, Tran Thi Hong, et al. "Named Entity Recognition Architecture Combining Contextual and Global Features." International Conference on Asian Digital Libraries. Springer, Cham, 2021.
 
 ---
 
